@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="author" content="SIRMly">
+    <meta name="keywords" content="安仁乐道"/>
+    <meta name="description" content="安仁乐道新闻首页"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/newsIndex.css"/>
+    <title>安仁乐道</title>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <div id="topSlider">
+            <div class="swiper-container" id="swiper-top">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="##">
+                            <img src="img/newsIndex-top.png" alt="" width="100%;"/>
+                            <p class="top-slider-word">安仁乐道正式开街</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="##">
+                            <img src="img/newsIndex-top.png" alt="" width="100%;"/>
+                            <p class="top-slider-word">安仁乐道正式开街</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="##">
+                            <img src="img/newsIndex-top.png" alt="" width="100%;"/>
+                            <p class="top-slider-word">安仁乐道正式开街</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="##">
+                            <img src="img/newsIndex-top.png" alt="" width="100%;"/>
+                            <p class="top-slider-word">安仁乐道正式开街</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination" id="top-pagination"></div>
+            </div>
+        </div>
+        <div class="news-content" id="list-wrapper">
+            <div class="card word-card">
+                <a href="##">
+                    <div class="word-card-img">
+                        <img src="img/news-index-pic.png" alt=""/>
+                    </div>
+                    <div class="word-card-words">
+                        <p class="word-card-title">小长假去了趟安仁，比我想象中好玩100倍！</p>
+                        <p class="word-card-content">而这前后，两个中国现今最走红的知识网红高晓松和樊建川在这里相聚密谋大事。</p>
+                        <p class="word-card-bottom clearfix">
+                            <span class="card-read pull-left">2016</span>
+                            <span class="news-date pull-left">2016-05-22</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="card pic-card">
+                <a href="##">
+                    <div class="pic-card-img">
+                        <img src="img/news-index-pic.png" alt=""/>
+                        <span>12</span>
+                    </div>
+                    <div class="pic-card-words">
+                        <p class="word-card-title">中国博物馆小镇，让安仁乐道成为一种生活方式！成都人的生活态度</p>
+                        <p class="word-card-bottom clearfix">
+                            <span class="card-read pull-left">2016</span>
+                            <span class="news-date pull-left">2016-05-22</span>
+                        </p>
+                    </div>
+
+                </a>
+            </div>
+            <div class="card video-card">
+                <a href="##">
+                    <div class="video-card-img">
+                        <img src="img/news-index-pic.png" alt=""/>
+                        <span>03:30</span>
+                    </div>
+                    <div class="pic-card-words">
+                        <p class="word-card-title">中国博物馆小镇，让安仁乐道成为一种生活方式！成都人的生活态度</p>
+                        <p class="word-card-bottom clearfix">
+                            <span class="card-read pull-left">2016</span>
+                            <span class="news-date pull-left">2016-05-22</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script>
+    ;(function ($){
+        var swiperTop = new Swiper('#swiper-top',{
+            pagination: "#top-pagination",
+            simulateTouch: false,
+            slidesPerView: 1,
+            paginationClickable: false,
+            spaceBetween: 0,
+            loop: true,
+            autoplay: 2500,
+            autoplayDisableOnInteraction: false
+        });
+    })(jQuery);
+</script>
+</body>
+</html>
