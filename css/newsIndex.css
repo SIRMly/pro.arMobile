@@ -77,7 +77,7 @@
 .write-icons.toComment{background-position: 1.5% 0; position: relative;}
 .write-icons.toSave{background-position: 32.8% 0;}
 .write-icons.toSend{background-position: 65% 0;}
-.write-icons.toComment span{position: absolute; font-size: 0.4rem; background-color: #d60012; width: 0.8rem; height: 0.8rem; line-height: 0.8rem; border-radius: 50%;color: #fff; text-align: center; left: -0.15rem; top: -0.15rem;}
+.write-icons.toComment span{position: absolute; font-size: 0.3rem; background-color: #d60012; width: 0.65rem; height: 0.65rem; line-height: 0.65rem; border-radius: 50%;color: #fff; text-align: center; left: -0.15rem; top: -0.15rem;}
 .comment-input{flex: auto; position: relative; height: 7.5vw; background: #e2dcce; padding: 0 3%; border-radius: 7vw; }
 .comment-input textarea{display: block; resize: none; height: 5.5vw; line-height: 5.5vw; width: 100%; text-indent: 0.5rem; font-size: 0.75rem; color: #333; margin-top: 1vw; padding-left: 0.4rem;}
 .textarea-placeholder,.textarea-reply{position: absolute; font-size: 0.75rem; top: 1vw; color: #333; left: 3%; text-indent: 1rem;}
