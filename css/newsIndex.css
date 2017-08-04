@@ -89,9 +89,9 @@
 #pics img.img-middle{top: 50%; -webkit-transform: translateY(-55%); -moz-transform: translateY(-55%); -ms-transform: translateY(-55%); -o-transform: translateY(-55%); transform: translateY(-55%);}
 .pic-word{position: absolute; bottom: 0; left: 0; right: 0; color: #c7b497; font-size: 0.75rem;  background-color: rgba(9,9,9,0.6);padding: 1.25rem 0.75rem 1rem; line-height: 1.15rem; }
 .word-inner{width: 100%; max-height: 5.8rem; overflow-y: auto; -webkit-overflow-scrolling: touch; position: relative; text-align: justify;}
-#pics-detail .pic-word.more:after{content: ''; width: 0.1rem; position: absolute; right: 0.4rem; top: 1.25rem; bottom: 1rem; background-color: #c7b497;}
+#pics-detail .pic-word.more:after{content: ''; width: 0.05rem; position: absolute; right: 0.4rem; top: 1.25rem; bottom: 1rem; background-color: #c7b497;}
 .pic-word .scrollbar{display: none;}
-.pic-word.more .scrollbar{display: block; width: 0.25rem; position: absolute; background-color: #c7b497; margin: 0; right: 0.33rem; top: 1.25rem;}
+.pic-word.more .scrollbar{display: block; width: 0.25rem; position: absolute; background-color: #c7b497; margin: 0; right: 0.3rem; top: 1.25rem;}
 .pic-word span{font-size: 0.8rem; font-weight: bold; margin-right: 0.3rem;}
 #pics-detail .comment-number>a{display: block; width: 100%; height: auto; position: absolute; left: 0; top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%);}
 #pics-detail .comment-number img{width: 5.2vw; margin: 0 auto -0.05rem;}

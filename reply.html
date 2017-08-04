@@ -105,7 +105,7 @@
     var commentTextarea = $("#comment-textarea");
     $(".comment-main").on(click, function (){
         var name = $(this).prev().find(".name").html();
-        commentTextarea.focus().val("");
+        commentTextarea.val("").focus();
         $(".textarea-reply").html("回复"+name+" :").removeClass("hide");
     });
     commentTextarea.on("input",function (){
