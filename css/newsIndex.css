@@ -81,7 +81,7 @@
 .write-icons.toComment span{position: absolute; font-size: 0.35rem; background-color: #d60012; width: 0.65rem; height: 0.65rem; line-height: 0.65rem; border-radius: 50%;color: #fff; text-align: center; left: -0.15rem; top: -0.15rem;}
 .comment-input{flex: auto; position: relative; height: 7.5vw; background: #e2dcce; padding: 0 3%; border-radius: 7vw; }
 .comment-input textarea{display: block; resize: none; height: 5.5vw; line-height: 5.5vw; width: 100%;  font-size: 0.75rem; color: #333; margin-top: 1vw; padding-left: 0.1rem;}
-.textarea-placeholder,.textarea-reply{position: absolute; font-size: 0.75rem; top: 1vw; color: #333; left: 4%; text-indent: 0rem;}
+.textarea-placeholder,.textarea-reply{position: absolute; font-size: 0.75rem; top: 1vw; color: #333; left: 4%; text-indent: 0.2rem;}
 /*==图集==*/
 #pics-detail,#pics-detail .container{background: #000000;}
 #pics{height: calc(100vh - 10.8vw); }
