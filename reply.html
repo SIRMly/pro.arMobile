@@ -91,8 +91,9 @@
     </div>
 </div>
 <script src="js/jquery.min.js"></script>
+<script src="js/fastclick.min.js"></script>
 <script>
-    var click = "ontouchstart" in document ? "touchstart" : "click";
+    var click = "click";
     /*==点赞换图标==*/
     $(".point-hand").on(click,  function (){
         if($(this).hasClass("active")){
@@ -105,7 +106,7 @@
     var commentTextarea = $("#comment-textarea");
     $(".comment-main").on(click, function (){
         var name = $(this).prev().find(".name").html();
-        commentTextarea.val("").focus();
+        commentTextarea.val("").trigger("click").trigger("focus");
         $(".textarea-reply").html("回复"+name+" :").removeClass("hide");
     });
     commentTextarea.on("input",function (){
