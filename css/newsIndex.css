@@ -26,7 +26,7 @@
 .card-read{ text-indent: 0.65rem; background: url("../img/eye.png") no-repeat center left; background-size: auto 65%; margin-right: 0.5rem;}
 .card:not(:last-of-type):after{content: ""; display: block; height: 0.25rem; position: absolute; left: 0.5rem; right: 0.5rem; bottom: 0; background: url("../img/newsIndex-border.png") no-repeat center center; -webkit-background-size:100% auto; background-size:100% auto;}
 .pic-card-img,.video-card-img{height: 53.73vw; overflow: hidden; position: relative; border:2px solid #b30d23;}
-.pic-card-words{width: 90%; margin: 0.5rem auto 0; }
+.pic-card-words{width: 95%; margin: 0.5rem auto 0; }
 .pic-card-words .word-card-bottom{margin-top: 0.3rem;}
 .pic-card-img span,.video-card-img span{position: absolute; width: 2rem; padding: 0.15rem 0.3rem 0.15rem 0; bottom: 0.4rem; right: 0.6rem; color: #fff; font-size: 0.6rem;border-radius: 0.2rem; text-align: right; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 .pic-card-img span{ background: rgba(0,0,0,0.6) url("../img/pic-icon.png") no-repeat 0.3rem center; -webkit-background-size: auto 0.5rem; background-size: auto 0.5rem; text-indent: 0.8rem;}
