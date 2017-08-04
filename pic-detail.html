@@ -127,6 +127,15 @@
     FastClick.attach(document.body);
     var click = "click";
     var winH = $(window).height();
+    /*==点击收藏==*/
+    $(".toSave").on(click, function (){
+        if(!$(this).hasClass("saved")){
+            $(this).addClass("saved");
+        }else{
+            $(this).removeClass("saved");
+        }
+    });
+    /*==图集整体slide==*/
     var swiper = new Swiper('#pics',{
         simulateTouch: false,
         slidesPerView: 1,

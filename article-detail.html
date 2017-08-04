@@ -138,6 +138,14 @@
 <script>
     FastClick.attach(document.body);
     var click = "click";
+    /*==点击收藏==*/
+    $(".toSave").on(click, function (){
+        if(!$(this).hasClass("saved")){
+            $(this).addClass("saved");
+        }else{
+            $(this).removeClass("saved");
+        }
+    });
     /*==评论的点赞换图标==*/
     $(".point-hand").on(click, function () {
         if ($(this).hasClass("active")) {
