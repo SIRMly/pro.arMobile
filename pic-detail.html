@@ -159,6 +159,7 @@
         /*==图片居中==*/
         imgW.height(sliderH - words.outerHeight());
         if(imgW.height()- winH*0.1> img.height()){
+            console.log(index);
             img.addClass("img-middle");
         }
         /*==滚动条==*/
@@ -182,15 +183,11 @@
     /*==底部input问题==*/
     var interval;
     $("#comment-textarea").focus(function (){
-//        $(".textarea-placeholder").addClass("hide");
         interval = setInterval(function() {
             document.body.scrollTop = document.body.scrollHeight;
         }, 100);
     }).blur(function (){
         clearInterval(interval);
-//        if($(this).val()==""){
-//            $(".textarea-placeholder").removeClass("hide");
-//        }
     });
 </script>
 </body>

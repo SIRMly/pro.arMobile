@@ -22,17 +22,17 @@
                 <div class="article-border-left"></div>
                 <div class="article-border-right"></div>
                 <img src="img/article-border-bottom.png" alt="" class="article-border-bottom"/>
-                <p class="article-title">
-                    中国博物馆小镇，让安仁乐道成为一种生活方式！感受成都人的生活态度
-                </p>
-                <p class="article-time">
+                <div class="article-top">
+                    <p class="article-title">
+                    中国博物馆小镇，让安仁乐道成为一种生活方式！
+                    </p>
+                    <p class="article-time">
                     <span class="time">2016-05-22</span>
                     <span class="point-num point-hand">2265</span>
                     <span class="read-num">1235</span>
-                </p>
-                <img src="img/newsIndex-border.png" alt=""/>
-
-                <p class="title">敦煌学|文 超级管理员</p>
+                    </p>
+                </div>
+                <p class="article-author">敦煌学|文 超级管理员</p>
 
                 <div class="article-content">
                     <p>仁乐道也是中国特色小镇“安仁样本”。</p>
@@ -76,7 +76,6 @@
                         </div>
                         <a href="reply.html" class="comment-check">查看全部4条回复 ></a>
                     </div>
-                    <img src="img/newsIndex-border.png" alt="" width="100%" class="comment-border"/>
                 </div>
                 <div class="comment-item">
                     <img src="img/header.png" alt="" class="comment-header"/>
@@ -100,7 +99,6 @@
                         </div>
                         <a href="reply.html" class="comment-check">查看全部4条回复 ></a>
                     </div>
-                    <img src="img/newsIndex-border.png" alt="" width="100%" class="comment-border"/>
                 </div>
                 <div class="comment-item">
                     <img src="img/header.png" alt="" class="comment-header"/>
@@ -113,9 +111,8 @@
 
                         <p class="comment-time">21分钟前</p>
                     </div>
-                    <img src="img/newsIndex-border.png" alt="" width="100%" class="comment-border"/>
                 </div>
-                <a href="comment.html" class="comment-all">显示全部评论</a>
+                <a href="comment.html" class="comment-all">查看全部评论</a>
             </div>
         </div>
     </div>
@@ -171,15 +168,11 @@
     /*==底部input问题==*/
     var interval;
     commentTextarea.focus(function () {
-//        $(".textarea-placeholder").addClass("hide");
         interval = setInterval(function () {
             document.body.scrollTop = document.body.scrollHeight
         }, 100)
     }).blur(function () {
         clearInterval(interval);
-//        if ($.trim($(this).val()) == "") {
-//            $(".textarea-placeholder").removeClass("hide");
-//        }
         $(".textarea-reply").addClass("hide");
     });
 </script>

@@ -1,0 +1,32 @@
+@charset "utf-8";
+.page.index{background-color: #e3ddcf;}
+.page .content{padding: 0.5rem 0.5rem 0.625rem;}
+.index-top{width: 100%; height: 13.73vw; background: url("../img/index-top.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; padding: 0 0.45rem;}
+.index-top>div{height: 100%;}
+.weather img{width: 1rem;}
+.weather{}
+.nav{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
