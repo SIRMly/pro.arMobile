@@ -1,4 +1,5 @@
 @charset "utf-8";
+a,img{display: block; width: 100%;}
 .page.index{background-color: #e3ddcf;}
 .page .content{padding: 0.5rem 0.5rem 0.625rem;}
 .nav{position: absolute; height: 100%; top: 0; right: 0; padding-right: 1.1vw;}
@@ -6,7 +7,6 @@
 .index-banners{margin-top: 0.5rem; background: url("../img/index-border1.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; padding: 0.1rem; position: relative;}
 .index-part{margin-top: 1.5rem; position: relative; }
 .border-top{width: 100%; height: 12.13vw; position: absolute; background: url("../img/border-top.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
-.border-left{width: 0.15rem; position: absolute; top: 12.13vw; }
 .border-bottom{width: 100%; height: 11.33vw; background: url("../img/border-bottom.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; bottom: 0; left: 0; position: absolute;}
 .border-left{width: 0.4vw; position: absolute; top: 12.13vw; left: 0; bottom: 11.33vw; background: url("../img/border-left.png") repeat-y; -webkit-background-size: 100% auto; background-size: 100% auto;}
 .border-right{width: 0.4vw; position: absolute; top: 12.13vw; right: 0; bottom: 11.33vw; background: url("../img/border-right.png") repeat-y; -webkit-background-size: 100% auto; background-size: 100% auto;}
@@ -18,14 +18,7 @@
 .news-video:after{position: absolute; content: ""; height: 0.125rem; left: 0.4rem; bottom: 0; right: 0.4rem; background: url("../img/index-line.png") no-repeat center center; -webkit-background-size: 100% auto; background-size: 100% auto;}
 .news-video .news-word{ padding:0 0.4rem; }
 .news-video .news-title{padding: 0.4rem 0 0.35rem;}
-.index-video-btn{width: 10vw; height: 10vw; position: absolute; left: 50%; top: 23vw;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%); background: url("../img/video-btn.png") no-repeat center center;
-    -webkit-background-size:contain;
-    background-size:contain;}
+.index-video-btn{width: 10vw; height: 10vw; position: absolute; left: 50%; top: 23vw; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); background: url("../img/video-btn.png") no-repeat center center; -webkit-background-size:contain; background-size:contain;}
 .card-read{ text-indent: 0.8rem; background: url("../img/index-eye.png") no-repeat center left; background-size: auto 65%; margin-right: 0.5rem; margin-left: 0.4rem;}
 .word-card{padding: 0.5rem; position: relative;}
 .word-card a{width:100%; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; justify-content: space-between; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; align-items: stretch;}
@@ -59,9 +52,14 @@
 .index-link:nth-of-type(4){left: 77.5%;}
 .to-top{margin-top: 0.4rem; width: 1rem; height: 1rem; background: url("../img/toTop.png") no-repeat center center; -webkit-background-size: contain; background-size: contain;}
 .index-bottom{margin-top: 0.675rem; width: 100%; height: 45.6vw; background: url("../img/index-bottom.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
-
-
-
+/*==sidebar==*/
+.sidebar{position: absolute; left: 0; width: 100%; height: 100%; top: 0; bottom: 0; z-index: 999; display: none;}
+.sidebar-bg{width: 100%; height: 100%;background-color: rgba(8,6,7,0.7);}
+.sidebar-inner{position: absolute; width: 65.6%; left: -100%; top: 0; bottom: 0.1rem; background-color: #fff; -webkit-transition: left 1.5s; -moz-transition: left 1.5s; -ms-transition: left 1.5s; -o-transition: left 1.5s; transition: left 1.5s;}
+.sidebar.show .sidebar-inner{left: 0;}
+.sidebar-lists{padding-top: 1.4rem; height: 100%;}
+.sidebar-lists li{text-align: center; height: 2.1rem; line-height: 2.1rem;}
+.sidebar-lists a{color: #595757; font-size: 0.8rem;}
 
 
 

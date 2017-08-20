@@ -15,7 +15,7 @@
     <title>安仁乐道</title>
 </head>
 <body>
-<div class="page login">
+<div class="page login register">
     <div class="container">
         <div class="content">
             <div class="login-content">
@@ -23,31 +23,27 @@
                 <div class="border-bottom"></div>
                 <div class="border-left"></div>
                 <div class="border-right"></div>
-                <div class="login-title">
-                    <img src="img/login-logo.png" alt=""/>
+                <div class="register-title">
+                    <p>密 码 找 回</p>
+                    <img src="img/forget-notice.png" alt="">
                 </div>
                 <div class="form-content">
                     <div class="input-item">
-                        <label class="input-controller flex her-stretch">
-                            <span class="icon-span user-icon"></span>
-                            <input type="text" placeholder="请输入用户名" class="input-controls"/>
-                        </label>
-                        <div class="error">用户名和密码不匹配！</div>
-                    </div>
-                    <div class="input-item">
                         <label class="input-controller">
-                            <span class="icon-span pass-icon"></span>
-                            <input type="password" placeholder="密码" class="input-controls"/>
+                            <span class="icon-span mail-icon"></span>
+                            <input type="text" placeholder="请输入绑定邮箱" class="input-controls"/>
                         </label>
                         <div class="error">啥啥啥写错</div>
                     </div>
-                    <a href="forget1.html" class="toForget">忘记密码?</a>
-                    <a href="##" class="btns login-btn"></a>
-                    <div class="login-link">
-                        <a href="register.html">
-                            <img src="img/to-register.png" alt="">
-                        </a>
+                    <div class="input-item check-code flex her-stretch">
+                        <label class="input-controller">
+                            <span class="icon-span check-icon"></span>
+                            <input type="text" placeholder="请输入验证码" class="input-controls" maxlength="4"/>
+                        </label>
+                        <div class="get-code">获取验证码</div>
+                        <div class="error">验证码不正确！</div>
                     </div>
+                    <a href="forget2.html" class="forget-btn"></a>
                 </div>
             </div>
         </div>
@@ -58,6 +54,24 @@
 <script>
     ;(function ($){
         FastClick.attach(document.body);
+        /*==获取验证码点击事件==*/
+        getCodeClick();
+        function getCodeClick(){
+            $(".get-code").on("click", function (){
+                var time = 60;
+                $(".get-code").html(time)
+                $(this).off("click");
+                var timer = setInterval(function (){
+                    time--;
+                    $(".get-code").html(time);
+                    if(time<=0){
+                        getCodeClick();
+                        clearInterval(timer);
+                        $(".get-code").html("获取验证码")
+                    }
+                },1000)
+            });
+        }
 
     })(jQuery);
 </script>

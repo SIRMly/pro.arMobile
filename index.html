@@ -198,6 +198,46 @@
             <div class="index-bottom"></div>
         </div>
     </div>
+    <div class="sidebar">
+        <div class="sidebar-bg"></div>
+        <div class="sidebar-inner">
+            <ul class="sidebar-lists">
+                <li>
+                    <a href="javascript:;">最新动态</a>
+                </li>
+                <li>
+                    <a href="javascript:;">活动报名</a>
+                </li>
+                <li>
+                    <a href="javascript:;">问卷调查</a>
+                </li>
+                <li>
+                    <a href="javascript:;">电子杂志</a>
+                </li>
+                <li>
+                    <a href="javascript:;">安仁TOP排行榜</a>
+                </li>
+                <li>
+                    <a href="javascript:;">在线商城</a>
+                </li>
+                <li>
+                    <a href="javascript:;">地图导览</a>
+                </li>
+                <li>
+                    <a href="javascript:;">游览攻略</a>
+                </li>
+                <li>
+                    <a href="javascript:;">失物招领</a>
+                </li>
+                <li>
+                    <a href="javascript:;">意见反馈</a>
+                </li>
+                <li>
+                    <a href="javascript:;">联系我们</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
 <script src="js/jquery.min.js"></script>
 <script src="js/swiper.jquery.min.js"></script>
@@ -263,6 +303,13 @@
             observeParents:true,
             prevButton:'.swiper-button-prev',
             nextButton:'.swiper-button-next'
+        });
+        /*==sidebar==*/
+        $(".to-sidebar").on("click", function (){
+           $(".sidebar").fadeIn(500).addClass("show");
+        });
+        $(".sidebar-bg").on("click", function (){
+            $(".sidebar").fadeOut(500).removeClass("show");
         });
     })(jQuery);
 </script>
