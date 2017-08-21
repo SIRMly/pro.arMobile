@@ -75,6 +75,7 @@
 </div>
 <div class="page item-detail">
     <div class="container">
+        <div class="item-crash"></div>
         <div class="shop-item">
             <img src="img/detail-pic.png" alt=""/>
             <p class="detail-title">麻辣牛肉荞面</p>
@@ -88,6 +89,12 @@
 <script>
     ;(function ($){
         FastClick.attach(document.body);
+        $(".card a").on("click", function (){
+            $(".item-detail").stop().fadeIn(100);
+        });
+        $(".item-crash").on("click", function (){
+            $(".item-detail").stop().fadeOut(100);
+        });
         $(".detail-icon").on("click", function (){
             $(this).hide();
             $(".detail-info").addClass("long");

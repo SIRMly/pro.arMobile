@@ -5,30 +5,68 @@
     <meta http-equiv="Cache-Control" content="no-cache"/>
     <meta name="renderer" content="webkit"/>
     <meta name="author" content="SIRMly">
-    <meta name="keywords" content="安仁乐道"/>
-    <meta name="description" content="安仁乐道首页"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/tu.css"/>
+    <link rel="stylesheet" href="css/newsIndex.css"/>
     <title>安仁乐道</title>
 </head>
 <body>
-<div class="page login">
+<div class="page">
     <div class="container">
         <div class="content">
-            <img src="img/active-enter.png" alt="">
+            <div class="article-wrapper po-re">
+                <img src="img/article-border-top.png" alt="" class="article-border-top"/>
+                <div class="article-border-left"></div>
+                <div class="article-border-right"></div>
+                <img src="img/article-border-bottom.png" alt="" class="article-border-bottom"/>
+                <div class="article-top">
+                    <p class="article-title">
+                    中国博物馆小镇，让安仁乐道成为一种生活方式！
+                    </p>
+                    <p class="article-time">
+                    <span class="time">2016-05-22</span>
+                    <span class="point-num point-hand">2265</span>
+                    <span class="read-num">1235</span>
+                    </p>
+                </div>
+                <p class="article-author">敦煌学|文 超级管理员</p>
+
+                <div class="article-content">
+                    <p>仁乐道也是中国特色小镇“安仁样本”。</p>
+
+                    <p>
+                        <img src="img/article-pic1.png" alt=""/>
+                    </p>
+                    <p>成都安仁古镇浓缩了川西近代史的百年风云，总共有保存完好中西合璧的老公馆27座、现代博物馆（展示馆）35座，现存文物的价值和规模、拥有博物馆的数量，在全国同类小镇中已是首屈一指。因而先后被建设部、国家文物局授予“中国历史文化名镇”，被中国博物馆学会冠名为“中国博物馆小镇”。</p>
+                    <p>孔子曰：“仁者安仁，知者利仁”，孔子还曰：“一箪食，一瓢饮，在陋巷”，这就是安仁乐道的哲学----管你世间姹紫嫣红还是乱马奔腾，我有我的世外桃园。</p>
+                    <p>
+                        <img src="img/article-pic1.png" alt=""/>
+                    </p>
+                    <p>值得欣喜的是，博物馆旅游从阳春白雪走进了平常人的旅游清单。越来越多人愿意慢下来，看一看、想一想，让博物馆成为休闲旅游的主题之一。</p>
+                    <p>我们感受外面的世界，需要品尝美食、举起相机，也可以带上自己所有的已知和未知走进博物馆。博物馆不仅仅是地方文明的标志，博物馆也可以是绚丽的、彩色的、科技的、主题各种各样的。</p>
+                    <p>不妨一起去看看。</p>
+                </div>
+            </div>
+            <div class="active-form"></div>
         </div>
     </div>
 </div>
 <script src="js/jquery.min.js"></script>
 <script src="js/fastclick.min.js"></script>
 <script>
-    ;(function ($){
-        FastClick.attach(document.body);
+    FastClick.attach(document.body);
+    /*==评论的点赞换图标==*/
+    $(".point-hand").on("click", function () {
+        if ($(this).hasClass("active")) {
+            $(this).removeClass("active");
+        } else {
+            $(this).addClass("active");
+        }
+    });
 
-    })(jQuery);
 </script>
 </body>
 </html>

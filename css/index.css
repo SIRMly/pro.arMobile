@@ -28,7 +28,7 @@ a,img{display: block; width: 100%;}
 .word-card-content{font-size: 0.6rem; color: #202468; font-style: italic; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; text-overflow: ellipsis;}
 .word-card-title{font-size: 0.8rem; height: 1.2rem;}
 .word-card .word-card-bottom{position: absolute; bottom: -0.1rem; right: 0; left: 0.3rem; font-size: 0.525rem; color: #989898;}
-.index-more-btn{position: absolute; right: 0; bottom: 0; width: 16.1vw; height: 6vw; background: url("../img/index-more.png") no-repeat center center; -webkit-background-size: contain; background-size: contain;}
+.index-more-btn{position: absolute; right: -0.3vw; bottom: 0.1vw; width: 16.1vw; height: 6vw; background: url("../img/index-more.png") no-repeat center center; -webkit-background-size: contain; background-size: contain;}
 .mt75{margin-top: 0.75rem;}
 .banner2-btn{width: 16.4vw; height: 6.13vw; background: url("../img/banner2-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; bottom: 3vw; left: 50%; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%);}
 .index-rank{margin: 0.875rem 0.5rem 0;}
