@@ -82,6 +82,12 @@
             </div>
         </div>
     </div>
+    <div class="delete-concern">
+        <div class="delete-img clearfix">
+            <a href="javascript:;" class="delete-sure pull-left"></a>
+            <a href="javascript:;" class="delete-cancel pull-left"></a>
+        </div>
+    </div>
     <div class="write-comment flex her-stretch ver-center">
         <div class="comment-input">
             <span class="textarea-reply hide"></span>
@@ -145,6 +151,13 @@
         }
         $(".textarea-reply").addClass("hide");
     });
+    /*==显示删除==*/
+    $(".comment-time").on("click", function (){
+        $(".delete-concern").fadeIn(100);
+    });
+    $(".delete-cancel").on("click", function (){
+        $(".delete-concern").fadeOut(100);
+    })
 </script>
 </body>
 </html>
