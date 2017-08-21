@@ -125,7 +125,7 @@ video::-webkit-media-controls { display:none !important; }
 #reply .comment-main .name{font-size: 0.75rem; margin-left: 0.1rem;}
 /*==回复删除==*/
 .delete-concern{position: absolute; width: 100%; height: 100%; z-index: 999; left: 0; top: 0; background-color: rgba(0,0,0,0.5); display: none;}
-.delete-img{width: 13.6rem; height: 8.025rem; position: absolute; left: 50%; margin-left: -7.8rem; top: 35%; background: url("../img/delete-pic.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; padding-top: 5.8rem;}
+.delete-img{width: 13.6rem; height: 8.025rem; position: absolute; left: 50%; margin-left: -6.8rem; top: 35%; background: url("../img/delete-pic.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; padding-top: 5.8rem;}
 .delete-img a{width: 50%; height: 2.25rem; }
 /*==活动列表==*/
 .active .word-card-img{border: 1px solid #b90d23;}

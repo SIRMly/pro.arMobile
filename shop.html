@@ -96,6 +96,7 @@
         $(".item-crash").on("click", function (){
             $(".item-detail").stop().fadeOut(100);
             $(".shop").find(".container").css("overflow","auto");
+            $(".detail-info").removeClass("long");
         });
         $(".detail-icon").on("click", function (){
             $(this).hide();
