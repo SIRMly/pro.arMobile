@@ -91,9 +91,11 @@
         FastClick.attach(document.body);
         $(".card a").on("click", function (){
             $(".item-detail").stop().fadeIn(100);
+            $(".shop").find(".container").css("overflow","hidden");
         });
         $(".item-crash").on("click", function (){
             $(".item-detail").stop().fadeOut(100);
+            $(".shop").find(".container").css("overflow","auto");
         });
         $(".detail-icon").on("click", function (){
             $(this).hide();
