@@ -60,7 +60,7 @@
 .info-lists li{height: 1.85rem; margin-top: 1.25rem; position: relative; color: #333333; font-size: 0.75rem; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; border-bottom: 1px solid #656565;}
 .info-lists li:first-child{height: 2.75rem;}
 .change-head{font-size: 0; width: 3.1rem;overflow: hidden; position: relative; margin-bottom: 0.25rem; padding-right: 1rem; background: url("../img/my-info-arrow.png") no-repeat; -webkit-background-size: 0.5rem auto; background-size: 0.5rem auto; background-position:  100% -27%;}
-.change-head img{width: 2.2rem; height: 2.2rem; }
+.change-head img{width: 2.2rem; height: 2.2rem; border-radius: 50%; overflow: hidden; }
 .change-head input{width: 100%; height: 100%; position: absolute; left: 0; top: 0; opacity: 0;}
 .font-right{font-size: 0.75rem; text-align: right; min-width: 50vw; padding-right: 1rem;background: url("../img/my-info-arrow.png") no-repeat; -webkit-background-size: 0.5rem auto; background-size: 0.5rem auto; background-position: 100% -0.5%;}
 .color-gray{color: #969696;}
