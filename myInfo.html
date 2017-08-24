@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="author" content="SIRMly">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/myCenter.css"/>
+    <title>敦煌研究院</title>
+</head>
+<body>
+<div class="page">
+    <div class="content">
+        <div class="content">
+            <ul class="info-lists">
+                <li class="flex her-stretch">
+                    <span>头像</span>
+                    <div class="change-head">
+                        <img src="img/header.png" alt="" class="img-show" id="img-show">
+                        <input type="file" class="img-btn" id="img-btn" accept="image/jpeg,image/jpg,image/png">
+                    </div>
+                </li>
+                <li class="flex her-stretch">
+                    <span>昵称</span>
+                    <input type="text" class="font-right" value="狗子"/>
+                </li>
+                <li class="flex her-stretch">
+                    <span>背景</span>
+                    <div class="change-bg po-re">
+                        <input type="file" name="" id="change-bg-btn" accept="image/jpeg,image/jpg,image/png">
+                        <span id="showSex" class="font-right">个性背景修改</span>
+                    </div>
+                </li>
+                <li class="flex her-stretch">
+                    <span>电话</span>
+                    <input type="tel" class="font-right" value="11111111111"/>
+                </li>
+                <li class="flex her-stretch">
+                    <span>邮箱</span>
+                    <input type="text" class="font-right color-gray" value="1234568@163.com" readonly/>
+                </li>
+            </ul>
+            <a href="javascript:;" class="fill-info-btn"></a>
+            <a href="javascript:;" class="submit-btn"></a>
+            <a href="index.html" class="home-icon"></a>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/fastclick.min.js"></script>
+<script>
+    ;(function (jQuery) {
+        FastClick.attach(document.body);
+        /*==上传预览头像==*/
+        $("#img-btn").on("change", function (){
+            var $file = $(this);
+            var fileObj = $file[0];
+            var windowURL = window.URL || window.webkitURL;
+            var dataURL;
+            var $img = $("#img-show");
+            if(fileObj && fileObj.files && fileObj.files[0]){
+                dataURL = windowURL.createObjectURL(fileObj.files[0]);
+                $img.attr('src',dataURL);
+            }else{
+                dataURL = $file.val();
+                var imgObj = document.getElementById("#img-show");
+                imgObj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+                imgObj.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = dataURL;
+            }
+        });
+    })($);
+</script>
+</body>
+</html>

@@ -5,29 +5,80 @@
     <meta http-equiv="Cache-Control" content="no-cache"/>
     <meta name="renderer" content="webkit"/>
     <meta name="author" content="SIRMly">
-    <meta name="keywords" content="安仁乐道"/>
-    <meta name="description" content="安仁乐道"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/tu.css"/>
+    <link rel="stylesheet" href="css/myCenter.css"/>
     <title>安仁乐道</title>
 </head>
 <body>
-<div class="page login">
-    <div class="container">
-        <div class="content">
-            <img src="img/myCenter.png" alt="">
-            <a href="javascript:;" class="my-change"></a>
-            <a href="javascript:;" class="my-article"></a>
-            <a href="myMessage.html" class="my-message"></a>
-            <a href="javascript:;" class="my-sugg"></a>
-            <a href="mySurvey.html" class="my-survey"></a>
-            <a href="javascript:;" class="my-active"></a>
-            <a href="javascript:;" class="my-active"></a>
-            <a href="javascript:;" class="my-goods"></a>
-            <a href="index.html" class="to-home"></a>
+<div class="wrapper myCenter">
+    <div class="content">
+        <div class="center-top">
+            <img src="img/center-bg.png" alt=""/>
+            <div class="center-top-content">
+                <a href="myInfo.html" class="center-head">
+                    <img src="img/header.png" alt=""/>
+                </a>
+                <p class="center-name">闹腾的二狗子</p>
+                <div class="my-collect flex ver-center her-center">
+                    <div class="top-item">
+                        <a href="myArticle.html">
+                            <p class="number">
+                                <span>111</span>
+                            </p>
+                            <p class="word">我读过的文章</p>
+                        </a>
+                    </div>
+                    <div class="top-item myMessage">
+                        <a href="myMessage.html">
+                            <p class="number">
+                                <span>103</span>
+                            </p>
+                            <p class="word">我的消息</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="center-links">
+            <ul class="center-lists">
+                <li>
+                    <a href="mySuggestion.html" class="lists-inner flex her-stretch ver-center">
+                        <span class="center-icon sugg-icon"></span>
+                        <span class="center-word">意见反馈</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mySurvey.html" class="lists-inner flex her-stretch ver-center">
+                        <span class="center-icon survey-icon"></span>
+                        <span class="center-word">问卷调查</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="myActive.html" class="lists-inner flex her-stretch ver-center">
+                        <span class="center-icon active-icon"></span>
+                        <span class="center-word">活动报名</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="myLost.html" class="lists-inner flex her-stretch ver-center">
+                        <span class="center-icon lost-icon"></span>
+                        <span class="center-word">失物招领</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="lists-inner flex her-stretch ver-center">
+                        <span class="center-icon goods-icon"></span>
+                        <span class="center-word">我的商品</span>
+                    </a>
+                </li>
+            </ul>
+            <a href="javascript:;" class="sign-out">退出登录</a>
+            <a href="index.html" class="home-icon"></a>
         </div>
     </div>
 </div>
@@ -36,7 +87,11 @@
 <script>
     ;(function ($){
         FastClick.attach(document.body);
-
+        /*==我的消息 >0时 加红点==*/
+        var myMessage = parseInt($(".myMessage").find("span").html());
+        if(myMessage > 0){
+            $(".myMessage").addClass("more");
+        }
     })(jQuery);
 </script>
 </body>

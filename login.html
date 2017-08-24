@@ -41,12 +41,22 @@
                         </label>
                         <div class="error">啥啥啥写错</div>
                     </div>
-                    <a href="forget1.html" class="toForget">忘记密码?</a>
+                    <div class="input-item check-item">
+                        <label class="input-controller">
+                            <span class="icon-span check-icon"></span>
+                            <input type="password" placeholder="验证码" class="input-controls"/>
+                        </label>
+                        <div class="check-in">
+                            <img src="img/login-check.png" alt="">
+                        </div>
+                        <div class="error">啥啥啥写错</div>
+                    </div>
+                    <div class="clearfix">
+                        <a href="forget1.html" class="toForget">忘记密码?</a>
+                    </div>
                     <a href="##" class="btns login-btn"></a>
                     <div class="login-link">
-                        <a href="register.html">
-                            <img src="img/to-register.png" alt="">
-                        </a>
+                        <a href="register.html">没有账号，立即<span>注册！</span></a>
                     </div>
                 </div>
             </div>
@@ -58,7 +68,11 @@
 <script>
     ;(function ($){
         FastClick.attach(document.body);
-
+        var winH = $(window).height();
+        $(":input").on("focus", function (){
+          $(".container").height(winH);
+          $(".content").height(winH);
+        });
     })(jQuery);
 </script>
 </body>

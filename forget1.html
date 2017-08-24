@@ -29,6 +29,13 @@
                 </div>
                 <div class="form-content">
                     <div class="input-item">
+                        <label class="input-controller flex her-stretch">
+                            <span class="icon-span user-icon"></span>
+                            <input type="text" placeholder="请输入用户名" class="input-controls"/>
+                        </label>
+                        <div class="error">用户名和密码不匹配！</div>
+                    </div>
+                    <div class="input-item">
                         <label class="input-controller">
                             <span class="icon-span mail-icon"></span>
                             <input type="text" placeholder="请输入绑定邮箱" class="input-controls"/>
@@ -54,6 +61,11 @@
 <script>
     ;(function ($){
         FastClick.attach(document.body);
+        var winH = $(window).height();
+        $(":input").on("focus", function (){
+            $(".container").height(winH);
+            $(".content").height(winH);
+        });
         /*==获取验证码点击事件==*/
         getCodeClick();
         function getCodeClick(){

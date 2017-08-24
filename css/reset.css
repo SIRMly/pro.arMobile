@@ -14,9 +14,10 @@ textarea{overflow: auto;}
 button, input, select, textarea {  font: 14px Verdana, Helvetica, Arial, sans-serif ;}
 table {  border-collapse: collapse; }
 html {overflow-y: scroll;}
-a, button, input, select, textarea { -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+a, button, input, select, textarea { -webkit-tap-highlight-color: rgba(255, 255, 255, 0); border-radius: 0; }
+input{border: 0.1px solid transparent;}
 input::-webkit-inner-spin-button, input::-webkit-outer-spin-button { -webkit-appearance: none !important;  margin: 0  ;}
-button, input[type=submit], input[type=reset], input[type=button] { -webkit-appearance: none;}
+button, input[type=submit], input[type=reset], input[type=button], input[type=file] { -webkit-appearance: none;}
 input[type=number] { -moz-appearance: textfield;  }
 .clearfix:after, .clearfix:before {  content: "";  display: block;  height: 0;  clear: both;  visibility: hidden;}
 .pull-left { float: left;}

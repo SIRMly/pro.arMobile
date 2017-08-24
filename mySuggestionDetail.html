@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="author" content="SIRMly">
+    <meta name="keywords" content="安仁乐道"/>
+    <meta name="description" content="安仁乐道"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css"/>
+    <title>安仁乐道</title>
+</head>
+<body>
+<div class="page register suggestion">
+    <div class="container">
+        <div class="content">
+            <div class="login-content">
+                <div class="border-top"></div>
+                <div class="border-bottom"></div>
+                <div class="border-left"></div>
+                <div class="border-right"></div>
+                <div class="register-title">
+                    <p>意 见 反 馈</p>
+                    <img src="img/suggestion-notice.png" alt="" class="sugg-notice">
+                </div>
+                <div class="form-content">
+                    <div class="input-item">
+                        <label class="input-controller flex her-stretch">
+                            <span class="icon-span user-icon"></span>
+                            <input type="text" placeholder="" class="input-controls" value="我叫狗子" readonly/>
+                        </label>
+                    </div>
+                    <div class="input-item">
+                        <label class="input-controller">
+                            <span class="icon-span id-icon"></span>
+                            <input type="text" placeholder="身份证号码" class="input-controls" value="12345678921111" readonly/>
+                        </label>
+                    </div>
+                    <div class="input-item">
+                        <label class="input-controller">
+                            <span class="icon-span tel-icon"></span>
+                            <input type="tel" placeholder="手机号码" class="input-controls" value="12345678911" readonly/>
+                        </label>
+                    </div>
+                    <div class="input-item text-item">
+                        <label class="input-controller">
+                            <span class="icon-span text-icon"></span>
+                            <textarea name="" id="" class="input-controls"  maxlength="100" readonly>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦嘎嘎嘎嘎卡卡卡卡卡卡卡卡啊哈哈哈</textarea>
+                        </label>
+                        <p class="text-notice">100字以内</p>
+                    </div>
+                    <div class="add-pic-wrapper flex ver-center her-center">
+                        <div class="img-updown img-updown1">
+                            <img src="img/pic-detail.png" alt="" class="img-show" id="img-show1"/>
+                        </div>
+                        <div class="img-updown img-updown1">
+                            <img src="img/shop-bg.png" alt="" class="img-show" id="img-show2"/>
+                        </div>
+                        <div class="img-updown img-updown1">
+                            <img src="img/detail-pic.png" alt="" class="img-show" id="img-show3"/>
+                        </div>
+                    </div>
+                    <a href="##" class="submit-btn submited-btn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page img-delete-wrapper">
+    <div class="container">
+        <div class="img-border">
+            <img src="" alt="" id="delete-img"/>
+        </div>
+        <a href="javascript:;" class="pic-delete"></a>
+        <a href="javascript:;" class="pic-cancel"></a>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/fastclick.min.js"></script>
+<script>
+    ;(function ($){
+        FastClick.attach(document.body);
+        /*==textarea输入变高==*/
+        var autoTextarea = function (elem, extra, maxHeight) {
+            extra = extra || 0;
+            var isFirefox = !!document.getBoxObjectFor || 'mozInnerScreenX' in window,
+                    isOpera = !!window.opera && !!window.opera.toString().indexOf('Opera'),
+                    addEvent = function (type, callback) {
+                        elem.addEventListener ?
+                                elem.addEventListener(type, callback, false) :
+                                elem.attachEvent('on' + type, callback);
+                    },
+                    getStyle = elem.currentStyle ?
+                            function (name) {
+                                var val = elem.currentStyle[name];
+                                if (name === 'height' && val.search(/px/i) !== 1) {
+                                    var rect = elem.getBoundingClientRect();
+                                    return rect.bottom - rect.top -
+                                            parseFloat(getStyle('paddingTop')) -
+                                            parseFloat(getStyle('paddingBottom')) + 'px';
+                                }
+                                ;
+                                return val;
+                            } : function (name) {
+                        return getComputedStyle(elem, null)[name];
+                    },
+                    minHeight = parseFloat(getStyle('height'));
+            elem.style.resize = 'none';
+
+            var change = function () {
+                var scrollTop, height,
+                        padding = 0,
+                        style = elem.style;
+
+                if (elem._length === elem.value.length) return;
+                elem._length = elem.value.length;
+
+                if (!isFirefox && !isOpera) {
+                    padding = parseInt(getStyle('paddingTop')) + parseInt(getStyle('paddingBottom'));
+                }
+                ;
+                scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+
+                elem.style.height = minHeight + 'px';
+                if (elem.scrollHeight > minHeight) {
+                    if (maxHeight && elem.scrollHeight > maxHeight) {
+                        height = maxHeight - padding;
+                        style.overflowY = 'auto';
+                    } else {
+                        height = elem.scrollHeight - padding;
+                        style.overflowY = 'hidden';
+                    }
+                    ;
+                    style.height = height + extra + 4 + 'px';
+                    scrollTop += parseInt(style.height) - elem.currHeight;
+                    document.body.scrollTop = scrollTop;
+                    document.documentElement.scrollTop = scrollTop;
+                    elem.currHeight = parseInt(style.height);
+                }
+                ;
+                console.log(elem.style.height)
+            };
+
+            addEvent('propertychange', change);
+            addEvent('input', change);
+            addEvent('focus', change);
+            change();
+        };
+        autoTextarea($("textarea")[0]);
+    })(jQuery);
+</script>
+</body>
+</html>

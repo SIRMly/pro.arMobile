@@ -1,0 +1,103 @@
+@charset "utf-8";
+.content{padding: 2.267vw 4.667vw; height: 100vh; position: relative;}
+.login-content{position: relative; width: 100%; height: 100%; border: 0.1px solid transparent;}
+.border-top{width: 100%; height: 12.13vw; position: absolute; background: url("../img/border-top.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.border-bottom{width: 100%; height: 11.33vw; background: url("../img/border-bottom.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; bottom: 0; left: 0; position: absolute;}
+.border-left{width: 0.6vw; position: absolute; top: 12.13vw; left: -0.01vw; bottom: 11.33vw; background: url("../img/border-left.png") repeat-y; -webkit-background-size: 100% auto; background-size: 100% auto;}
+.border-right{width: 0.3vw; position: absolute; top: 12.13vw; right: -0.03vw; bottom: 11.33vw; background: url("../img/border-right.png") repeat-y; -webkit-background-size: 100% auto; background-size: 100% auto;}
+.error{width: 100%; font-size: 0.45rem; color: #f10b00; position: absolute; top: -0.55rem; left: 0; text-align: center; }
+.login .error{top: -1rem;}
+.login-title{width: 100%; height: 24.8vh; border: 1px solid transparent;}
+.login-title img{width: 14vw; margin: 16% auto 0;}
+.login .form-content{width: 66.2%; margin: 2rem auto 0; padding-bottom: 1rem;}
+.input-item{height: 1.5rem;  position: relative; border-bottom: 1px solid #656565;}
+.input-item+.input-item{margin-top: 1.3em;}
+.input-controller{display: block; height: 100%; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: end; -ms-flex-align: end; -webkit-align-items: flex-end; align-items: flex-end; -webkit-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; justify-content: space-between; }
+.icon-span{width: 1.3rem; height: 1.5rem; background: url("../img/login-icon.png") no-repeat left center; -webkit-background-size: 103% auto; background-size: 103% auto;}
+.user-icon{ background-position: left -1%;}
+.input-controls{flex: auto; height: 100%; width: 0; padding-left:
+0.2rem;color: #595757; font-size: 0.8rem;}
+.pass-icon{ background-position: left 11%;}
+.input-item+.input-item{margin-top: 0.7rem;}
+.login .input-item+.input-item{margin-top: 3rem;}
+.login-btn{display: block; width: 16.8vw; height: 6.67vw; background: url("../img/login-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; margin: 4rem auto 0;}
+.login-link{text-align: center; margin-top: -0.1rem;}
+.login-link a{color: #868686; position: relative; display: inline-block; width: 22.5vw;}
+.toForget{display: block; font-size: 0.45rem; color: #595757; text-align: right; margin-top: 0.5rem;}
+/*==注册==*/
+.form-content{width: 73.1vw;  margin: 1.3rem auto 0; padding-bottom: 1rem;}
+.register-title p{width: 100%; margin-top: 1.825rem; border: 1px solid transparent; height: 2.5rem; line-height: 2.5rem; color: #595757; font-size: 1.05rem; text-align: center; word-spacing: 0.02rem;}
+.register-title img{height: 1.3rem; display: block; margin: 0 auto; width: auto;}
+.mail-icon{ background-position: left 22%;}
+.phone-icon{ background-position: left 33%;}
+.check-label{font-size: 0.55rem; margin-top: 0.55rem;}
+.checkbox-wrapper{width: 0.55rem; height: 0.55rem; border: 1px solid #595757; position: relative; overflow: hidden;}
+.checkbox-input{position: absolute; width: 100%; height: 100%; left: 0; top: 0;}
+.checkbox-show{display: block; width: 100%; height: 100%;}
+.checkbox-input:checked+.checkbox-show{ background: no-repeat center; background-color: #595757; background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20x%3D'0px'%20y%3D'0px'%20viewBox%3D'0%200%2012%209'%20xml%3Aspace%3D'preserve'%3E%3Cpolygon%20fill%3D'%23ffffff'%20points%3D'12%2C0.7%2011.3%2C0%203.9%2C7.4%200.7%2C4.2%200%2C4.9%203.9%2C8.8%203.9%2C8.8%203.9%2C8.8%20'%2F%3E%3C%2Fsvg%3E"); color: #595757; -webkit-background-size: contain; background-size: contain; }
+.checkbox-word{margin-left: 0.2rem; color: #595757;}
+.checkbox-word a{display: inline; color: #595757;}
+.register-btn{display: block; width: 16.8vw; height: 6.67vw; background: url("../img/register-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; margin: 3.5rem auto 0;}
+/*==注册成功提示==*/
+.register-done .register-title p{margin-top: 5rem; height: 3.875rem; line-height: 3.875rem;}
+.to-complete{display: block; width: 3.2rem; margin: 0.75rem auto; color: #595757; font-size: 0.525rem; background: url("../img/register-arrow.png") no-repeat center right; -webkit-background-size:auto 74%; background-size:auto 74%; }
+/*==忘记密码==*/
+.check-icon{background-position: left 44%;}
+.check-code{padding-right: 0; -webkit-box-align: end; -ms-flex-align: end; -webkit-align-items: flex-end; align-items: flex-end;}
+.check-code .input-controller{width: 61%;}
+.get-code{width: 38.9%; text-align: center; font-size: 0.55rem; color: #595757; position: relative; border: 1px solid #656565; height: 1.575rem; line-height: 1.575rem;border-bottom-width:0;}
+.forget-btn{display: block; width: 19.6vw; height: 6.67vw; background: url("../img/next-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; margin: 3.85rem auto 0;}
+.forget2-btn{display: block;width: 16.8vw; height: 6.67vw; background: url("../img/register-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; margin: 5rem auto 0;}
+.ios-select-widget-box header.iosselect-header a,.date_btn{color: #0894ec;}
+.complete-btn{display: block; width: 17.1vw; height: 6.93vw; background: url("../img/complete-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; margin: 6.5rem auto 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,27 +3,32 @@
 .login-content{position: relative; width: 100%; height: 100%; border: 0.1px solid transparent;}
 .border-top{width: 100%; height: 12.13vw; position: absolute; background: url("../img/border-top.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
 .border-bottom{width: 100%; height: 11.33vw; background: url("../img/border-bottom.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; bottom: 0; left: 0; position: absolute;}
-.border-left{width: 0.6vw; position: absolute; top: 12.13vw; left: -0.01vw; bottom: 11.33vw; background: url("../img/border-left.png") repeat-y; -webkit-background-size: 100% auto; background-size: 100% auto;}
-.border-right{width: 0.3vw; position: absolute; top: 12.13vw; right: -0.03vw; bottom: 11.33vw; background: url("../img/border-right.png") repeat-y; -webkit-background-size: 100% auto; background-size: 100% auto;}
-.error{width: 100%; font-size: 0.45rem; color: #f10b00; position: absolute; top: -0.55rem; left: 0; text-align: center; }
+.border-left{width: 0.4vw; position: absolute; top: 12.13vw; left: 0.2vw; bottom: 11.33vw; background: url("../img/border-left.png") repeat-y; -webkit-background-size: 100% auto; background-size: 100% auto;}
+.border-right{width: 0.25vw; position: absolute; top: 12.13vw; right: 0vw; bottom: 11.33vw; background: url("../img/border-right.png") repeat-y; -webkit-background-size: 100% auto; background-size: 100% auto;}
+.error{width: 100%; font-size: 0.45rem; color: #963333; position: absolute; top: -0.55rem; left: 0; text-align: center; }
 .login .error{top: -1rem;}
-.login-title{width: 100%; height: 24.8vh; border: 1px solid transparent;}
+.login-title{width: 100%; border: 1px solid transparent; padding-bottom: 0.5rem;}
 .login-title img{width: 14vw; margin: 16% auto 0;}
 .login .form-content{width: 66.2%; margin: 2rem auto 0; padding-bottom: 1rem;}
-.input-item{height: 1.5rem;  position: relative; border-bottom: 1px solid #656565;}
+.input-item{height: 1.5rem;  position: relative;}
 .input-item+.input-item{margin-top: 1.3em;}
-.input-controller{display: block; height: 100%; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: end; -ms-flex-align: end; -webkit-align-items: flex-end; align-items: flex-end; -webkit-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; justify-content: space-between; }
+.input-controller{display: block; height: 100%; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: end; -ms-flex-align: end; -webkit-align-items: flex-end; align-items: flex-end; -webkit-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; justify-content: space-between;  border-bottom: 1px solid #656565;}
 .icon-span{width: 1.3rem; height: 1.5rem; background: url("../img/login-icon.png") no-repeat left center; -webkit-background-size: 103% auto; background-size: 103% auto;}
 .user-icon{ background-position: left -1%;}
 .input-controls{flex: auto; height: 100%; width: 0; padding-left:
 0.2rem;color: #595757; font-size: 0.8rem;}
 .pass-icon{ background-position: left 11%;}
 .input-item+.input-item{margin-top: 0.7rem;}
-.login .input-item+.input-item{margin-top: 3rem;}
+.login .input-item+.input-item{margin-top: 1.7rem;}
 .login-btn{display: block; width: 16.8vw; height: 6.67vw; background: url("../img/login-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; margin: 4rem auto 0;}
-.login-link{text-align: center; margin-top: -0.1rem;}
-.login-link a{color: #868686; position: relative; display: inline-block; width: 22.5vw;}
-.toForget{display: block; font-size: 0.45rem; color: #595757; text-align: right; margin-top: 0.5rem;}
+.login-link{text-align: center; font-size: 0.45rem; color: #333;}
+.login-link a{color: #595757; position: relative; display: inline-block; margin-top: 0.5rem;}
+.login-link span{font-size: 0.55rem; color: #993333;}
+.toForget{display: block; float: right; font-size: 0.45rem; color: #595757; text-align: center; margin-top: 0.25rem; width: 2.9rem; padding-left: 0.1rem;}
+.check-item{border-bottom: 0; padding-right: 3.275rem;}
+.check-item .input-controller{border-bottom: 1px solid #656565;}
+.check-in{width: 2.9rem; position: absolute; height: 1.1rem; right: 0; bottom: 0; border: 1px solid #656565;}
+.check-in img{width: 100%; height: 100%;}
 /*==注册==*/
 .form-content{width: 73.1vw;  margin: 1.3rem auto 0; padding-bottom: 1rem;}
 .register-title p{width: 100%; margin-top: 1.825rem; border: 1px solid transparent; height: 2.5rem; line-height: 2.5rem; color: #595757; font-size: 1.05rem; text-align: center; word-spacing: 0.02rem;}
@@ -31,35 +36,68 @@
 .mail-icon{ background-position: left 22%;}
 .phone-icon{ background-position: left 33%;}
 .check-label{font-size: 0.55rem; margin-top: 0.55rem;}
-.checkbox-wrapper{width: 0.55rem; height: 0.55rem; border: 1px solid #595757; position: relative; overflow: hidden;}
+.checkbox-wrapper{width: 0.55rem; height: 0.55rem; border: 1px solid #963333; position: relative; overflow: hidden;}
 .checkbox-input{position: absolute; width: 100%; height: 100%; left: 0; top: 0;}
 .checkbox-show{display: block; width: 100%; height: 100%;}
-.checkbox-input:checked+.checkbox-show{ background: no-repeat center; background-color: #595757; background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20x%3D'0px'%20y%3D'0px'%20viewBox%3D'0%200%2012%209'%20xml%3Aspace%3D'preserve'%3E%3Cpolygon%20fill%3D'%23ffffff'%20points%3D'12%2C0.7%2011.3%2C0%203.9%2C7.4%200.7%2C4.2%200%2C4.9%203.9%2C8.8%203.9%2C8.8%203.9%2C8.8%20'%2F%3E%3C%2Fsvg%3E"); color: #595757; -webkit-background-size: contain; background-size: contain; }
+.checkbox-input:checked+.checkbox-show{ background: no-repeat center; background-color: #963333; background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20x%3D'0px'%20y%3D'0px'%20viewBox%3D'0%200%2012%209'%20xml%3Aspace%3D'preserve'%3E%3Cpolygon%20fill%3D'%23ffffff'%20points%3D'12%2C0.7%2011.3%2C0%203.9%2C7.4%200.7%2C4.2%200%2C4.9%203.9%2C8.8%203.9%2C8.8%203.9%2C8.8%20'%2F%3E%3C%2Fsvg%3E"); color: #595757; -webkit-background-size: contain; background-size: contain; }
 .checkbox-word{margin-left: 0.2rem; color: #595757;}
 .checkbox-word a{display: inline; color: #595757;}
-.register-btn{display: block; width: 16.8vw; height: 6.67vw; background: url("../img/register-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; margin: 3.5rem auto 0;}
+.register-btn{display: block; width: 16.8vw; height: 6.67vw; background: url("../img/register-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; margin: 3.1rem auto 0;}
 /*==注册成功提示==*/
 .register-done .register-title p{margin-top: 5rem; height: 3.875rem; line-height: 3.875rem;}
-.to-complete{display: block; width: 3.2rem; margin: 0.75rem auto; color: #595757; font-size: 0.525rem; background: url("../img/register-arrow.png") no-repeat center right; -webkit-background-size:auto 74%; background-size:auto 74%; }
+.done-btns{height: 1.2rem; line-height: 1.2rem; width: 47vw; margin: 1.5rem auto; font-size: 0.55rem; color: #595757; font-weight: bold;}
+.to-login{ background: url("../img/tologin-arrow.png") no-repeat center left; -webkit-background-size:auto 46%; background-size:auto 46%; padding-left: 0.75rem;}
+.to-complete{ background: url("../img/register-arrow.png") no-repeat center right; -webkit-background-size:auto 46%; background-size:auto 46%; padding-right: 0.75rem;}
 /*==忘记密码==*/
 .check-icon{background-position: left 44%;}
 .check-code{padding-right: 0; -webkit-box-align: end; -ms-flex-align: end; -webkit-align-items: flex-end; align-items: flex-end;}
-.check-code .input-controller{width: 61%;}
-.get-code{width: 38.9%; text-align: center; font-size: 0.55rem; color: #595757; position: relative; border: 1px solid #656565; height: 1.575rem; line-height: 1.575rem;}
+.check-code .input-controller{width: 0; flex: auto;}
+.get-code{width: 4.2rem; text-align: center; font-size: 0.55rem; color: #595757; position: relative; border: 1px solid #656565; height: 1.575rem; line-height: 1.575rem; margin-left: 0.6rem;}
 .forget-btn{display: block; width: 19.6vw; height: 6.67vw; background: url("../img/next-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; margin: 3.85rem auto 0;}
 .forget2-btn{display: block;width: 16.8vw; height: 6.67vw; background: url("../img/register-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; margin: 5rem auto 0;}
 .ios-select-widget-box header.iosselect-header a,.date_btn{color: #0894ec;}
-.complete-btn{display: block; width: 17.1vw; height: 6.93vw; background: url("../img/complete-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; margin: 6.5rem auto 0;}
-
-
-
-
-
-
-
-
-
-
+.complete-btn{display: block; width: 17.1vw; height: 6.93vw; background: url("../img/complete-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; margin: 6rem auto 0;}
+/*==完善信息==*/
+.id-icon{ background-position: left 67%;}
+.birthday-icon{ background-position: left 55.5%;}
+.sex-icon{ background-position: left 78%;}
+.addre-icon{ background-position: left 89%;}
+/*==意见==*/
+.register-title .sugg-notice{height: 1.85rem;}
+.suggestion .input-item{border-bottom: none;}
+.suggestion .content{min-height: 100vh; height: auto;}
+.suggestion .login-content{min-height: calc(100vh - 4.534vw); height: auto;}
+.suggestion .input-controller{border-bottom: none;}
+.suggestion .input-controls{border-bottom: 1px solid #656565;}
+.suggestion .icon-span{width: 1.375rem; height: 1.5rem; background: url("../img/enter-icon.png") no-repeat left center; -webkit-background-size: 108% auto; background-size: 108% auto;}
+.suggestion .user-icon{ background-position: left 0;}
+.suggestion .id-icon{ background-position: left 19%;}
+.suggestion .tel-icon{ background-position: left 78%;}
+.suggestion .text-icon{ background-position: left 98%;}
+.text-item{height: auto;}
+.text-item .input-controller{-webkit-box-align: start; -ms-flex-align: start; -webkit-align-items: flex-start; align-items: flex-start; }
+.text-item .input-controller:before{width: 100%; height: 0.2rem; background-color: #fff; content: ""; position: absolute; left: 1.375rem; right: 0; top: -0.1rem;}
+.text-item .input-controls{min-height: 4rem; background: url("../img/text-line.png") repeat-y top center; -webkit-background-size: 100% auto; background-size: 100% auto;border-bottom: 0; line-height: 6.15vw; padding-top: 0.05rem; resize: none; padding-bottom: 0.1rem; font-size: 0.675rem;}
+.text-item .input-controls::-webkit-input-placeholder{font-size: 0.8rem;}
+.text-notice{text-align: right; font-size: 0.45rem; color: #333333; }
+.img-updown{width: 11.73vw; height: 11.73vw; position: relative; margin-top: 0.8rem; background: url("../img/pic-add.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.img-updown+.img-updown{margin-left: 3vw;}
+.img-updown img{width: 100%; height: 100%; border: none; outline: none;}
+.img-updown input{position: absolute; border: none; outline: none; width: 100%; height: 100%; opacity: 0; left: 0;top: 0;}
+.submit-btn{display: block; width: 3.175rem; height: 1.25rem; margin: 4rem auto 0; background: url("../img/submit-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain;}
+.submited-btn{background: url("../img/submited-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain;}
+.suggestion .input-item+.input-item{margin-top: 0.75rem;}
+.up-crash{width: 100%;  height: 100%; position: absolute; left: 0; top: 0; background-color: rgba(0,0,0,0.1);}
+.img-delete-wrapper{background-color: #1e2023; display: none;}
+.img-border{width: 100%; margin: 20vh auto 0; height: 35vh; overflow: hidden; position: relative;}
+.img-delete-wrapper img{display: block; max-height: 100%; max-width: 100%; position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: auto;}
+.img-delete-wrapper a{width: 3.675rem; height: 1.45rem; position: absolute; top: 75%; }
+.pic-delete{background: url("../img/pic-delete.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; left: 25%; margin-left: -1.7rem;}
+.pic-cancel{background: url("../img/pic-cancel.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; right: 25%; margin-right: -1.7rem;}
+/*==二维码==*/
+.code-wrapper{width: 57.7vw; height: 57.7vw; margin: 45% auto 0; background: url("../img/code-bg.png") no-repeat; -webkit-background-size:100% 100%; background-size:100% 100%; border: 0.1px solid transparent;}
+.code-wrapper img{width: 76.7%; margin: 12% auto;}
+.code p{text-align: center; font-size: 0.75rem; color: #000000; margin-top: 0.5rem;}
 
 
 

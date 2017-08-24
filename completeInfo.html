@@ -39,21 +39,21 @@
                     </div>
                     <div class="input-item">
                         <label class="input-controller">
-                            <span class="icon-span pass-icon"></span>
+                            <span class="icon-span id-icon"></span>
                             <input type="text" placeholder="身份证号码" class="input-controls"/>
                         </label>
                         <div class="error">啥啥啥写错</div>
                     </div>
                     <div class="input-item">
                         <label class="input-controller">
-                            <span class="icon-span pass-icon"></span>
+                            <span class="icon-span birthday-icon"></span>
                             <input type="text" id="birthday" placeholder="出生日期" class="input-controls" readonly/>
                         </label>
                         <div class="error">啥啥啥写错</div>
                     </div>
                     <div class="input-item">
                         <label class="input-controller">
-                            <span class="icon-span mail-icon"></span>
+                            <span class="icon-span sex-icon"></span>
                             <input type="text" placeholder="性别" class="input-controls" id="showSex" readonly/>
                             <input type="hidden" name="sex_id" id="sexId" value="">
                         </label>
@@ -61,7 +61,7 @@
                     </div>
                     <div class="input-item">
                         <label class="input-controller">
-                            <span class="icon-span mail-icon"></span>
+                            <span class="icon-span addre-icon"></span>
                             <input type="text" placeholder="籍贯" class="input-controls"/>
                         </label>
                         <div class="error">啥啥啥写错</div>
@@ -80,6 +80,11 @@
 <script>
     ;(function ($){
         FastClick.attach(document.body);
+        var winH = $(window).height();
+        $(":input").on("focus", function (){
+            $(".container").height(winH);
+            $(".content").height(winH);
+        });
         /*==性别选择==*/
         var showSexDom = document.querySelector('#showSex');
         var sexIdDom = document.querySelector('#sexId');

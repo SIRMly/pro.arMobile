@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css"/>
     <link rel="stylesheet" href="css/newsIndex.css"/>
     <title>安仁乐道</title>
 </head>
@@ -19,7 +20,8 @@
     <div class="container">
         <div class="content">
             <div class="shop-top">
-                <img src="img/shop-top.png" alt=""/>
+                <div class="swiper-container" id="swiper-top">
+                </div>
             </div>
             <div class="shop-info">
                 <p class="shop-title">一家店名</p>
@@ -77,30 +79,76 @@
     <div class="container">
         <div class="item-crash"></div>
         <div class="shop-item">
-            <img src="img/detail-pic.png" alt=""/>
-            <p class="detail-title">麻辣牛肉荞面</p>
-            <p class="detail-info">荞面是以荞麦面粉加水和成面团压平后切制而成的荞面荞面细面条，荞面是以荞麦面粉加水和成面团压平后切制而成的荞面荞面细面条，荞面是以荞麦面粉加水和成面团压平后切制而成的荞面荞面细面条，荞面是以荞麦面粉加水和成面团压平后切制而成的荞面荞面细面条，荞面是以荞麦面粉加水和成面团压平后切制而成的荞面荞面细面条，条细筋韧、挑起来不断条、清香利口。荞麦是人们主要粮食品之一，原产于中国北方地区。古代由中国经朝鲜传入日本，现今荞麦及荞麦面条在日、韩两国十分流行。中国西北陇中，陇东，陇南等地广为种植。因其含丰富营养和特殊的健康成分颇受推崇，被誉为健康主食品。 是一种适宜在高寒气候生长的植物，在内蒙古、山西地区有种植。荞麦经过加工制成荞麦面，可以加工成</p>
-            <p class="detail-icon"></p>
+            <div class="shop-item-container">
+                <div class="shop-item-content">
+                    <img src="img/detail-pic.png" alt=""/>
+                    <p class="detail-title">麻辣牛肉荞面</p>
+                    <p class="detail-info">荞面是以荞麦面粉加水和成面团压平后切制而成的荞面荞面细面条，荞面是以荞麦面粉加水和成面团压平后切制而成的荞面荞面细面条，荞面是以荞麦面粉加水和成面团压平后切制而成的荞面荞面细面条，荞面是以荞麦面粉加水和成面团压平后切制而成的荞面荞面细面条，荞面是以荞麦面粉加水和成面团压平后切制而成的荞面荞面细面条，条细筋韧、挑起来不断条、清香利口。荞麦是人们主要粮食品之一，原产于中国北方地区。古代由中国经朝鲜传入日本，现今荞麦及荞麦面条在日、韩两国十分流行。中国西北陇中，陇东，陇南等地广为种植。因其含丰富营养和特殊的健康成分颇受推崇，被誉为健康主食品。 是一种适宜在高寒气候生长的植物，在内蒙古、山西地区有种植。荞麦经过加工制成荞麦面，可以加工成</p>
+                </div>
+            </div>
+            <span class="scrollbar"></span>
         </div>
     </div>
 </div>
 <script src="js/jquery.min.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
 <script src="js/fastclick.min.js"></script>
 <script>
     ;(function ($){
         FastClick.attach(document.body);
+        /*==项目点击==*/
         $(".card a").on("click", function (){
-            $(".item-detail").stop().fadeIn(100);
             $(".shop").find(".container").css("overflow","hidden");
+            $(".item-detail").stop().fadeIn(100, function (){
+                /*==滚动条==*/
+                var scrollbar = $(".scrollbar");
+                var contentHei = $(".shop-item-content").height();
+                var containerHei = $(".shop-item-container").height();
+                if(contentHei > containerHei){
+                    $(".shop-item").addClass("more");
+                    /*==滚动条长度==*/
+                    scrollbar.css({
+                        height :　containerHei/contentHei*containerHei
+                    });
+                    /*==滚动时移动==*/
+                    $(".shop-item-container").scroll(function(){
+                        scrollbar.css({
+                            top : $(".shop-item-container").scrollTop()/contentHei*containerHei
+                        });
+                    })
+                }
+            });
+
         });
         $(".item-crash").on("click", function (){
             $(".item-detail").stop().fadeOut(100);
             $(".shop").find(".container").css("overflow","auto");
             $(".detail-info").removeClass("long");
         });
-        $(".detail-icon").on("click", function (){
-            $(this).hide();
-            $(".detail-info").addClass("long");
+        /*==顶部轮播图==*/
+        var data=[
+            {"img":"img/shop-top.png"},
+            {"img":"img/shop-top.png"},
+            {"img":"img/shop-top.png"},
+            {"img":"img/shop-top.png"}
+        ];
+        var html= "";
+        for(var i=0; i<data.length;i++){
+            html+='<div class="swiper-slide"><img src="'+data[i].img+'"></div>'
+        }
+        var container = '<div class="swiper-wrapper"></div>';
+        $("#swiper-top").append(container);
+        $(".swiper-wrapper").append(html);
+        var swiperTop = new Swiper('#swiper-top',{
+            simulateTouch: false,
+            slidesPerView: 1,
+            paginationClickable: false,
+            spaceBetween: 0,
+            loop: true,
+            autoplay: 2500,
+            autoplayDisableOnInteraction: false,
+            observer:true,
+            observeParents:true
         });
     })(jQuery);
 </script>

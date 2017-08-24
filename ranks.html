@@ -193,19 +193,18 @@
         FastClick.attach(document.body);
         var rankTitle=$(".rank-title");
         rankTitle.each(function (){
-           $(this).on("click",function (){
-               $(this).next(".rank-item").stop().slideDown(500);
-               $(this).find(".rank-arrow").stop().fadeIn(500);
-               $(this).closest(".rank").addClass("show").siblings().removeClass("show").hide();
+           $(this).on("click",function (e){
+               e.stopPropagation();
+               e.preventDefault();
+               if($(this).closest(".rank").hasClass("show")){
+                   $(this).next(".rank-item").stop().slideUp(500);
+                   $(this).closest(".rank").removeClass("show").siblings().removeClass("show").show();
+               }else{
+                   $(this).next(".rank-item").stop().slideDown(500);
+                   $(this).closest(".rank").addClass("show").siblings().removeClass("show").hide();
+               }
            });
         });
-        $(".rank-arrow").on("click", function (e){
-            e.stopPropagation();
-            e.preventDefault();
-            $(this).stop().fadeOut(500);
-            $(this).closest(".rank").find(".rank-item").stop().slideUp(500);
-            $(this).closest(".rank").removeClass("show").siblings().show();
-        })
     })(jQuery);
 </script>
 </body>

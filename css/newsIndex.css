@@ -99,7 +99,7 @@ a,img{display: block; width: 100%;}
 .video-js{width: 100%; height: auto; display: block; right: 0; }
 .video-js .vjs-tech{ width: 100%; height: auto; display: block; right: 0; position: static;}
 .vjs-poster{-webkit-background-size: 100% 100%; background-size: 100% 100%;  }
-.video-js .vjs-big-play-button{width: 5vh; height: 5vh; line-height: 5vh; left: 50%; top: 50%; margin-top: -2.5vh; margin-left: -2.5vh; border-radius: 50%; background-color: transparent; font-size: 2em;}
+.video-js .vjs-big-play-button{width: 7vh; height: 7vh; line-height: 7vh; left: 50%; top: 50%; margin-top: -3.5vh; margin-left: -2.5vh; border-radius: 50%; background-color: transparent; font-size: 2.5em;}
 .video-js:hover .vjs-big-play-button, .video-js .vjs-big-play-button:focus{background-color: transparent; }
 .vjs-loading-spinner{  margin: -20px 0 0 -20px; border: 3px solid rgba(43, 51, 63, 0.7); width: 40px; height: 40px;}
 .vjs-loading-spinner:before, .vjs-loading-spinner:after{margin: -3px;}
@@ -133,11 +133,37 @@ video::-webkit-media-controls { display:none !important; }
 .active .word-card-title{padding-top:0.1rem;}
 .active .card{border-bottom: 1px solid #656565;}
 /*==活动报名==*/
-
+.active-form{border-top: 1px solid #656565;}
+.enter-title{width: 5.9rem; height: 1.575rem; background: url("../img/enter-title.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; margin-left: 1.375rem; margin-top: -0.75rem;}
+.enter-form{padding: 0 1.8rem 3.2rem 2rem;}
+.input-item{height: 1.5rem;  position: relative;  margin-top: 1.4rem;}
+.input-controller{display: block; height: 100%; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: end; -ms-flex-align: end; -webkit-align-items: flex-end; align-items: flex-end; -webkit-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; justify-content: space-between;}
+.icon-span{width: 1.375rem; height: 1.5rem; background: url("../img/enter-icon.png") no-repeat left center; -webkit-background-size: 108% auto; background-size: 108% auto;}
+.user-icon{ background-position: left 0%;}
+.id-icon{ background-position: left 19%;}
+.sex-icon{ background-position: left 39%;}
+.age-icon{ background-position: left 58.5%;}
+.tel-icon{ background-position: left 78%;}
+.text-icon{ background-position: left 98%;}
+.input-controls{flex: auto; height: 100%; width: 0; padding-left: 0.2rem;color: #595757; font-size: 0.75rem;border-bottom: 1px solid #333333;}
+.input-controls::-webkit-input-placeholder{color: rgba(102,102,102,0.42);}
+.error{width: 100%; font-size: 0.45rem; color: #963333; position: absolute; top: -1rem; left: 0; text-align: center; }
+.text-item{height: auto;}
+.text-item .input-controller{-webkit-box-align: start; -ms-flex-align: start; -webkit-align-items: flex-start; align-items: flex-start; }
+.text-item .input-controls{min-height: 4rem; background: url("../img/text-line.png") repeat-y; -webkit-background-size: 100% auto; background-size: 100% auto;border-bottom: 0; line-height: 6.933vw; padding-top: 0.05rem; resize: none;}
+.text-notice{text-align: right; font-size: 0.45rem; color: #333333; }
+.enter-btn{width: 3.175rem; height: 1.25rem; margin: 0.9rem auto 0; background: url("../img/submit-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain;}
+.entered-btn{background: url("../img/submited-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain;}
+.ios-select-widget-box header.iosselect-header a{width: auto; color: #0894ec;}
+/*==错误提示==*/
+.submit-hint{background-color: rgba(255,255,255,0.1); display: none;}
+.success-hint,.error-hint{width: 9.375rem; height: 7.325rem; position: absolute; top: 37%; left: 50%; margin-left: -4.7rem; background: url("../img/succ-hint.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; display: none;}
+.error-hint{background: url("../img/error-hint.png") no-repeat center center; -webkit-background-size: contain; background-size: contain;}
+.submit-hint.succ,.submit-hint.succ .success-hint,.submit-hint.error,.submit-hint.error .error-hint{display: block;}
 /*==排行榜==*/
 .rank{position: relative;}
-.rank-arrow{width: 11vw; height: 11vw; margin: 0.7rem auto 0; background: url("../img/rank-arrow.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; display: none;}
-.rank.show .rank-arrow{display: block;}
+.rank-arrow{width: 8vw; height: 8vw; margin: 0.7rem auto 0; background: url("../img/rank-arrow.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; -webkit-transition: transform 0.5s; -moz-transition: transform 0.5s; -ms-transition: transform 0.5s; -o-transition: transform 0.5s; transition: transform 0.5s;}
+.rank.show .rank-arrow{ -webkit-transform: rotate(-180deg); -moz-transform: rotate(-180deg); -ms-transform: rotate(-180deg); -o-transform: rotate(-180deg); transform: rotate(-180deg);}
 .crash{position: absolute; width: 100%; height: 100%; left: 0; top: 0; background-color: rgba(0,0,0,0.5); padding-top: 13.3vw;}
 .rank-word{width: 28.27vw; margin: 0 auto;}
 .rank-item{display: none;}
@@ -162,15 +188,17 @@ video::-webkit-media-controls { display:none !important; }
 .shop-price{font-size: 0.75rem; color: #963333;}
 .shop .word-card-content{font-size: 0.525rem; color: #666666; margin-top: 0.35rem;}
 /*==店铺detail==*/
-.item-detail{background-color: rgba(0,0,0,0.1); display: none;}
+.item-detail{background-color: rgba(0,0,0,0.5); z-index: 99; display: none;}
 .item-crash{width: 100%; height: 100%; }
-.shop-item{position: absolute; width: 91%; left: 4.5%; top: 9%; border-radius: 1rem; overflow: hidden; background-color: #fff; color: #333; padding-bottom: 1rem; }
-.detail-title{font-size: 0.875rem; padding: 0 0.7rem; height: 1.7rem; line-height: 1.6rem; }
-.detail-info{font-size: 0.5rem; padding: 0 0.7rem; line-height: 1rem; height: 6rem; overflow: hidden;}
-.detail-info.long{height: 9.325rem; overflow-y: auto;-webkit-overflow-scrolling: touch;}
-.detail-icon{margin: 1rem auto; width: 1.325rem; height: 1.325rem;background: url("../img/shop-detail-icon.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
-
-
+.shop-item{position: absolute; width: 91%; height: 75%; left: 4.5%; top: 11%; border-radius: 1rem; background-color: #fff; color: #333; overflow: hidden;}
+.shop-item-container{position: absolute; left: 0; top: 0; bottom: 0.7rem; width: 100%; overflow-y: auto;-webkit-overflow-scrolling: touch;}
+.detail-title{font-size: 0.875rem; padding: 0 0.7rem; height: 1.8rem; line-height: 1.7rem; }
+.detail-info{font-size: 0.6rem; padding: 0 0.7rem; line-height: 1.1rem; }
+.item-detail .scrollbar{display: none;}
+.shop-item.more .scrollbar{display: block; width: 0.15rem; position: absolute; background-color: rgba(199,180,151,0.3); margin: 0; right: 0.35rem; top: 0;}
+/*==我的活动==*/
+.myActive .word-card-img{border: none;}
+.active-time.done{color: #953333;}
 
 
 

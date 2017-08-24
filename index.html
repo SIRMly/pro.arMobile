@@ -23,7 +23,7 @@
                 <img src="img/index-top.png" alt=""/>
                 <div class="nav clearfix">
                     <a href="myCenter.html" class="to-center"></a>
-                    <a href="javascript:;" class="to-search"></a>
+                    <a href="search.html" class="to-search"></a>
                     <a href="javascript:;" class="to-sidebar"></a>
                 </div>
             </div>
@@ -111,8 +111,9 @@
                 <a href="javascript:;" class="banner2-btn"></a>
             </div>
             <div class="index-rank po-re">
-                <img src="img/index-rank.png" alt=""/>
-                <a href="ranks.html" class="banner2-btn"></a>
+                <a href="ranks.html">
+                    <img src="img/index-rank.png" alt=""/>
+                </a>
             </div>
             <div class="active-part">
                 <div class="border-top"></div>
@@ -182,20 +183,24 @@
                     <div class="swiper-container" id="magazine-swiper">
                     </div>
                 </div>
-                <a href="activeList.html" class="index-magazine-btn"></a>
+                <a href="magazineList.html" class="index-magazine-btn"></a>
             </div>
             <div class="index-way">
-                <img src="img/index-way.png" alt=""/>
-                <a href="javascript:;" class="index-way-btn"></a>
+                <a href="javaScript:;">
+                    <img src="img/index-way.png" alt=""/>
+                    <span class="index-way-btn"></span>
+                </a>
             </div>
             <div class="index-mall po-re">
-                <img src="img/index-mall.png" alt=""/>
-                <a href="javascript:;"  class="index-way-btn"></a>
+                <a href="javaScript:;">
+                    <img src="img/index-mall.png" alt=""/>
+                    <span  class="index-way-btn"></span>
+                </a>
             </div>
             <div class="index-links">
                 <img src="img/index-links.png" alt=""/>
-                <a href="##" class="index-link"></a>
-                <a href="##" class="index-link"></a>
+                <a href="javaScript:;" class="index-link"></a>
+                <a href="code.html" class="index-link"></a>
                 <a href="suggestion.html" class="index-link"></a>
                 <a href="lostFound.html" class="index-link"></a>
             </div>
@@ -206,23 +211,26 @@
         </div>
     </div>
     <div class="sidebar">
-        <div class="sidebar-bg"></div>
+        <!--<div class="sidebar-bg"></div>-->
         <div class="sidebar-inner">
             <ul class="sidebar-lists">
                 <li>
-                    <a href="javascript:;">最新动态</a>
+                    <a href="javascript:;" class="back-home">首页</a>
                 </li>
                 <li>
-                    <a href="javascript:;">活动报名</a>
+                    <a href="newsIndex.html">最新动态</a>
                 </li>
                 <li>
-                    <a href="javascript:;">问卷调查</a>
+                    <a href="activeList.html">活动报名</a>
                 </li>
                 <li>
-                    <a href="javascript:;">电子杂志</a>
+                    <a href="survey.html">问卷调查</a>
                 </li>
                 <li>
-                    <a href="javascript:;">安仁TOP排行榜</a>
+                    <a href="magazineList.html">安仁杂志</a>
+                </li>
+                <li>
+                    <a href="ranks.html">安仁美食排行</a>
                 </li>
                 <li>
                     <a href="javascript:;">在线商城</a>
@@ -234,13 +242,10 @@
                     <a href="javascript:;">游览攻略</a>
                 </li>
                 <li>
-                    <a href="javascript:;">失物招领</a>
+                    <a href="lostFound.html">失物招领</a>
                 </li>
                 <li>
-                    <a href="javascript:;">意见反馈</a>
-                </li>
-                <li>
-                    <a href="javascript:;">联系我们</a>
+                    <a href="suggestion.html">意见反馈</a>
                 </li>
             </ul>
         </div>
@@ -319,10 +324,20 @@
         });
         /*==sidebar==*/
         $(".to-sidebar").on("click", function (){
-           $(".sidebar").fadeIn(500).addClass("show");
+            if(!$(".sidebar").is(":animated")){
+                $(".sidebar").stop().fadeIn(0).animate({
+                    left : 0,
+                    opacity : 1
+                },1000,"swing");
+            }
         });
-        $(".sidebar-bg").on("click", function (){
-            $(".sidebar").fadeOut(500).removeClass("show");
+        $(".back-home").on("click", function (){
+            if(!$(".sidebar").is(":animated")){
+                $(".sidebar").stop().animate({
+                    left : "100%",
+                    opacity : 0
+                },1000,"swing").fadeOut(0);
+            }
         });
     })(jQuery);
 </script>

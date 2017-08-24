@@ -11,23 +11,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/tu.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/newsIndex.css"/>
     <title>安仁乐道</title>
 </head>
 <body>
-<div class="page login">
+<div class="page">
     <div class="container">
         <div class="content">
-            <img src="img/mySurvey.png" alt="">
+            <div class="news-content">
+                <div class="card word-card">
+                    <a href="surveyResult.html">
+                        <div class="word-card-img">
+                            <img src="img/news-index-pic.png" alt=""/>
+                        </div>
+                        <div class="word-card-words">
+                            <p class="word-card-title">小长假去了趟安仁，比我想象中好玩100倍！</p>
+                            <p class="word-card-bottom clearfix">
+                                <span class="active-time">活动时间：2016-05-22至2016-06-22</span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card word-card">
+                    <a href="surveyResult.html">
+                        <div class="word-card-img">
+                            <img src="img/news-index-pic.png" alt=""/>
+                        </div>
+                        <div class="word-card-words">
+                            <p class="word-card-title">小长假去了趟安仁，比我想象中好玩100倍！</p>
+                            <p class="word-card-bottom clearfix">
+                                <span class="active-time">活动时间：2016-05-22至2016-06-22</span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card word-card">
+                    <a href="surveyResult.html">
+                        <div class="word-card-img">
+                            <img src="img/news-index-pic.png" alt=""/>
+                        </div>
+                        <div class="word-card-words">
+                            <p class="word-card-title">小长假去了趟安仁，比我想象中好玩100倍！</p>
+                            <p class="word-card-bottom clearfix">
+                                <span class="active-time done">活动已结束</span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card word-card">
+                    <a href="surveyResult.html">
+                        <div class="word-card-img">
+                            <img src="img/news-index-pic.png" alt=""/>
+                        </div>
+                        <div class="word-card-words">
+                            <p class="word-card-title">小长假去了趟安仁，比我想象中好玩100倍！</p>
+                            <p class="word-card-bottom clearfix">
+                                <span class="active-time done">活动已结束</span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card word-card">
+                    <a href="surveyResult.html">
+                        <div class="word-card-img">
+                            <img src="img/news-index-pic.png" alt=""/>
+                        </div>
+                        <div class="word-card-words">
+                            <p class="word-card-title">小长假去了趟安仁，比我想象中好玩100倍！</p>
+                            <p class="word-card-bottom clearfix">
+                                <span class="active-time done">活动已结束</span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="to-top"></div>
 </div>
 <script src="js/jquery.min.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
 <script src="js/fastclick.min.js"></script>
 <script>
     ;(function ($){
         FastClick.attach(document.body);
-
+        /*==到顶部==*/
+        var winH = $(window).height();
+        $(".container").scroll(function (){
+            if($(".container").scrollTop() >= winH*2){
+                $(".to-top").show(500);
+            }else{
+                $(".to-top").hide(500);
+            }
+        });
+        $(".to-top").on("click", function () {
+            $(".container").stop().animate({
+                "scrollTop": 5
+            }, 1000);
+        });
     })(jQuery);
 </script>
 </body>
