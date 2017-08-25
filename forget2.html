@@ -56,7 +56,7 @@
         var winH = $(window).height();
         $(":input").on("focus", function (){
             $(".container").height(winH);
-            $(".content").height(winH);
+            $(".content").outerHeight(winH);
         });
     })(jQuery);
 </script>

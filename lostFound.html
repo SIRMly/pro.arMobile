@@ -71,7 +71,10 @@
 <div class="page img-delete-wrapper">
     <div class="container">
         <div class="img-border">
-            <img src="" alt="" id="delete-img"/>
+            <div class="img-inner">
+                <img src="" alt="" id="delete-img"/>
+            </div>
+            <p>图 片 预 览</p>
         </div>
         <a href="javascript:;" class="pic-delete"></a>
         <a href="javascript:;" class="pic-cancel"></a>
@@ -105,28 +108,30 @@
             }else{
                 console.log("bbb");
                 /*==出现删除层==*/
-                deleteImage.attr("src",$("#img-show"+index).attr("src"));
-                $(".img-delete-wrapper").fadeIn(100, function (){
-                    $(".pic-cancel").on("click", function (){
-                        deleteImage.attr("src","");
-                        $(".img-delete-wrapper").hide();
-                    });
-                    $(".pic-delete").on("click", function (){
-                        $(".img-updown"+index).empty().remove();
-                        deleteImage.attr("src","");
-                        $(".img-delete-wrapper").hide();
-                        /*==判断是否还有+号的==*/
-                        var emptyInput = 0;
-                        $(".img-btn").each(function (){
-                            if($(this).val()==""){
-                                emptyInput++;
-                            }
+                if($(".img-updown"+index).find(".up-crash") != ""){
+                    deleteImage.attr("src",$("#img-show"+index).attr("src"));
+                    $(".img-delete-wrapper").fadeIn(100, function (){
+                        $(".pic-cancel").on("click", function (){
+                            deleteImage.attr("src","");
+                            $(".img-delete-wrapper").hide();
                         });
-                        if(emptyInput<=0){
-                            addImg();
-                        }
-                    })
-                });
+                        $(".pic-delete").on("click", function (){
+                            $(".img-updown"+index).empty().remove();
+                            deleteImage.attr("src","");
+                            $(".img-delete-wrapper").hide();
+                            /*==判断是否还有+号的==*/
+                            var emptyInput = 0;
+                            $(".img-btn").each(function (){
+                                if($(this).val()==""){
+                                    emptyInput++;
+                                }
+                            });
+                            if(emptyInput<=0){
+                                addImg();
+                            }
+                        })
+                    });
+                };
             }
         });
 

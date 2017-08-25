@@ -64,7 +64,7 @@
         var winH = $(window).height();
         $(":input").on("focus", function (){
             $(".container").height(winH);
-            $(".content").height(winH);
+            $(".content").outerHeight(winH);
         });
         /*==获取验证码点击事件==*/
         getCodeClick();
