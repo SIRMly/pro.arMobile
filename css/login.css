@@ -89,7 +89,6 @@
 .suggestion .input-item+.input-item{margin-top: 0.75rem;}
 .up-crash{width: 100%;  height: 100%; position: absolute; left: 0; top: 0; background-color: rgba(0,0,0,0.1);}
 .img-delete-wrapper{background-color: #fff; display: none;}
-/*.img-border-wrapper{}*/
 .img-border{width: 100%; height: 64vh; overflow: hidden; background-color: #efefef; padding-top: 22.8%}
 .img-inner{position: relative; width: 90%; margin: 0 auto; height: 66%;}
 .img-delete-wrapper img{display: block; max-height: 100%; max-width: 100%; position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: auto;}
