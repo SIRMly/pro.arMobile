@@ -69,10 +69,8 @@
     ;(function ($){
         FastClick.attach(document.body);
         var winH = $(window).height();
-        $(":input").on("focus", function (){
-          $(".container").height(winH);
-          $(".content").outerHeight(winH);
-        });
+        $(".container").height(winH);
+        $(".content").height(winH);
     })(jQuery);
 </script>
 </body>

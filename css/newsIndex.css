@@ -34,10 +34,10 @@ a,img{display: block; width: 100%;}
 .article-detail{padding-top: 1rem; }
 .article-title{color: #333; font-size: 1.2rem; line-height: 1.45rem; padding: 0 0.9rem; margin-bottom: 1.55rem;}
 .article-time{font-size: 0.65rem; color: #333; height: 1.5rem;line-height: 1.5rem; padding: 0 0.9rem;}
-.article-time span{ margin-right: 1rem;}
+.article-time span{margin-right: 1rem;}
 .read-num{background: url("../img/eye.png") no-repeat center left; -webkit-background-size: auto 80%;  background-size: auto 80%; padding-left: 1rem;}
 .point-num{padding-left: 1rem; background: url("../img/point.png") no-repeat center left; -webkit-background-size: auto 200%; background-size: auto 200%; background-position: 0 0;}
-.point-num.active{background-position: 0 102%;}
+.point-num.active{background-position: 0 103%;}
 .article-wrapper{margin: 0.5rem 0.5rem 2.5rem; padding: 2rem 0 5rem;}
 .article-author{height: 2.25rem; line-height: 1.9rem; font-size: 0.65rem; padding-left: 1.4rem; color: #000000;}
 .article-border-top{position: absolute; top: 0; left: 0; right: 0;}
@@ -56,8 +56,8 @@ a,img{display: block; width: 100%;}
 .comment-header{position: absolute; width: 6.8vw;height: 6.8vw; border-radius: 50%; left: 0; top: 0.25rem;}
 .comment-item .name{color: #036e94; font-size: 0.7rem;}
 .comment-name{height: 1.55rem; line-height: 1.55rem;}
-.comment-point{color: #959595; font-size: 0.7rem;text-align: left; padding-right: 1.2rem; background: url("../img/article-point.png") no-repeat center right; -webkit-background-size: 45% auto; background-size: 40% auto; background-position: 98% -13%;}
-.comment-point.active{ background-position: 98% 130%;}
+.comment-point{color: #959595; font-size: 0.7rem;text-align: left; padding-right: 1.2rem; background: url("../img/article-point.png") no-repeat center right; -webkit-background-size: 1rem auto; background-size: 1rem auto; background-position-y: -13%;}
+.comment-point.active{ background-position-y: 121%;}
 .comment-main{color: #333333; font-size: 0.75rem; line-height: 1.1rem;}
 .comment-time{color: #333; font-size: 0.55rem; margin-top: 0.3rem;}
 .comment-second{color: #606060; font-size: 0.6rem; margin-top: 0.5rem;}
@@ -179,9 +179,9 @@ video::-webkit-media-controls { display:none !important; }
 .shop-top img{height: 100%;}
 .shop-info{padding-bottom: 0.7rem;}
 .shop-info>p{padding: 0 2.35rem 0 1.925rem; color: #333;}
-.shop-title{height: 3.5rem; line-height: 3.5rem; font-size: 1.05rem;}
+.shop-title{height: 3rem; line-height: 3rem; font-size: 1.05rem;}
 .shop-add{font-size: 0.55rem; height: 1rem; line-height: 1rem; background: url("../img/shop-icon.png") no-repeat; -webkit-background-size: auto 98%; background-size: auto 98%; background-position: 0.8rem center; margin-bottom: 0.5rem;}
-.shop-des{font-size: 0.52rem; line-height: 0.7rem; }
+.shop-des{font-size: 0.55rem; line-height: 0.9rem; }
 .shop-detail{margin: 0 0.5rem; border-top: 1px solid #b0b0b0;}
 .shop .word-card-img{height: 23.48vw; border: 1px solid #c19963;}
 .shop .word-card-title{height: 7.2vw; line-height: 7.2vw;}
