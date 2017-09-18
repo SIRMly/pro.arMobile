@@ -69,11 +69,11 @@
 .suggestion .login-content{min-height: calc(100vh - 4.534vw); height: auto;}
 .suggestion .input-controller{border-bottom: none;}
 .suggestion .input-controls{border-bottom: 1px solid #656565;}
-.suggestion .icon-span{width: 1.375rem; height: 1.5rem; background: url("../img/enter-icon.png") no-repeat left center; -webkit-background-size: 108% auto; background-size: 108% auto;}
-.suggestion .user-icon{ background-position: left 0;}
-.suggestion .id-icon{ background-position: left 19%;}
-.suggestion .tel-icon{ background-position: left 78%;}
-.suggestion .text-icon{ background-position: left 98%;}
+.suggestion .icon-span{width: 1.375rem; height: 1.4rem; background: url("../img/enter-icon.png") no-repeat left center; -webkit-background-size: 108% auto; background-size: 108% auto;}
+.suggestion .user-icon{ background-position: left 72.5%;}
+.suggestion .id-icon{ background-position: left 75.68%;}
+.suggestion .tel-icon{ background-position: left 79%;}
+.suggestion .text-icon{ background-position: left 98.5%;}
 .text-item{height: auto;}
 .text-item .input-controller{-webkit-box-align: start; -ms-flex-align: start; -webkit-align-items: flex-start; align-items: flex-start; }
 .text-item .input-controller:before{width: 100%; height: 0.2rem; background-color: #fff; content: ""; position: absolute; left: 1.375rem; right: 0; top: -0.1rem;}
@@ -100,44 +100,3 @@
 .code-wrapper{width: 57.7vw; height: 57.7vw; margin: 45% auto 0; background: url("../img/code-bg.png") no-repeat; -webkit-background-size:100% 100%; background-size:100% 100%; border: 0.1px solid transparent;}
 .code-wrapper img{width: 76.7%; margin: 12% auto;}
 .code p{text-align: center; font-size: 0.75rem; color: #000000; margin-top: 0.5rem;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

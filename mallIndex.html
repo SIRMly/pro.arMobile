@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="author" content="SIRMly">
+    <meta name="keywords" content="安仁乐道"/>
+    <meta name="description" content="安仁乐道首页"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/mall.css"/>
+    <title>安仁乐道</title>
+</head>
+<body>
+<div class="page index">
+    <div class="container">
+        <div class="content">
+            <div class="mall-top po-re">
+                <div class="swiper-container" id="mall-index-top">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/mall-top.png" alt=""/>
+                            <div class="m-index-content">
+                                <p class="m-top-title">格调静心，品质生活</p>
+                                <p class="m-top-subhead">安仁乐道给你惊喜</p>
+                                <a href="javascript:;"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/mall-top.png" alt=""/>
+                            <div class="m-index-content">
+                                <p class="m-top-title">格调静心，品质生活</p>
+                                <p class="m-top-subhead">安仁乐道给你惊喜</p>
+                                <a href="javascript:;"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/mall-top.png" alt=""/>
+                            <div class="m-index-content">
+                                <p class="m-top-title">格调静心，品质生活</p>
+                                <p class="m-top-subhead">安仁乐道给你惊喜</p>
+                                <a href="javascript:;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-search flex ver-center her-stretch">
+                    <a href="javascript:;" class="m-search-btn"></a>
+                    <input type="text" placeholder="点击此处输入搜索内容" @click="handleClick"/>
+                    <a href="javascript:;" class="m-search-cancel"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/fastclick.min.js"></script>
+<script>
+    ;(function ($){
+        FastClick.attach(document.body);
+        $(".to-top").on("click", function () {
+            $(".container").stop().animate({
+                "scrollTop": 0
+            }, 1000);
+        });
+        /*==顶部轮播图==*/
+        var swiperTop = new Swiper('#mall-index-top',{
+            simulateTouch: false,
+            slidesPerView: 1,
+            paginationClickable: false,
+            spaceBetween: 0,
+            loop: true,
+            autoplay: 3000,
+            autoplayDisableOnInteraction: false,
+            observer:true,
+            observeParents:true
+        });
+    })(jQuery);
+</script>
+</body>
+</html>
