@@ -13,6 +13,8 @@ a,img{display: block; width: 100%;}
 .part-content{padding: 3.867vw 0.4vw 0.65rem;}
 .news-title,.word-card-title{color: #202468; font-size: 0.8rem; font-weight: bold; line-height: 1rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 .news-bottom{font-size: 0.6rem; color: #989898;}
+.video-pic{height: 52.8vw; overflow: hidden;}
+.video-pic img{min-height: 100%;}
 .news-video{padding-bottom: 0.5rem; position: relative; margin-bottom: 0.5rem;}
 .news-video:after{position: absolute; content: ""; height: 0.125rem; left: 0.4rem; bottom: 0; right: 0.4rem; background: url("../img/index-line.png") no-repeat center center; -webkit-background-size: 100% auto; background-size: 100% auto;}
 .video-time{position: absolute; font-size: 0.6rem; color: #cdba9d; right: 3%; bottom: 7%;}
@@ -29,6 +31,7 @@ a,img{display: block; width: 100%;}
 .word-card-title{font-size: 0.8rem; height: 1.2rem;}
 .word-card .word-card-bottom{position: absolute; line-height: 0.6rem; bottom: -0.1rem; right: 0; left: 0.3rem; font-size: 0.525rem; color: #989898;}
 .index-more-btn{position: absolute; right: -0.3vw; bottom: 0.1vw; width: 16.1vw; height: 6vw; background: url("../img/index-more.png") no-repeat center center; -webkit-background-size: contain; background-size: contain;}
+.index-banners.mt75,.active-part,.magazine-part{margin-left: 0.5rem; margin-right: 0.5rem;}
 .mt75{margin-top: 0.75rem;}
 .banner2-btn{width: 16.4vw; height: 6.13vw; background: url("../img/banner2-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; bottom: 3vw; left: 50%; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%);}
 .index-rank{margin: 0.875rem 0.5rem 0;}
@@ -36,16 +39,17 @@ a,img{display: block; width: 100%;}
 /*==活动信息==*/
 .active-part{margin-top: 1.5rem; position: relative;}
 .active-part .index-news-list{padding-left: 0.5rem; padding-right: 0.325rem;}
-.active-part .word-card-title{font-size: 0.75rem; padding-top: 0; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; white-space: normal; height: auto;}
+.active-part .word-card-title{font-size: 0.75rem;}
 .active-part .word-card-bottom{bottom: 0.1rem; font-size: 0.45rem; color: #999999;}
 .active-part .news-date{margin-left: 1rem;}
-.active-part .word-card-img{height: 18.4vw; border: 2px solid #b90d23;}
+.active-part .word-card-img{border: 2px solid #b90d23;}
 .active-part .index-more-btn{background: url("../img/index-active-more.png") no-repeat center center; -webkit-background-size: contain; background-size: contain;}
 /*==安仁杂志==*/
 .magazine-part{margin-top: 1.5rem; position: relative;}
 .magazine-content{padding: 7.33vw 0.65rem 1.5rem;}
 .magazine-top{width: 100%; height: 0.1rem;}
 .index-magazine-btn{width: 16.1vw; height: 6vw; background: url("../img/index-active-more.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; left: 50%; margin-left: -8.05vw; bottom: -0.5rem;}
+.magazine-part .magazine-content img{height: 44.13vw;}
 /*==游览==*/
 .index-way{margin:1.25rem 0.5rem 0; position: relative;}
 .index-way-btn{width: 15.73vw; height: 6.13vw; background: url("../img/index-way-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; left: 50%; margin-left: -7.865vw;  bottom: 4%;}
@@ -68,19 +72,20 @@ a,img{display: block; width: 100%;}
 .sidebar-lists li{text-align: center; height: 2.2rem; line-height:2.2rem;width: 91.3%; margin: 0 auto;}
 .sidebar-lists li:not(:last-child){border-bottom: 1px solid #e1cdb1;}
 .sidebar-lists a{color: #c49c63; font-size: 0.85rem; }
-.sidebar-back{width: 2rem; height: 2rem; background: url("../img/index-back.png") no-repeat center center;
-    -webkit-background-size: contain;
-    background-size: contain; position: absolute; top: 26rem; right: 10%;}
+.sidebar-back{width: 2rem; height: 2rem; background: url("../img/index-back.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; top: 26rem; right: 10%;}
 /*==搜索==*/
-.search-top{width: 94.8vw; height: 8.67vw; margin: 0.325rem auto 0.7rem; background: url("../img/search-top.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; padding: 0 9.3vw;}
+.search .content{padding: 0 2.6vw 3rem;}
+.search .word-card-title{white-space: normal; height: auto;}
+.search #list-wrapper{margin-top: -0.3rem;}
+.search-top{width: 100%; height: 8.67vw; margin: 0.325rem auto 0.7rem; background: url("../img/search-top.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; padding: 0 9.3vw;}
 .search-btn{position: absolute; width: 9vw; height: 100%; left: 0; top: 0;}
 .toIndex{position: absolute; width: 9vw; height: 100%; right: 0; top: 0;}
-.search-top input{font-size: 0.65rem; color: #898989; width: 90%;}
-.history-title{width: 94.8vw;height: 0.8rem; line-height: 0.8rem; margin: 0 auto; font-size: 0.65rem; color: #333333; }
+.search-top input{font-size: 0.65rem; color: #898989; width: 90%; height: 100%;}
+.history-title{width:100%; height: 0.8rem; line-height: 0.8rem; margin: 0 auto; font-size: 0.65rem; color: #333333; }
 .title-left{height: 100%; padding-left: 1.25rem; background: url("../img/search-history.png") no-repeat left center; -webkit-background-size: auto 100%; background-size: auto 100%;}
 .history-delete{float: right; width: auto; color: #333333;}
-.search-words{width: 94.8vw; margin: 0 auto;}
-.search-lists{ display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex;-webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center;-webkit-box-pack: start; -ms-flex-pack: start; -webkit-justify-content: flex-start; justify-content: flex-start; -webkit-box-lines: multiple; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap; -ms-flex-wrap: wrap; -o-flex-wrap: wrap; flex-wrap: wrap;overflow: hidden; margin-left: -0.7rem; height: 3.7rem;}
+.search-words{width: 100%; margin: 0 auto;}
+.search-lists{display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex;-webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center;-webkit-box-pack: start; -ms-flex-pack: start; -webkit-justify-content: flex-start; justify-content: flex-start; -webkit-box-lines: multiple; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap; -ms-flex-wrap: wrap; -o-flex-wrap: wrap; flex-wrap: wrap;overflow: hidden; margin-left: -0.7rem; max-height: 3.7rem;}
 .search-item{width: auto; height: 1.2rem; line-height: 1.1rem;font-size: 0.6rem; color: #595959; text-align: center; padding: 0 0.45rem; margin-top: 0.6rem; margin-left: 0.7rem; box-sizing: border-box;}
 .topBorder{height: 0.15rem; position: absolute; top: -0.1rem; left: 0.15rem; right: 0.15rem; background: url("../img/topBorder.png") repeat-x; -webkit-background-size: auto 100%; background-size: auto 100%;}
 .bottomBorder{height: 0.16rem; position: absolute; bottom: 0; left: 0.1rem; right: 0.1rem; background: url("../img/bottomBorder.png") repeat-x; -webkit-background-size: auto 100%; background-size: auto 100%;}
@@ -95,15 +100,3 @@ a,img{display: block; width: 100%;}
 .search-hot-words a:nth-of-type(3){left: 44%;}
 .search-hot-words a:nth-of-type(4){left: 66%;}
 .search-hot-words a:nth-of-type(5){left: 87%;}
-
-
-
-
-
-
-
-
-
-
-
-

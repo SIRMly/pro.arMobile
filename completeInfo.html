@@ -81,10 +81,8 @@
     ;(function ($){
         FastClick.attach(document.body);
         var winH = $(window).height();
-        $(":input").on("focus", function (){
-            $(".container").height(winH);
-            $(".content").height(winH);
-        });
+        $(".container").height(winH);
+        $(".content").height(winH);
         /*==性别选择==*/
         var showSexDom = document.querySelector('#showSex');
         var sexIdDom = document.querySelector('#sexId');

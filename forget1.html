@@ -62,10 +62,8 @@
     ;(function ($){
         FastClick.attach(document.body);
         var winH = $(window).height();
-        $(":input").on("focus", function (){
-            $(".container").height(winH);
-            $(".content").outerHeight(winH);
-        });
+        $(".container").height(winH);
+        $(".content").height(winH);
         /*==获取验证码点击事件==*/
         getCodeClick();
         function getCodeClick(){

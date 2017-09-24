@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="author" content="SIRMly">
+    <meta name="keywords" content="安仁乐道"/>
+    <meta name="description" content="安仁乐道"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mall.css"/>
+    <title>安仁乐道</title>
+</head>
+<body>
+<div class="page mall-new">
+    <div class="bar">
+        <div class="new-pics new-list">
+            <p>有8件相关产品</p>
+            <img src="img/news1.png" alt=""/>
+            <img src="img/news2.png" alt=""/>
+            <img src="img/news3.png" alt=""/>
+            <img src="img/news1.png" alt=""/>
+            <img src="img/news2.png" alt=""/>
+        </div>
+        <div class="m-n-top">
+            <a href="mallDetail.html" class="new-list">
+                <img src="img/news1.png" alt=""/>
+                <p>意式经典浓缩特浓咖啡豆</p>
+            </a>
+            <a href="mallDetail.html" class="new-list">
+                <img src="img/news2.png" alt=""/>
+                <p>意式经典浓缩特浓咖啡豆</p>
+            </a>
+            <a href="mallDetail.html" class="new-list">
+                <img src="img/news3.png" alt=""/>
+                <p>意式经典浓缩特浓咖啡豆</p>
+            </a>
+            <a href="mallDetail.html" class="new-list">
+                <img src="img/news1.png" alt=""/>
+                <p>意式经典浓缩特浓咖啡豆</p>
+            </a>
+            <a href="mallDetail.html" class="new-list">
+                <img src="img/news2.png" alt=""/>
+                <p>意式经典浓缩特浓咖啡豆</p>
+            </a>
+            <a href="mallDetail.html" class="new-list">
+                <img src="img/news3.png" alt=""/>
+                <p>意式经典浓缩特浓咖啡豆</p>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <p class="m-n-title">新品上架</p>
+            <div class="m-p-content">
+                <div class="m-p-list">
+                    <p>
+                        <img src="img/mall-1.png" alt=""/>
+                    </p>
+                    <p>作为对食物比对自己更负责的厨师每每听到《我的前半生》里贺涵叫唐晶第一反应总是“糖精？”我们的糖从来没有任何添加！</p>
+                    <p>
+                        <img src="img/mall-1.png" alt=""/>
+                    </p>
+                    <p>作为对食物比对自己更负责的厨师每每听到《我的前半生》里贺涵叫唐晶第一反应总是“糖精？”我们的糖从来没有任何添加！</p>
+                    <p>作为对食物比对自己更负责的厨师每每听到《我的前半生》里贺涵叫唐晶第一反应总是“糖精？”我们的糖从来没有任何添加！</p>
+                    <div>
+                        <a href="mallDetail.html" class="m-n-link">
+                            <img src="img/mall-1.png" alt=""/>
+                            <div class="m-n-right">
+                                <p class="m-n-name">李记手工牛轧糖</p>
+                                <p class="m-n-bottom clearfix">
+                                    <span class="m-n-price">¥19.90</span>
+                                    <span class="m-n-btn">去选购</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="m-p-list">
+                    <p>
+                        <img src="img/mall-2.png" alt=""/>
+                    </p>
+                    <p>作为对食物比对自己更负责的厨师每每听到《我的前半生》里贺涵叫唐晶第一反应总是“糖精？”我们的糖从来没有任何添加！</p>
+                    <p>
+                        <img src="img/mall-2.png" alt=""/>
+                    </p>
+                    <p>作为对食物比对自己更负责的厨师每每听到《我的前半生》里贺涵叫唐晶第一反应总是“糖精？”我们的糖从来没有任何添加！</p>
+                    <p>作为对食物比对自己更负责的厨师每每听到《我的前半生》里贺涵叫唐晶第一反应总是“糖精？”我们的糖从来没有任何添加！</p>
+                    <div>
+                        <a href="mallDetail.html" class="m-n-link">
+                            <img src="img/mall-2.png" alt=""/>
+                            <div class="m-n-right">
+                                <p class="m-n-name">李记手工牛轧糖</p>
+                                <p class="m-n-bottom clearfix">
+                                    <span class="m-n-price">¥19.90</span>
+                                    <span class="m-n-btn">去选购</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="to-top"></div>
+</div>
+<script src="js/jquery.min.js"></script>
+<!--<script src="js/fastclick.min.js"></script>-->
+<script>
+    ;(function ($){
+//        FastClick.attach(document.body);
+        var click = "ontouchstart" in document ? "touchstart" : "click";
+        /*==顶部展开==*/
+        $(".new-pics").on(click, function (){
+            if($(".m-n-top").is(":hidden")){
+                $(".m-n-top").stop().slideDown(500,"swing");
+            }
+        });
+        /*==回到顶部==*/
+        var winH = $(window).height();
+        $(".container").scroll(function (){
+            if($(".container").scrollTop() >= winH*2){
+                $(".to-top").show(500);
+            }else{
+                $(".to-top").hide(500);
+            }
+            /*==顶部的收起==*/
+            if($(".m-n-top").is(":visible")){
+                $(".m-n-top").stop().slideUp(200,"swing");
+            }
+        });
+        $(".container").on(click, function (){
+            /*==顶部的收起==*/
+            if($(".m-n-top").is(":visible")){
+                $(".m-n-top").stop().slideUp(200,"swing");
+            }
+        });
+        $(".to-top").on(click, function () {
+            $(".container").stop().animate({
+                "scrollTop": 5
+            }, 1000);
+        });
+    })(jQuery);
+</script>
+</body>
+</html>

@@ -11,35 +11,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/login.css"/>
+    <link rel="stylesheet" href="css/mall.css"/>
     <title>安仁乐道</title>
 </head>
 <body>
-<div class="page register-done">
+<div class="page">
+    <div class="bottom-bar">
+        <div class="detail-bottom clearfix">
+            <label class="car-all-btn pull-left">
+                <input type="checkbox">全选
+            </label>
+            <a href="javascript:;" class="detail-buy-btn pull-right">立即购买</a>
+            <span class="car-count pull-right">总计：¥ <i>0</i></span>
+        </div>
+    </div>
     <div class="container">
         <div class="content">
-            <div class="login-content">
-                <div class="border-top"></div>
-                <div class="border-bottom"></div>
-                <div class="border-left"></div>
-                <div class="border-right"></div>
-                <div class="register-title">
-                    <p>注 册 成 功</p>
-                    <img src="img/forget-notice.png" alt="">
-                </div>
-                <p class="done-btns clearfix">
-                    <a href="login.html" class="to-login pull-left">返回登陆</a>
-                    <a href="completeInfo.html" class="to-complete pull-right">完善资料</a>
-                </p>
+            <div class="car-all car-item flex ver-center her-stretch">
+                <label class="car-check">
+                    <input type="text">安仁商城
+                </label>
+                <a href="javascript:;" class="car-edit">编辑</a>
             </div>
         </div>
     </div>
 </div>
 <script src="js/jquery.min.js"></script>
-<script src="js/fastclick.min.js"></script>
 <script>
     ;(function ($){
-        FastClick.attach(document.body);
+        var click = "ontouchstart" in document ? "touchstart" : "click";
+
+
     })(jQuery);
 </script>
 </body>
