@@ -15,29 +15,24 @@
     <title>安仁乐道</title>
 </head>
 <body>
-<div class="page">
+<div class="page buying">
     <div class="bottom-bar">
-        <div class="detail-bottom clearfix">
-            <label class="car-all-btn pull-left">
-                <input type="checkbox">全选
-            </label>
-            <a href="mallBuying.html" class="detail-buy-btn pull-right">立即购买</a>
-            <span class="car-count pull-right">总计：¥ <i>0</i></span>
+        <div class="detail-bottom">
+            <span class="buy-count">总计：¥ <i>0</i></span>
+            <a href="javascript:;" class="detail-buy-btn">立即购买</a>
         </div>
     </div>
     <div class="container">
         <div class="content">
-            <div class="car-all clearfix">
-                <label class="car-input-w pull-left">
-                    <input type="checkbox" id="all-input">
-                </label>
-                <label for="all-input" class="car-check pull-left">安仁商城</label>
-                <a href="javascript:;" class="car-edit pull-right">编辑</a>
+            <div class="buy-address">
+                <a href="javascript:;">
+                    <p class="buyer-name">收货人：王小丫 <span>12333333</span></p>
+                    <p class="buyer-addre">收货地址：陕西省西安市雁塔区太白南路100号西安美术学院三号楼1口201</p>
+                    <span class="buyer-arrow"></span>
+                </a>
             </div>
+            <p class="buy-shop">安仁商城</p>
             <div class="car-item flex ver-center her-stretch">
-                <label class="car-input-w">
-                    <input type="checkbox" class="car-checkbox">
-                </label>
                 <img src="img/mall-1.png" alt="" class="car-img">
                 <div class="car-info">
                     <p class="car-info-title">意式经典浓缩特浓咖啡豆</p>
@@ -50,9 +45,6 @@
                 </div>
             </div>
             <div class="car-item flex ver-center her-stretch">
-                <label class="car-input-w">
-                    <input type="checkbox" class="car-checkbox" id="car-bottom-all">
-                </label>
                 <img src="img/mall-1.png" alt="" class="car-img">
                 <div class="car-info">
                     <p class="car-info-title">意式经典浓缩特浓咖啡豆</p>
@@ -72,7 +64,7 @@
     ;(function ($){
         var click = "ontouchstart" in document ? "touchstart" : "click";
         $("#all-input,#car-bottom-all").on(click, function (){
-
+            
         });
 
     })(jQuery);
