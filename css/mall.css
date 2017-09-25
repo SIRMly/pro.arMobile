@@ -89,7 +89,7 @@ a{display: block;}
 .detail-speci-input{position: absolute; opacity: 0;width: 100%; height: 100%; left: 0; top: 0;}
 .detail-speci-input:checked+.detail-speci-word{color: #923333; border-color: #923333;}
 .d-c-num{margin-left: 1.6rem;}
-.de-num{float: left; width:0.9rem; height: 100%; }
+.de-num{float: left; width:0.9rem; height: 1.2rem; }
 .de-num-dec{background: url("../img/num-des.png") no-repeat center center; -webkit-background-size: 100% auto; background-size: 100% auto;}
 .de-num-add{background: url("../img/num-add.png") no-repeat center center; -webkit-background-size: 100% auto; background-size: 100% auto;}
 .de-num-show{width: 1.85rem; height: 100%; line-height: 1rem; color: #333; font-size: 0.75rem; float: left; text-align: center;}
@@ -150,7 +150,7 @@ a{display: block;}
 .mall-buy-count .buy-way-price{color: #923333; font-weight: bold;}
 .mall-buy-text{width: 100%; padding: 0 0.925rem; margin-top: 1.25rem; margin-bottom: 2rem; position: relative;}
 .mall-buy-text:before{content: ''; position: absolute; width: 1.35rem; height: 1.35rem;  background: url("../img/enter-icon.png") no-repeat left center; -webkit-background-size: 100% auto; background-size: 100% auto;background-position: left 98.5%; left: 0.8rem; top: -0.3rem;}
-.buy-textarea{display: block; width: 100%; background: transparent url("../img/mall-line.png") repeat-y top center; -webkit-background-size: 100% 1.1rem; background-size: 100% 1.1rem; resize: none; height: 3.5rem; font-size: 0.65rem; color: #333;  line-height: 1.1rem; text-indent: 1.4rem;}
+.buy-textarea{display: block; width: 100%; background: transparent url("../img/mall-line.png") repeat-y top center; -webkit-background-size: 100% 1.1rem; background-size: 100% 1.1rem; resize: none; height: 3.5rem; font-size: 0.65rem; color: #333; line-height: 1.1rem; text-indent: 1.4rem;}
 .buy-textarea::-webkit-input-placeholder{font-size: 0.65rem; color: #333;}
 /*==地址==*/
 .address .detail-bottom a{height: 100%; line-height: 2rem; font-size: 0.65rem; color: #bd9563; padding: 0 0.35rem;}
