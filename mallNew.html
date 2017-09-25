@@ -117,6 +117,8 @@
         $(".new-pics").on(click, function (){
             if($(".m-n-top").is(":hidden")){
                 $(".m-n-top").stop().slideDown(500,"swing");
+            }else{
+                $(".m-n-top").stop().slideUp(500,"swing");
             }
         });
         /*==回到顶部==*/

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="author" content="SIRMly">
+    <meta name="keywords" content="安仁乐道"/>
+    <meta name="description" content="安仁乐道"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mall.css"/>
+    <title>安仁乐道</title>
+</head>
+<body>
+<div class="page address">
+    <div class="bottom-bar">
+        <div class="detail-bottom clearfix">
+            <a href="mallAddressNew.html" class="pull-left">添加新的地址</a>
+            <a href="javascript:;" class="pull-right addre-manage">管理</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="address-item address-default add-checked">
+                <span class="add-check-icon"></span>
+                <a href="javascript:;" class="add-check-delete"></a>
+                <a href="javascript:;" class="address-link">
+                    <p class="buyer-name">收货人：王小丫 <span>12333333</span></p>
+                    <p class="buyer-addre"><span>收货地址：</span>陕西省西安市雁塔区太白南路100号西安美术学院三号楼1口201</p>
+                </a>
+                <a href="mallAddressEdit.html" class="address-edit"></a>
+            </div>
+            <div class="address-item">
+                <span class="add-check-icon"></span>
+                <a href="javascript:;" class="add-check-delete"></a>
+                <a href="javascript:;" class="address-link">
+                    <p class="buyer-name">收货人：王小丫 <span>12333333</span></p>
+                    <p class="buyer-addre"><span>收货地址：</span>陕西省西安市雁塔区太白南路100号西安美术学院三号楼1口201</p>
+                </a>
+                <a href="mallAddressEdit.html" class="address-edit"></a>
+            </div>
+            <div class="address-item">
+                <span class="add-check-icon"></span>
+                <a href="javascript:;" class="add-check-delete"></a>
+                <a href="javascript:;" class="address-link">
+                    <p class="buyer-name">收货人：王小丫 <span>12333333</span></p>
+                    <p class="buyer-addre"><span>收货地址：</span>陕西省西安市雁塔区太白南路100号西安美术学院三号楼1口201</p>
+                </a>
+                <a href="mallAddressEdit.html" class="address-edit"></a>
+            </div>
+            <div class="address-item">
+                <span class="add-check-icon"></span>
+                <a href="javascript:;" class="add-check-delete"></a>
+                <a href="javascript:;" class="address-link">
+                    <p class="buyer-name">收货人：王小丫 <span>12333333</span></p>
+                    <p class="buyer-addre"><span>收货地址：</span>陕西省西安市雁塔区太白南路100号西安美术学院三号楼1口201</p>
+                </a>
+                <a href="mallAddressEdit.html" class="address-edit"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+    ;(function ($){
+        var click = "ontouchstart" in document ? "touchstart" : "click";
+        /*==点击底部的管理==*/
+        $(".addre-manage").on(click, function (){
+            if($(this).hasClass("showed")){
+                $(".add-check-delete").stop().fadeOut(0);
+                $(".add-check-icon").stop().fadeIn(0);
+                $(this).removeClass("showed");
+            }else{
+                $(".add-check-delete").stop().fadeIn(0);
+                $(".add-check-icon").stop().fadeOut(0);
+                $(this).addClass("showed");
+            }
+        });
+    })(jQuery);
+</script>
+</body>
+</html>

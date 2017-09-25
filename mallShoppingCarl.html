@@ -15,11 +15,11 @@
     <title>安仁乐道</title>
 </head>
 <body>
-<div class="page">
+<div class="page car">
     <div class="bottom-bar">
         <div class="detail-bottom clearfix">
             <label class="car-all-btn pull-left">
-                <input type="checkbox">全选
+                <input type="checkbox" id="car-bottom-all">全选
             </label>
             <a href="mallBuying.html" class="detail-buy-btn pull-right">立即购买</a>
             <span class="car-count pull-right">总计：¥ <i>0</i></span>
@@ -28,13 +28,10 @@
     <div class="container">
         <div class="content">
             <div class="car-all clearfix">
-                <label class="car-input-w pull-left">
-                    <input type="checkbox" id="all-input">
-                </label>
-                <label for="all-input" class="car-check pull-left">安仁商城</label>
+                <p class="car-check pull-left">安仁商城</p>
                 <a href="javascript:;" class="car-edit pull-right">编辑</a>
             </div>
-            <div class="car-item flex ver-center her-stretch">
+            <div class="car-item">
                 <label class="car-input-w">
                     <input type="checkbox" class="car-checkbox">
                 </label>
@@ -43,25 +40,49 @@
                     <p class="car-info-title">意式经典浓缩特浓咖啡豆</p>
                     <p class="car-info-speci">颜色规格：硬豆</p>
                     <p class="car-info-line3 clearfix">
-                        <span class="car-info-price">¥ 28.8</span>
-                        <span class="car-info-num">×1</span>
+                        <span class="car-info-price">¥ <i>20</i></span>
+                        <span class="car-info-num">×<i>2</i></span>
                     </p>
                     <a href="mallDetail.html" class="car-item-link"></a>
                 </div>
+                <div class="car-item-edit">
+                    <p class="car-info-title">意式经典浓缩特浓咖啡豆</p>
+                    <div class="d-c-info flex ver-stretch">
+                        <span>数量</span>
+                        <div class="d-c-num clearfix">
+                            <a href="javascript:;" class="de-num de-num-dec"></a>
+                            <input type="text" readonly class="de-num-show" value="1"/>
+                            <a href="javascript:;" class="de-num de-num-add"></a>
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="car-item-delete">删除</a>
+                </div>
             </div>
-            <div class="car-item flex ver-center her-stretch">
+            <div class="car-item">
                 <label class="car-input-w">
-                    <input type="checkbox" class="car-checkbox" id="car-bottom-all">
+                    <input type="checkbox" class="car-checkbox">
                 </label>
                 <img src="img/mall-1.png" alt="" class="car-img">
                 <div class="car-info">
                     <p class="car-info-title">意式经典浓缩特浓咖啡豆</p>
                     <p class="car-info-speci">颜色规格：硬豆</p>
                     <p class="car-info-line3 clearfix">
-                        <span class="car-info-price">¥ 28.8</span>
-                        <span class="car-info-num">×1</span>
+                        <span class="car-info-price">¥ <i>28.8</i></span>
+                        <span class="car-info-num">×<i>1</i></span>
                     </p>
                     <a href="mallDetail.html" class="car-item-link"></a>
+                </div>
+                <div class="car-item-edit">
+                    <p class="car-info-title">意式经典浓缩特浓咖啡豆</p>
+                    <div class="d-c-info flex ver-stretch">
+                        <span>数量</span>
+                        <div class="d-c-num clearfix">
+                            <a href="javascript:;" class="de-num de-num-dec"></a>
+                            <input type="text" readonly class="de-num-show" value="1"/>
+                            <a href="javascript:;" class="de-num de-num-add"></a>
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="car-item-delete">删除</a>
                 </div>
             </div>
         </div>
@@ -71,10 +92,76 @@
 <script>
     ;(function ($){
         var click = "ontouchstart" in document ? "touchstart" : "click";
-        $("#all-input,#car-bottom-all").on(click, function (){
-
+        /*==点击底部全选==*/
+        $("#car-bottom-all").on("change", function () {
+            if ($(this).prop("checked") == true) {
+                $(".car-item").each(function () {
+                    $(this).find(".car-checkbox").prop("checked", true);
+                })
+            } else {
+                $(".car-item").each(function () {
+                    $(this).find(".car-checkbox").prop("checked", false);
+                })
+            }
+            changeCount();
+        });
+        $(".car-checkbox").on("change", function () {
+            if ($(".car-checkbox:checked").length == $(".car-checkbox").length) {
+                $("#car-bottom-all").prop("checked", true);
+            } else {
+                $("#car-bottom-all").prop("checked", false);
+            }
+            changeCount();
+        });
+        /*==总价==*/
+        function changeCount(){
+            var count = 0;
+            $(".car-item").each(function (index, item){
+                if($(this).find(".car-checkbox").prop("checked") == true){
+                    var thisPrice = ($(item).find(".car-info-price i").html());
+                    var thisNum = parseInt($(item).find(".car-info-num i").html());
+                    count+=thisPrice*thisNum;
+                    console.log(count);
+                }
+            });
+            $(".car-count i").html(count);
+        }
+        /*==点击编辑==*/
+        $(".car-edit").on(click, function (){
+            if($(this).hasClass("edited")){
+                $(this).removeClass("edited").html("编辑");
+                $(".car-item").each(function (index, item){
+                    var thisItem = $(this);
+                    console.log(thisItem.find(".de-num-show").val());
+                    thisItem.find(".car-info-num i").html(thisItem.find(".de-num-show").val());
+                    thisItem.find(".car-info").stop().fadeIn(0);
+                    thisItem.find(".car-item-edit").stop().fadeOut(0);
+                    changeCount();
+                });
+            }else{
+                $(this).addClass("edited").html("完成");
+                $(".car-item").each(function (index, item){
+                    var thisItem = $(this);
+                    thisItem.find(".de-num-show").val(thisItem.find(".car-info-num i").html());
+                    $(this).find(".car-info").stop().fadeOut(0);
+                    $(this).find(".car-item-edit").stop().fadeIn(0);
+                });
+            }
         });
 
+        $(".car-item").each(function (index, item){
+            var thisItem = $(this);
+            thisItem.on(click, ".de-num-add", function (){
+                var desNum = parseInt(thisItem.find(".de-num-show").val());
+                desNum = desNum>=99 ? desNum : desNum+1;
+                thisItem.find(".de-num-show").val(desNum);
+            });
+            thisItem.on(click, ".de-num-dec", function (){
+                var desNum = parseInt(thisItem.find(".de-num-show").val());
+                desNum = desNum<=1 ? desNum : desNum-1;
+                thisItem.find(".de-num-show").val(desNum);
+            });
+        });
     })(jQuery);
 </script>
 </body>

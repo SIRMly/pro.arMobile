@@ -25,36 +25,68 @@
     <div class="container">
         <div class="content">
             <div class="buy-address">
-                <a href="javascript:;">
+                <a href="mallAddress.html">
                     <p class="buyer-name">收货人：王小丫 <span>12333333</span></p>
                     <p class="buyer-addre">收货地址：陕西省西安市雁塔区太白南路100号西安美术学院三号楼1口201</p>
                     <span class="buyer-arrow"></span>
                 </a>
             </div>
             <p class="buy-shop">安仁商城</p>
-            <div class="car-item flex ver-center her-stretch">
-                <img src="img/mall-1.png" alt="" class="car-img">
-                <div class="car-info">
-                    <p class="car-info-title">意式经典浓缩特浓咖啡豆</p>
-                    <p class="car-info-speci">颜色规格：硬豆</p>
-                    <p class="car-info-line3 clearfix">
-                        <span class="car-info-price">¥ 28.8</span>
-                        <span class="car-info-num">×1</span>
-                    </p>
-                    <a href="mallDetail.html" class="car-item-link"></a>
+            <div class="car-items">
+                <div class="car-item">
+                    <img src="img/mall-1.png" alt="" class="car-img">
+                    <div class="car-info">
+                        <p class="car-info-title">意式经典浓缩特浓咖啡豆</p>
+                        <p class="car-info-speci">颜色规格：硬豆</p>
+                        <p class="car-info-line3 clearfix">
+                            <span class="car-info-price">¥ 28.8</span>
+                            <span class="car-info-num">×1</span>
+                        </p>
+                        <a href="mallDetail.html" class="car-item-link"></a>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <img src="img/mall-1.png" alt="" class="car-img">
+                    <div class="car-info">
+                        <p class="car-info-title">意式经典浓缩特浓咖啡豆</p>
+                        <p class="car-info-speci">颜色规格：硬豆</p>
+                        <p class="car-info-line3 clearfix">
+                            <span class="car-info-price">¥ 28.8</span>
+                            <span class="car-info-num">×1</span>
+                        </p>
+                        <a href="mallDetail.html" class="car-item-link"></a>
+                    </div>
                 </div>
             </div>
-            <div class="car-item flex ver-center her-stretch">
-                <img src="img/mall-1.png" alt="" class="car-img">
-                <div class="car-info">
-                    <p class="car-info-title">意式经典浓缩特浓咖啡豆</p>
-                    <p class="car-info-speci">颜色规格：硬豆</p>
-                    <p class="car-info-line3 clearfix">
-                        <span class="car-info-price">¥ 28.8</span>
-                        <span class="car-info-num">×1</span>
-                    </p>
-                    <a href="mallDetail.html" class="car-item-link"></a>
-                </div>
+            <div class="mall-buy">
+                <div class="mall-buy-p">配送方式：</div>
+                <label class="mall-buy-p">
+                    <input type="radio" name="buy-way" class="car-checkbox" checked>
+                    <span class="buy-way-word">顺丰</span>
+                    <span class="buy-way-price">¥ 18.00</span>
+                </label>
+                <label class="mall-buy-p">
+                    <input type="radio" name="buy-way" class="car-checkbox">
+                    <span class="buy-way-word">普通快递</span>
+                    <span class="buy-way-price">¥ 8.00</span>
+                </label>
+            </div>
+            <div class="mall-buy mall-buy-money">
+                <p class="mall-buy-p mall-buy-money">
+                    <span>商品金额:</span>
+                    <span>¥ 8.00</span>
+                </p>
+                <p class="mall-buy-p mall-buy-money">
+                    <span>运费:</span>
+                    <span>¥ 18.00</span>
+                </p>
+                <p class="mall-buy-p mall-buy-count">
+                    <span>实付款:</span>
+                    <span class="buy-way-price">¥ 888.00</span>
+                </p>
+            </div>
+            <div class="mall-buy-text">
+                <textarea class="buy-textarea" maxlength="60" placeholder="订单附言"></textarea>
             </div>
         </div>
     </div>
@@ -63,9 +95,6 @@
 <script>
     ;(function ($){
         var click = "ontouchstart" in document ? "touchstart" : "click";
-        $("#all-input,#car-bottom-all").on(click, function (){
-            
-        });
 
     })(jQuery);
 </script>

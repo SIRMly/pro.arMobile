@@ -80,20 +80,20 @@ a{display: block;}
 .detail-buy-btn{color: #1a2954; font-size: 0.65rem; background-color: #bd9563; -webkit-border-radius: 0.3rem; -moz-border-radius: 0.3rem; border-radius: 0.3rem; height: 1.5rem; line-height: 1.5rem; width: 4.15rem; text-align: center; margin-top: 0.25rem;}
 .crash{position: absolute;width: 100%; height: 100%; left: 0; top: 0; background-color: rgba(0,0,0,0.5);}
 .detail-car{position: absolute; left: 0; bottom: 0; width: 100%; background-color: #fff;}
-.d-c-title{text-align: center; height: 2rem; line-height: 2rem; color: #333; font-size: 1rem; margin-bottom: 0.5rem; padding: 0 1.125rem;}
-.d-c-price{color: #923333; font-size: 1rem; padding: 0 1.125rem; height: 1.4rem; line-height: 1.4rem;}
-.d-c-info{padding: 0 1.125rem; font-size: 0.6rem; height: 1rem; color: #333; margin-top: 0.45rem; margin-bottom: 0.55rem;}
-.d-c-info>span{margin-left: 0.4rem; line-height: 1rem;}
+.d-c-title{text-align: center; height: 2rem; line-height: 2.3rem; color: #333; font-size: 1rem; margin-bottom: 0.5rem; padding: 0 1.125rem;}
+.d-c-price{color: #923333; font-size: 1rem; padding: 0 1.5rem; height: 1.4rem; line-height: 1.4rem;}
+.d-c-info{padding: 0 1.125rem; font-size: 0.6rem; height: 1.2rem; color: #333; margin-top: 0.55rem; margin-bottom: 0.55rem;}
+.d-c-info>span{margin-left: 0.4rem; line-height: 1.2rem;}
 .detail-speci-item{margin-left: 0.7rem; position: relative;}
-.detail-speci-word{border: 1px solid #333333; padding: 0 0.25rem; height: 100%; line-height: 1rem;}
+.detail-speci-word{border: 1px solid #333333; padding: 0 0.25rem; height: 100%; line-height: 1.2rem;}
 .detail-speci-input{position: absolute; opacity: 0;width: 100%; height: 100%; left: 0; top: 0;}
 .detail-speci-input:checked+.detail-speci-word{color: #923333; border-color: #923333;}
 .d-c-num{margin-left: 1.6rem;}
 .de-num{float: left; width:0.9rem; height: 100%; }
 .de-num-dec{background: url("../img/num-des.png") no-repeat center center; -webkit-background-size: 100% auto; background-size: 100% auto;}
 .de-num-add{background: url("../img/num-add.png") no-repeat center center; -webkit-background-size: 100% auto; background-size: 100% auto;}
-.de-num-show{width: 1.45rem; height: 100%; line-height: 1rem; color: #333; font-size: 0.75rem; float: left; text-align: center;}
-.d-car-btn{height: 2rem; line-height: 2rem; text-align: center; color: #bd9563; background-color: #1a2954; margin-top: 0.25rem; font-weight: bold;}
+.de-num-show{width: 1.85rem; height: 100%; line-height: 1rem; color: #333; font-size: 0.75rem; float: left; text-align: center;}
+.d-car-btn{height: 2rem; line-height: 2rem; font-size: 1rem; text-align: center; color: #bd9563; background-color: #1a2954; margin-top: 0.25rem;}
 .de-car-crash{display: none; background-color: transparent; z-index: 202;}
 .hint{width: 50%; background-color: rgba(0,0,0,0.7); position: absolute; left: 25%; top: 30%; -webkit-border-radius: 0.4rem; -moz-border-radius: 0.4rem; border-radius: 0.4rem; display: none;}
 .hint.succ .succ{display: block;}
@@ -108,22 +108,29 @@ a{display: block;}
 .car-all-btn input:checked{background: no-repeat center center; background-color: #963333; background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20x%3D'0px'%20y%3D'0px'%20viewBox%3D'0%200%2012%209'%20xml%3Aspace%3D'preserve'%3E%3Cpolygon%20fill%3D'%23ffffff'%20points%3D'12%2C0.7%2011.3%2C0%203.9%2C7.4%200.7%2C4.2%200%2C4.9%203.9%2C8.8%203.9%2C8.8%203.9%2C8.8%20'%2F%3E%3C%2Fsvg%3E"); color: #923333; -webkit-background-size: 90% auto; background-size: 90% auto; }
 .car-count{line-height: 2rem; color: #bd9563; font-size: 0.65rem; margin-right: 0.75rem;}
 .car-all{height: 1.625rem;padding-left: 0.6rem; border-bottom: 1px solid #e0e1e1; line-height: 1.625rem;}
-.car-check{font-size: 0.6rem; color: #333333;}
-.car-item input[type="checkbox"],.car-all input[type="checkbox"]{width: 0.75rem; height: 0.75rem; -webkit-border-radius:50%; -moz-border-radius:50%;border-radius:50%; background-color: #cdc7b9; margin-right: 0.6rem;}
+.car-check{font-size: 0.6rem; color: #333333; padding-left: 1.25rem;}
+.car-checkbox,.car-all input[type="checkbox"]{width: 0.75rem; height: 0.75rem; -webkit-border-radius:50%; -moz-border-radius:50%;border-radius:50%; background-color: #cdc7b9; margin-right: 0.6rem;}
 .car-input-w{height: 100%;}
 .car-all input{margin-top: 0.42rem;}
-.car-all input:checked,.car-item input:checked{background: no-repeat center center; background-color: #963333; background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20x%3D'0px'%20y%3D'0px'%20viewBox%3D'0%200%2012%209'%20xml%3Aspace%3D'preserve'%3E%3Cpolygon%20fill%3D'%23ffffff'%20points%3D'12%2C0.7%2011.3%2C0%203.9%2C7.4%200.7%2C4.2%200%2C4.9%203.9%2C8.8%203.9%2C8.8%203.9%2C8.8%20'%2F%3E%3C%2Fsvg%3E"); color: #923333; -webkit-background-size: 90% auto; background-size: 90% auto; }
+.car-all input:checked,.car-checkbox:checked{background: no-repeat center center; background-color: #963333; background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20x%3D'0px'%20y%3D'0px'%20viewBox%3D'0%200%2012%209'%20xml%3Aspace%3D'preserve'%3E%3Cpolygon%20fill%3D'%23ffffff'%20points%3D'12%2C0.7%2011.3%2C0%203.9%2C7.4%200.7%2C4.2%200%2C4.9%203.9%2C8.8%203.9%2C8.8%203.9%2C8.8%20'%2F%3E%3C%2Fsvg%3E"); color: #923333; -webkit-background-size: 90% auto; background-size: 90% auto; }
 .car-edit{font-size: 0.6rem; color: #333; height: 1rem; line-height: 1rem; width: 2.125rem; text-align: center; border-left: 1px solid #e0e1e1; margin-top: 0.3rem;}
-.car-item{border-bottom: 1px solid #e0e1e1; height: 3.5rem; padding: 0.5rem 1rem 0.4rem 0.6rem;}
+.car-item{border-bottom: 1px solid #e0e1e1; height: 3.5rem; padding: 0.5rem 1rem 0.4rem 0.6rem;display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex;-webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; justify-content: space-between; position: relative;}
 .car-checkbox{margin-top: 0.9rem;}
 .car-img{width: 2.65rem; height: 2.65rem;}
-.car-info{width: 0; flex: auto; padding-left: 0.5rem; position: relative;}
+.car-info,.car-item-edit{width: 0; flex: auto; padding-left: 0.5rem; position: relative;}
+.car-item-edit{display: none;}
 .car-info-title{color: #333333; font-size: 0.7rem; height: 0.75rem; line-height: 0.75rem;}
 .car-info-speci{color: #999999; font-size: 0.5rem; margin-top: 0.3rem;}
 .car-info-line3{ height: 0.75rem; line-height: 0.75rem; margin-top: 0.1rem;}
 .car-info-price{font-size: 0.6rem;color: #923333; float: left;}
 .car-info-num{font-size: 0.5rem; color: #999999; float: right;}
 .car-item-link{position: absolute; height: 100%; left: -2.65rem; right: 0; top: 0;}
+.car-item-edit{padding-right: 1.6rem;}
+.car-item-edit .d-c-info{padding: 0; font-size: 0.55rem; margin-bottom: 0;}
+.car-item-edit .d-c-info>span{margin-left: 0;}
+.car-item-edit .detail-speci-item{margin-left: 0.6rem;}
+.car-item-edit .de-num-show{font-size: 0.7rem;}
+.car-item-delete{font-size: 0.65rem;color: #ffffff; background-color: #923333; height: 3.5rem; width: 2.5rem; text-align: center; line-height: 3.5rem; position: absolute; right: -1rem; top: -0.5rem; }
 /*==购买==*/
 .buy-count{line-height: 2rem; color: #bd9563; font-size: 0.65rem; text-align: center; width: 100%; display: block;}
 .buying .detail-buy-btn{position: absolute; right: 0.3rem; top: 0;}
@@ -133,14 +140,43 @@ a{display: block;}
 .buyer-addre{font-size: 0.55rem; color: #333; padding-left: 1rem; max-width: 60vw; margin-top: 0.5rem; background: url("../img/mall-add.png") no-repeat left top; -webkit-background-size: 0.6rem auto; background-size: 0.6rem auto; background-position-y: 0.1rem;}
 .buyer-arrow{position: absolute; width: 0.5rem; height: 0.75rem; background: url("../img/mall-arrow.png") no-repeat center center; -webkit-background-size:contain;background-size:contain; top: 50%; margin-top: -0.375rem; right: 0.9rem;}
 .buy-shop{height: 1.625rem;line-height: 1.625rem;padding-left: 0.9rem; border-bottom: 1px solid #e0e1e1; font-size: 0.65rem; color: #333;}
-
-
-
-
-
-
-
-
+.mall-buy{margin-top: 0.2rem;}
+.mall-buy-p{font-size: 0.65rem; color: #333; padding-left: 0.925rem; padding-right: 0.45rem;display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex;-webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; justify-content: space-between; height: 1.75rem; line-height: 1.75rem; border-bottom: 1px solid #e0e1e1;}
+.mall-buy-p .car-checkbox{margin-top: 0;}
+.mall-buy-p .buy-way-word{width: 0; flex: auto; text-align: right; font-size: 0.6rem;}
+.buy-way-price{width: 3.65rem; text-align: right; font-size: 0.6rem;}
+.mall-buy-money{font-size: 0.65rem; color: #666;}
+.mall-buy-count{font-size: 0.75rem; color: #333; height: 1.95rem;}
+.mall-buy-count .buy-way-price{color: #923333; font-weight: bold;}
+.mall-buy-text{width: 100%; padding: 0 0.925rem; margin-top: 1.25rem; margin-bottom: 2rem; position: relative;}
+.mall-buy-text:before{content: ''; position: absolute; width: 1.35rem; height: 1.35rem;  background: url("../img/enter-icon.png") no-repeat left center; -webkit-background-size: 100% auto; background-size: 100% auto;background-position: left 98.5%; left: 0.8rem; top: -0.3rem;}
+.buy-textarea{display: block; width: 100%; background: transparent url("../img/mall-line.png") repeat-y top center; -webkit-background-size: 100% 1.1rem; background-size: 100% 1.1rem; resize: none; height: 3.5rem; font-size: 0.65rem; color: #333;  line-height: 1.1rem; text-indent: 1.4rem;}
+.buy-textarea::-webkit-input-placeholder{font-size: 0.65rem; color: #333;}
+/*==地址==*/
+.address .detail-bottom a{height: 100%; line-height: 2rem; font-size: 0.65rem; color: #bd9563; padding: 0 0.35rem;}
+.address-item{border-bottom: 1px solid #f0f0f0;padding: 0.25rem 0;display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; align-items: stretch; -webkit-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; justify-content: space-between;}
+/*.address-default{}*/
+.address-item.address-default{border-bottom: 0.4rem solid #f0f0f0;padding: 0;}
+.address-link{width: 0; flex: auto;padding: 0.65rem 0 0.2rem 0.5rem; }
+.add-check-icon{width: 14.3vw; max-width: 2.7rem; background: url("../img/mall-add-check.png") no-repeat right center; -webkit-background-size: 88% auto; background-size: 88% auto; display: none;}
+.add-check-delete{width: 14.3vw; max-width: 2.7rem; background: url("../img/addre-delete.png") no-repeat right center; -webkit-background-size: 90% auto; background-size: 90% auto; display: none;}
+.address-edit{ width: 2.2rem; border-left: 1px solid #e0e1e1; background: url("../img/addre-edit.png") no-repeat center center; -webkit-background-size: 1.1rem auto; background-size: 1.1rem auto;}
+.address-item .buyer-name{ padding-left: 0; padding-right: 0.3rem;}
+.address-item .buyer-addre{line-height: 0.875rem; background: none; padding-left: 0; padding-bottom: 0.5rem;}
+.address-item.address-default .buyer-addre{padding-bottom: 0;}
+.add-checked .buyer-name,.add-checked .buyer-addre span{color: #923333;}
+/*.address-item.add-checked{padding-left: 2.5rem; position: relative;}*/
+.address-item.add-checked .add-check-icon{display: block;}
+/*==修改地址==*/
+.a-e-inputs{display: block; height: 2.1rem; border-bottom: 1px solid #e8e8e8; width: 100%; font-size: 0.75rem; color: #333; padding: 0 1.25rem;background-color: #fff;}
+.a-e-textarea{display: block;border-bottom: 1px solid #e8e8e8; width: 100%; font-size: 0.75rem; color: #333; padding: 0.5rem 1.25rem 0.5rem; height: 3.75rem; background-color: #fff;}
+.mall-address-edit{background-color: #f0f0f0;}
+.a-e-checkbox{margin-top: 0.2rem;  height: 2.1rem; line-height: 2.1rem; background-color: #fff;font-size: 0.75rem; color: #979797; display: block;width: 100%; padding: 0 0.75rem 0 1.25rem; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.mall-address-edit .car-checkbox{margin-top: 0.675rem;}
+.a-e-btn{width: 3.2rem; height: 1.25rem; background: url("../img/submit-btn.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; bottom: 15%; left: 50%; margin-left: -1.6rem;}
+.area_ctrl{background-color: #fff;}
+.area_btn_box{background-color: #1a2954;}
+.area_btn{font-size: 0.65rem; color: #bd9563;}
 
 
 
