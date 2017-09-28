@@ -31,6 +31,16 @@
             <a href="javascript:;" class="a-e-btn"></a>
         </div>
     </div>
+    <div class="hint">
+        <div class="succ">
+            <img src="img/correct-icon.png" alt=""/>
+            <p>收货地址更改成功</p>
+        </div>
+        <div class="error">
+            <img src="img/wrong-icon.png" alt=""/>
+            <p>收货地址更改失败</p>
+        </div>
+    </div>
 </div>
 <script src="js/jquery.min.js"></script>
 <script src="js/LAreaData1.js"></script>
@@ -52,6 +62,25 @@
         });
         /*==设定默认==*/
         area1.value=[9,0,15];
+        /*==提交==*/
+        $(".a-e-btn").on(click, function () {
+            /*==提交成功==*/
+            $(".hint").addClass("succ").stop().fadeIn(300, function () {
+                setTimeout(function () {
+                    $(".hint").stop().fadeOut(300, function () {
+                        $(this).removeClass("succ");
+                    });
+                }, 1500)
+            });
+            /*==提交失败==*/
+//            $(".hint").addClass("error").stop().fadeIn(500, function () {
+//                setTimeout(function () {
+//                    $(".hint").stop().fadeOut(300, function () {
+//                        $(this).removeClass("error");
+//                    });
+//                }, 1500)
+//            });
+        })
     })(jQuery);
 </script>
 </body>

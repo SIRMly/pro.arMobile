@@ -86,7 +86,8 @@
                 </p>
             </div>
             <div class="mall-buy-text">
-                <textarea class="buy-textarea" maxlength="60" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;订单附言"></textarea>
+                <span class="text-placeholder">订单附言</span>
+                <textarea class="buy-textarea" maxlength="60"></textarea>
             </div>
         </div>
     </div>
@@ -95,7 +96,23 @@
 <script>
     ;(function ($){
         var click = "ontouchstart" in document ? "touchstart" : "click";
-
+        /*==模拟placeholder==*/
+        $(".buy-textarea").on("input", function (){
+            if($(this).val()!=""){
+                $(".text-placeholder").hide();
+            }else{
+                $(".text-placeholder").show();
+            }
+        });
+        /*==textarea==*/
+        var interval;
+        $(".buy-textarea").focus(function (){
+            interval = setInterval(function() {
+                document.body.scrollTop = document.body.scrollHeight
+            }, 100)
+        }).blur(function (){
+            clearInterval(interval);
+        });
     })(jQuery);
 </script>
 </body>
