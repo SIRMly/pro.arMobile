@@ -10,8 +10,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/mall.css"/>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/mall.css"/>
     <title>安仁乐道</title>
 </head>
 <body>
@@ -34,7 +34,7 @@
             <p class="buy-shop">安仁商城</p>
             <div class="car-items">
                 <div class="car-item">
-                    <img src="img/mall-1.png" alt="" class="car-img">
+                    <img src="../img/mall-1.png" alt="" class="car-img">
                     <div class="car-info">
                         <p class="car-info-title">意式经典浓缩特浓咖啡豆</p>
                         <p class="car-info-speci">颜色规格：硬豆</p>
@@ -46,7 +46,7 @@
                     </div>
                 </div>
                 <div class="car-item">
-                    <img src="img/mall-1.png" alt="" class="car-img">
+                    <img src="../img/mall-1.png" alt="" class="car-img">
                     <div class="car-info">
                         <p class="car-info-title">意式经典浓缩特浓咖啡豆</p>
                         <p class="car-info-speci">颜色规格：硬豆</p>
@@ -86,16 +86,24 @@
                 </p>
             </div>
             <div class="mall-buy-text">
-                <textarea class="buy-textarea" maxlength="60" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;订单附言"></textarea>
+                <span class="text-placeholder">订单附言</span>
+                <textarea class="buy-textarea" maxlength="60"></textarea>
             </div>
         </div>
     </div>
 </div>
-<script src="js/jquery.min.js"></script>
+<script src="../js/jquery.min.js"></script>
 <script>
     ;(function ($){
         var click = "ontouchstart" in document ? "touchstart" : "click";
-
+        /*==模拟placeholder==*/
+        $(".buy-textarea").on("input", function (){
+            if($(this).val()!=""){
+                $(".text-placeholder").hide();
+            }else{
+                $(".text-placeholder").show();
+            }
+        });
     })(jQuery);
 </script>
 </body>

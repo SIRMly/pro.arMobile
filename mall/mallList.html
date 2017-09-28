@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="author" content="SIRMly">
+    <meta name="keywords" content="安仁乐道"/>
+    <meta name="description" content="安仁乐道"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/mall.css"/>
+    <title>安仁乐道</title>
+</head>
+<body>
+<div class="page index">
+    <div class="container">
+        <div class="content">
+            <div class="mall-index-lists">
+                <a href="mallDetail.html" class="mall-index-list">
+                    <img src="../img/mall-1.png" alt=""/>
+                    <p class="m-i-title">李记手工牛轧糖</p>
+                    <p class="m-i-content">闻的到的奶香，看的见的水果，看的到的坚果，李记牛轧糖全部小锅炒制，低温烘烤，坚持健康无添加，全程手工制作，坚持现做现卖！二十多种口味满足各种需求</p>
+                </a>
+                <a href="mallDetail.html" class="mall-index-list">
+                    <img src="../img/mall-2.png" alt=""/>
+                    <p class="m-i-title">红娘手工冰皮月饼</p>
+                    <p class="m-i-content">在安仁乐道美食街引领粉色闺蜜风尚，从配方到原料和制作手法，均融合自己多年来对美食的钻研精神和实践经验。</p>
+                </a>
+                <a href="mallDetail.html" class="mall-index-list">
+                    <img src="../img/mall-1.png" alt=""/>
+                    <p class="m-i-title">李记手工牛轧糖</p>
+                    <p class="m-i-content">闻的到的奶香，看的见的水果，看的到的坚果，李记牛轧糖全部小锅炒制，低温烘烤，坚持健康无添加，全程手工制作，坚持现做现卖！二十多种口味满足各种需求</p>
+                </a>
+                <a href="mallDetail.html" class="mall-index-list">
+                    <img src="../img/mall-2.png" alt=""/>
+                    <p class="m-i-title">红娘手工冰皮月饼</p>
+                    <p class="m-i-content">在安仁乐道美食街引领粉色闺蜜风尚，从配方到原料和制作手法，均融合自己多年来对美食的钻研精神和实践经验。</p>
+                </a>
+                <a href="mallDetail.html" class="mall-index-list">
+                    <img src="../img/mall-1.png" alt=""/>
+                    <p class="m-i-title">李记手工牛轧糖</p>
+                    <p class="m-i-content">闻的到的奶香，看的见的水果，看的到的坚果，李记牛轧糖全部小锅炒制，低温烘烤，坚持健康无添加，全程手工制作，坚持现做现卖！二十多种口味满足各种需求</p>
+                </a>
+                <a href="mallDetail.html" class="mall-index-list">
+                    <img src="../img/mall-2.png" alt=""/>
+                    <p class="m-i-title">红娘手工冰皮月饼</p>
+                    <p class="m-i-content">在安仁乐道美食街引领粉色闺蜜风尚，从配方到原料和制作手法，均融合自己多年来对美食的钻研精神和实践经验。</p>
+                </a>
+                <a href="mallDetail.html" class="mall-index-list">
+                    <img src="../img/mall-1.png" alt=""/>
+                    <p class="m-i-title">李记手工牛轧糖</p>
+                    <p class="m-i-content">闻的到的奶香，看的见的水果，看的到的坚果，李记牛轧糖全部小锅炒制，低温烘烤，坚持健康无添加，全程手工制作，坚持现做现卖！二十多种口味满足各种需求</p>
+                </a>
+                <a href="mallDetail.html" class="mall-index-list">
+                    <img src="../img/mall-2.png" alt=""/>
+                    <p class="m-i-title">红娘手工冰皮月饼</p>
+                    <p class="m-i-content">在安仁乐道美食街引领粉色闺蜜风尚，从配方到原料和制作手法，均融合自己多年来对美食的钻研精神和实践经验。</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="to-top"></div>
+</div>
+<script src="../js/jquery.min.js"></script>
+<script>
+    ;(function ($){
+        var click = "ontouchstart" in document ? "touchstart" : "click";
+        /*==到顶部==*/
+        var winH = $(window).height();
+        $(".container").scroll(function (){
+            if($(".container").scrollTop() >= winH*2){
+                $(".to-top").show(500);
+            }else{
+                $(".to-top").hide(500);
+            }
+        });
+        $(".to-top").on("click", function () {
+            $(".container").stop().animate({
+                "scrollTop": 5
+            }, 1000);
+        });
+    })(jQuery);
+</script>
+</body>
+</html>
