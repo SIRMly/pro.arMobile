@@ -9,7 +9,7 @@
     from{opacity: 1;}
     to{opacity: 0;}
 }
-.s-arrow{width: 1.4rem; height: 1.4rem; background: url("../img/s-arrow.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; left: 50%; margin-left: -0.7rem; bottom: 5%;  animation: fadeIn 1s linear 0s infinite alternate, arrowMove 1s linear 0s infinite alternate;}
+.s-arrow{width: 1.4rem; height: 1.4rem; background: url("../img/s-arrow.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; left: 50%; margin-left: -0.7rem; bottom: 4%;  animation: fadeIn 1s linear 0s infinite alternate, arrowMove 1s linear 0s infinite alternate;}
 @-webkit-keyframes arrowMove {
     from{margin-bottom: 0;}
     to{margin-bottom: 10px;}
@@ -61,11 +61,11 @@ animation: part1LeftIn 1.5s linear 0.1s 1 forwards, fadeIn 3s ease-out 0.1s 1 fo
     from{top: 20%;}
     to{top: 0;}
 }
-.page2-title{position: absolute; width: 9.53vw; left: 45.2%; top: 92vw; opacity: 0; animation: fadeIn 2.5s ease-in 0.1s 1 forwards;}
-.page2-word{width: 66%; position: absolute; left: 17%; top: 117vw; opacity: 0; animation:  fadeIn 2.5s ease-in 0.6s 1 forwards}
+.page2-title{position: absolute; width: 9.53vw; left: 45.2%; top: 90vw; opacity: 0; animation: fadeIn 2.5s ease-in 0.1s 1 forwards;}
+.page2-word{width: 66%; position: absolute; left: 17%; top: 115vw; opacity: 0; animation:  fadeIn 2.5s ease-in 0.6s 1 forwards}
 /*==page3==*/
-#page3 .page2-title{left: 15%; top: 95vw;}
-.page3-word{width: 70%; position: absolute; left: 15%; top: 120vw; opacity: 0; animation:  fadeIn 2.5s ease-in 0.6s 1 forwards}
+#page3 .page2-title{left: 15%; top: 94vw;}
+.page3-word{width: 70%; position: absolute; left: 15%; top: 118vw; opacity: 0; animation:  fadeIn 2.5s ease-in 0.6s 1 forwards}
 /*==page4==*/
 #page4 .page2-title{left: 80.5%; top: 60vw;}
 .page4-word1{width: 18.75%; position: absolute; left: 60%; top: 79vw; opacity: 0; animation: fadeIn 2s ease-in 0.6s 1 forwards;}
@@ -120,7 +120,7 @@ animation: part1LeftIn 1.5s linear 0.1s 1 forwards, fadeIn 3s ease-out 0.1s 1 fo
     to{left: 0%;}
 }
 #page8 .page2-title{left: 81%; top: 98vw;}
-.page8-word{width: 71vw; position: absolute; left: 8%; top: 115vw; opacity: 0; animation: fadeIn 2s ease-in 0.3s 1 forwards;}
+.page8-word{width: 71vw; position: absolute; left: 8%; top: 113vw; opacity: 0; animation: fadeIn 2s ease-in 0.3s 1 forwards;}
 /*==page9==*/
 .page9-pic{width: 100%; position: absolute; top: 0; left: 0; transform-origin: 0 0; transform: scale(0,0);  animation: page9PicMove 1.5s ease-in 0.1s 1 forwards;}
 @-webkit-keyframes page9PicMove {
@@ -128,10 +128,10 @@ animation: part1LeftIn 1.5s linear 0.1s 1 forwards, fadeIn 3s ease-out 0.1s 1 fo
     to{ transform: scale(1,1);}
 }
 #page9 .page2-title{left: 75%; top: 86vw;}
-.page9-word{width: 76vw; position: absolute; left: 9.5%; top: 116vw; opacity: 0; animation: fadeIn 2s ease-in 0.3s 1 forwards;}
+.page9-word{width: 76vw; position: absolute; left: 9.5%; top: 114vw; opacity: 0; animation: fadeIn 2s ease-in 0.3s 1 forwards;}
 /*==page10==*/
 #page10 .page2-title{left: 13%; top: 88vw;}
-.page10-word{width: 54vw; position: absolute; left: 12.5%; top: 116vw; opacity: 0; animation: fadeIn 2s ease-in 0.3s 1 forwards;}
+.page10-word{width: 54vw; position: absolute; left: 12.5%; top: 115vw; opacity: 0; animation: fadeIn 2s ease-in 0.3s 1 forwards;}
 /*==page11==*/
 .page11-pic{width: 100%; position: absolute; bottom: -67vw; left: 0;animation: page11PicMove 1.5s ease-out 0.1s 1 forwards;}
 @-webkit-keyframes page11PicMove {
