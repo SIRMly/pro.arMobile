@@ -15,6 +15,7 @@
     <title>安仁乐道</title>
 </head>
 <body>
+<audio src="audio/bgm.mp3" loop preload="auto" id="bgm"></audio>
 <div class="page" id="page0">
     <img src="img/s-loading.gif" alt=""/>
 </div>
@@ -125,6 +126,7 @@
     <div class="page-border"></div>
 </div>
 <div class="s-arrow"></div>
+<div class="music"></div>
 <div id="orientLayer" class="mod-orient-layer">
     <div class="mod-orient-layer__content">
         <i class="icon mod-orient-layer__icon-orient"></i>
@@ -139,7 +141,7 @@
         document.addEventListener('touchmove', function (e) {
             e.preventDefault();
         });
-
+        var bgm = document.getElementById("bgm");
         var imgs = [
             "img/s-4-pic.png",
             "img/s-arrow.png",
@@ -217,12 +219,27 @@
                     if(proNum>=count){
 //                        proPercentage=100;
                         $("#page0").stop().fadeOut(500);
-                        $("#page1").stop().fadeIn(500)
+                        $("#page1").stop().fadeIn(500);
+                        setTimeout(function(){
+                            bgm.play();
+                            $(".music").addClass("play");
+                        },0 )
                     }
 //                    proBox.html(proPercentage+"%");
                 }
             }
         }
+        $(".music").on(click, function (){
+            if(bgm.paused){
+                bgm.play();
+                $(".music").addClass("play");
+            }else{
+                bgm.pause();
+                $(".music").removeClass("play");
+            }
+        });
+
+
 
         $(".page").each(function (index, item){
             (function (index){

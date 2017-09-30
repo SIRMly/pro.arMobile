@@ -9,10 +9,16 @@
     from{opacity: 1;}
     to{opacity: 0;}
 }
-.s-arrow{width: 1.4rem; height: 1.4rem; background: url("../img/s-arrow.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; left: 50%; margin-left: -0.7rem; bottom: 4%;  animation: fadeIn 1s linear 0s infinite alternate, arrowMove 1s linear 0s infinite alternate;}
+.s-arrow{width: 1.4rem; height: 1.4rem; background: url("../img/s-arrow.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; left: 50%; margin-left: -0.7rem; bottom: 4%;  animation: fadeIn 1s linear 0s infinite alternate, arrowMove 1s linear 0s infinite alternate; z-index: 1000;}
 @-webkit-keyframes arrowMove {
     from{margin-bottom: 0;}
     to{margin-bottom: 10px;}
+}
+.music{width: 1.5rem; height: 1.5rem; background: url("../img/music-icon.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; right: 6%; top: 5vw; z-index: 1000; transform: rotate(0deg);}
+.music.play{animation: rotate 2s linear 0s infinite;}
+@-webkit-keyframes rotate {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
 }
 /*==page1==*/
 .page1-bottom{width: 100%; height: 38.125vw; position: absolute; left: 100%; bottom: 0; background: url("../img/s-page1-bottom.png") no-repeat bottom right; -webkit-background-size: contain; background-size: contain;mix-blend-mode: multiply;animation: page1-bottom-move 1s linear 0.3s 1 forwards; }
