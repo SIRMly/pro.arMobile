@@ -141,10 +141,10 @@
         document.addEventListener('touchmove', function (e) {
             e.preventDefault();
         });
-        var bgm = document.getElementById("bgm");
-        bgm.src = "audio/bgm.mp3";
         document.addEventListener("WeixinJSBridgeReady", function () {
         }, false);
+        var bgm = document.getElementById("bgm");
+//        bgm.src = "audio/bgm.mp3";
         var imgs = [
             "img/s-4-pic.png",
             "img/s-arrow.png",
@@ -225,13 +225,11 @@
                         $("#page1").stop().fadeIn(500);
                         setTimeout(function(){
                             $(".music").addClass("play");
-                            bgm.load();
                             bgm.play();
                             WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
-                                bgm.load();
                                 bgm.play();
                             });
-                        },0 )
+                        },100)
                     }
 //                    proBox.html(proPercentage+"%");
                 }
