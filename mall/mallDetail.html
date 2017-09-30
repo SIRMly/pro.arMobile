@@ -123,6 +123,7 @@
     <div class="page de-car-crash">
         <div class="crash"></div>
         <div class="detail-car">
+            <img src="../img/mall-1.png" alt="" class="d-c-img"/>
             <p class="d-c-title">意式经典浓缩特浓咖啡豆</p>
             <p class="d-c-price">¥ 25.5</p>
             <div class="d-c-info flex ver-stretch">
@@ -215,11 +216,15 @@
         });
         /*==点击加入购物车==*/
         $(".add-car-btn").on(click, function (){
-            $(".de-car-crash").stop().fadeIn(500);
+            $(".de-car-crash").stop().fadeIn(500).addClass("car-show");
         });
         /*==加入购物车消失==*/
         $(".crash").on(click, function (){
-            $(".de-car-crash").stop().fadeOut(500);
+            $(".de-car-crash").stop().fadeOut(500).removeClass("car-show").removeClass("buy-show");
+        });
+        /*==立即购买==*/
+        $(".detail-buy-btn").on(click, function (){
+            $(".de-car-crash").stop().fadeIn(500).addClass("buy-show");
         });
         /*==数量增减==*/
         var desNum = parseInt($(".de-num-show").val());
@@ -233,16 +238,17 @@
         });
         /*==确认加购物车==*/
         $(".d-car-btn").on(click, function (){
-            $(".de-car-crash").stop().fadeOut(300, function (){
-                /*==提交成功==*/
-                $(".hint").addClass("succ").stop().fadeIn(300, function (){
-                    setTimeout(function (){
-                        $(".hint").stop().fadeOut(300, function (){
-                            $(this).removeClass("succ");
-                        });
-                    },1500)
-                });
-                /*==提交失败==*/
+            if($(this).closest(".de-car-crash").hasClass("car-show")){
+                $(".de-car-crash").removeClass("car-show").stop().fadeOut(300, function (){
+                    /*==提交成功==*/
+                    $(".hint").addClass("succ").stop().fadeIn(300, function (){
+                        setTimeout(function (){
+                            $(".hint").stop().fadeOut(300, function (){
+                                $(this).removeClass("succ");
+                            });
+                        },1500)
+                    });
+                    /*==提交失败==*/
 //                $(".hint").addClass("error").stop().fadeIn(500, function (){
 //                    setTimeout(function (){
 //                        $(".hint").stop().fadeOut(300, function (){
@@ -250,7 +256,12 @@
 //                        });
 //                    },1500)
 //                });
-            });
+                });
+            }else if($(this).closest(".de-car-crash").hasClass("buy-show")){
+                $(".de-car-crash").removeClass("buy-show");
+                window.location.href = "mallBuying.html";
+            }
+
         })
     })(jQuery);
 </script>

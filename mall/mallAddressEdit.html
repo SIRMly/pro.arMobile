@@ -64,6 +64,13 @@
         area1.value=[9,0,15];
         /*==提交==*/
         $(".a-e-btn").on(click, function () {
+            if($(".car-checkbox").prop("checked") == true){
+                $(".succ p").html("默认地址更改成功");
+                $(".error p").html("默认地址更改失败");
+            }else{
+                $(".succ p").html("收货地址更改成功");
+                $(".error p").html("收货地址更改失败");
+            }
             /*==提交成功==*/
             $(".hint").addClass("succ").stop().fadeIn(300, function () {
                 setTimeout(function () {
