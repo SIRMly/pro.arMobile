@@ -142,6 +142,7 @@
             e.preventDefault();
         });
         var bgm = document.getElementById("bgm");
+        bgm.src = "audio/bgm.mp3";
         document.addEventListener("WeixinJSBridgeReady", function () {
         }, false);
         var imgs = [
@@ -223,11 +224,13 @@
                         $("#page0").stop().fadeOut(500);
                         $("#page1").stop().fadeIn(500);
                         setTimeout(function(){
+                            $(".music").addClass("play");
+                            bgm.load();
                             bgm.play();
                             WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
+                                bgm.load();
                                 bgm.play();
                             });
-                            $(".music").addClass("play");
                         },0 )
                     }
 //                    proBox.html(proPercentage+"%");
