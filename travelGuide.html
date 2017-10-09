@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="author" content="SIRMly">
+    <meta name="keywords" content="安仁乐道,游览攻略"/>
+    <meta name="description" content="安仁乐道"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/tour.css"/>
+    <title>安仁乐道</title>
+</head>
+<body>
+<audio src="audio/bgm.mp3" loop preload="auto" id="bgm"></audio>
+<div class="page hide" id="page0">
+    <img src="img/s-loading.gif" alt=""/>
+</div>
+<div class="page hide" id="page1">
+    <div class="p1-bg"></div>
+    <div class="p1-color"></div>
+    <div class="p1-content">
+        <img src="img/t-p1-title.png" alt="" class="p1-title"/>
+        <img src="img/t-p1-pic.png" alt="" class="p1-pic"/>
+        <img src="img/t-p1-bottom.png" alt="" class="p1-bottom"/>
+    </div>
+</div>
+<div class="page hide" id="page2">
+    <img src="img/t-p2-pic.png" alt="" class="p2-pic"/>
+    <img src="img/t-p2-title.png" alt="" class="p2-title"/>
+    <!--<img src="img/t-p2-word.png" alt="" class="p2-word"/>-->
+    <p class="p2-word">安仁古镇地处成都平原西部，位于成都市大邑县，距成都市区41公里，大邑县城8公里。安仁地名取“仁者安仁”之意而得名。古镇始建于唐朝，现存的旧式街坊建筑多建于清末民初时期，尢以民国年间刘氏家族鼎盛时期的建筑最多，风格中西式样结合，庄重、典雅、大方的各式院落，造就了安仁镇特殊的建筑风貌，号称“川西建筑文化精品”。2009中国博物馆学会正式授予安仁“中国博物馆之乡”称号，至此安仁古镇成为中国唯一以博物馆命名的小镇，以文化旅游产业发展的城镇文化。</p>
+</div>
+<div class="page hide" id="page3">
+    <img src="img/t-p3-pic.png" alt="" class="p3-pic"/>
+    <img src="img/t-p3-title.png" alt="" class="p2-title"/>
+    <div class="p3-word">
+        <p>成都市属中亚热带湿润季风气候区,冬无严寒、夏无酷暑，气候非常适宜，因此成都一年四季都适合旅游。</p>
+        <p>但由于成都地处盆地，气候温润，空气相对流通较弱。</p>
+    </div>
+</div>
+<div class="page" id="page4">
+    <a class="p4-part1">
+        <img src="img/t-p4-title.png" alt="" class="p4-title"/>
+        <img src="img/t-p4-icon.png" alt="" class="p4-icon"/>
+    </a>
+    <a href="javascript:;" class="p4-part2 p4-part2-1 toSecond">
+        <img src="img/t-p4-word1.png" alt=""/>
+    </a>
+    <a href="javascript:;" class="p4-part2 p4-part2-2 toSecond">
+        <img src="img/t-p4-word2.png" alt=""/>
+    </a>
+    <a href="javascript:;" class="p4-part2 p4-part2-3 toSecond">
+        <img src="img/t-p4-word3.png" alt=""/>
+    </a>
+    <a href="javascript:;" class="p4-part2 p4-part2-4 toSecond">
+        <img src="img/t-p4-word4.png" alt=""/>
+    </a>
+    <div class="page pageSec hide" id="transTradition">
+        <img src="img/t-trans1.png" alt="" class="trans1-pic">
+        <img src="img/t-tran1-title.png" alt="" class="trans1-title">
+        <div class="sec-words">
+            <div class="sec-word">
+                <p class="title">地铁</p>
+                <p>目前成都已开通地铁1、2、3、4号线，起步价为2元/ 人，最高单程票票价为7元</p>
+            </div>
+            <div class="sec-word">
+                <p class="title">公交</p>
+                <p>大部分为无人售票。单程通票2元/人；少数由主城区开往郊县的公交线路为有人售票公交，票价大多为2元/人~3元/人。</p>
+            </div>
+            <div class="sec-word">
+                <p class="title">出租车</p>
+                <p>车型不同，出租车起步价不同。8元起跳。</p>
+            </div>
+        </div>
+        <div class="pageSec-bg"></div>
+        <a href="javascript:;" class="sec-out"></a>
+    </div>
+    <div class="page pageSec hide" id="transCard">
+        <img src="img/t-trans2.png" alt="" class="trans1-pic">
+        <img src="img/t-tran2-title.png" alt="" class="trans1-title">
+        <div class="sec-words">
+            <div class="sec-word">
+                <p class="title">押金 20 元/ 张</p>
+                <p>各公交营运点或者地铁站都有销售，第一次至少充值10 元。使用天府通卡可乘坐成都市市区地铁线路和所有安装天府通公交POS机具的公交线路，并可享受地铁票价9折优惠和主城区范围内公交线路票价5折优惠。</p>
+            </div>
+            <div class="sec-word">
+                <p class="weightB">退卡退款：</p>
+                <p>用户办理押金卡退卡，须出示押金凭证和退卡人身份证原件，并确保原卡表面完好无损，使用正常。</p>
+            </div>
+        </div>
+        <div class="pageSec-bg"></div>
+        <a href="javascript:;" class="sec-out"></a>
+    </div>
+    <div class="page pageSec hide" id="transBike">
+        <img src="img/t-trans3.png" alt="" class="trans1-pic">
+        <img src="img/t-tran3-title.png" alt="" class="trans1-title">
+        <div class="sec-words">
+            <div class="sec-word">
+                <p class="title">一步单车</p>
+                <p class="weightB">押金：99元 费用半小时0.5元/半小时</p>
+                <p>用车时，需要使用“1步单车”APP，绑定手机号、输入真实姓名（不需要输入身份证号）</p>
+            </div>
+            <div class="sec-word">
+                <p class="title">永安行</p>
+                <p class="weightB">押金：99元 费用半小时0.5元/半小时</p>
+                <p>用车时需要使用“摩拜单车”APP绑定手机号、输入真实姓名、身份证号码，</p>
+                <p>（还有大家常见的 摩拜，OFO，bluegogo）</p>
+            </div>
+        </div>
+        <div class="pageSec-bg"></div>
+        <a href="javascript:;" class="sec-out"></a>
+    </div>
+    <div class="page pageSec hide" id="transCar">
+        <img src="img/t-trans4.png" alt="" class="trans1-pic">
+        <img src="img/t-tran4-title.png" alt="" class="trans1-title">
+        <div class="sec-words">
+            <div class="sec-word">
+                <p class="title">Car2share</p>
+                <p class="weightB">费用：9.9元/半小时 1.2元 /公里</p>
+                <p>车型为奔驰smart，市面售价在12.50-22.80万不等，为燃油车，整个车子为单排双座，车型最小。</p>
+            </div>
+            <div class="sec-word">
+                <p class="title">Evcard</p>
+                <p class="weightB">押金：99元 费用半小时0.5元/半小时</p>
+                <p>费用：9元/小时，24小时内封顶129元</p>
+                <p>车型较多，主要是奇瑞EQ、荣威E50和宝马之诺三款车型</p>
+            </div>
+        </div>
+        <div class="pageSec-bg"></div>
+        <a href="javascript:;" class="sec-out"></a>
+    </div>
+</div>
+<div class="page hide" id="page5">
+    <a class="p4-part1">
+        <img src="img/t-p4-title.png" alt="" class="p4-title"/>
+        <img src="img/t-p4-icon.png" alt="" class="p4-icon"/>
+    </a>
+    <a href="javascript:;" class="p4-part2 p4-part2-1 toSecond">
+        <img src="img/t-p4-word1.png" alt=""/>
+    </a>
+    <a href="javascript:;" class="p4-part2 p4-part2-2 toSecond">
+        <img src="img/t-p4-word2.png" alt=""/>
+    </a>
+    <a href="javascript:;" class="p4-part2 p4-part2-3 toSecond">
+        <img src="img/t-p4-word3.png" alt=""/>
+    </a>
+    <a href="javascript:;" class="p4-part2 p4-part2-4 toSecond">
+        <img src="img/t-p4-word4.png" alt=""/>
+    </a>
+    <div class="page pageSec hide" id="transTradition">
+        <img src="img/t-trans1.png" alt="" class="trans1-pic">
+        <img src="img/t-tran1-title.png" alt="" class="trans1-title">
+        <div class="sec-words">
+            <div class="sec-word">
+                <p class="title">地铁</p>
+                <p>目前成都已开通地铁1、2、3、4号线，起步价为2元/ 人，最高单程票票价为7元</p>
+            </div>
+            <div class="sec-word">
+                <p class="title">公交</p>
+                <p>大部分为无人售票。单程通票2元/人；少数由主城区开往郊县的公交线路为有人售票公交，票价大多为2元/人~3元/人。</p>
+            </div>
+            <div class="sec-word">
+                <p class="title">出租车</p>
+                <p>车型不同，出租车起步价不同。8元起跳。</p>
+            </div>
+        </div>
+        <div class="pageSec-bg"></div>
+        <a href="javascript:;" class="sec-out"></a>
+    </div>
+    <div class="page pageSec hide" id="transCard">
+        <img src="img/t-trans2.png" alt="" class="trans1-pic">
+        <img src="img/t-tran2-title.png" alt="" class="trans1-title">
+        <div class="sec-words">
+            <div class="sec-word">
+                <p class="title">押金 20 元/ 张</p>
+                <p>各公交营运点或者地铁站都有销售，第一次至少充值10 元。使用天府通卡可乘坐成都市市区地铁线路和所有安装天府通公交POS机具的公交线路，并可享受地铁票价9折优惠和主城区范围内公交线路票价5折优惠。</p>
+            </div>
+            <div class="sec-word">
+                <p class="weightB">退卡退款：</p>
+                <p>用户办理押金卡退卡，须出示押金凭证和退卡人身份证原件，并确保原卡表面完好无损，使用正常。</p>
+            </div>
+        </div>
+        <div class="pageSec-bg"></div>
+        <a href="javascript:;" class="sec-out"></a>
+    </div>
+    <div class="page pageSec hide" id="transBike">
+        <img src="img/t-trans3.png" alt="" class="trans1-pic">
+        <img src="img/t-tran3-title.png" alt="" class="trans1-title">
+        <div class="sec-words">
+            <div class="sec-word">
+                <p class="title">一步单车</p>
+                <p class="weightB">押金：99元 费用半小时0.5元/半小时</p>
+                <p>用车时，需要使用“1步单车”APP，绑定手机号、输入真实姓名（不需要输入身份证号）</p>
+            </div>
+            <div class="sec-word">
+                <p class="title">永安行</p>
+                <p class="weightB">押金：99元 费用半小时0.5元/半小时</p>
+                <p>用车时需要使用“摩拜单车”APP绑定手机号、输入真实姓名、身份证号码，</p>
+                <p>（还有大家常见的 摩拜，OFO，bluegogo）</p>
+            </div>
+        </div>
+        <div class="pageSec-bg"></div>
+        <a href="javascript:;" class="sec-out"></a>
+    </div>
+    <div class="page pageSec hide" id="transCar">
+        <img src="img/t-trans4.png" alt="" class="trans1-pic">
+        <img src="img/t-tran4-title.png" alt="" class="trans1-title">
+        <div class="sec-words">
+            <div class="sec-word">
+                <p class="title">Car2share</p>
+                <p class="weightB">费用：9.9元/半小时 1.2元 /公里</p>
+                <p>车型为奔驰smart，市面售价在12.50-22.80万不等，为燃油车，整个车子为单排双座，车型最小。</p>
+            </div>
+            <div class="sec-word">
+                <p class="title">Evcard</p>
+                <p class="weightB">押金：99元 费用半小时0.5元/半小时</p>
+                <p>费用：9元/小时，24小时内封顶129元</p>
+                <p>车型较多，主要是奇瑞EQ、荣威E50和宝马之诺三款车型</p>
+            </div>
+        </div>
+        <div class="pageSec-bg"></div>
+        <a href="javascript:;" class="sec-out"></a>
+    </div>
+</div>
+<!--<div class="s-arrow"></div>-->
+<!--<div class="music"></div>-->
+<div id="orientLayer" class="mod-orient-layer">
+    <div class="mod-orient-layer__content">
+        <i class="icon mod-orient-layer__icon-orient"></i>
+        <div class="mod-orient-layer__desc">为了更好的体验，请使用竖屏浏览</div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/touch.min.js"></script>
+<script>
+    ;(function ($){
+        var click = "ontouchstart" in document ? "touchstart" : "click";
+        document.addEventListener('touchmove', function (e) {
+            e.preventDefault();
+        });
+        document.addEventListener("WeixinJSBridgeReady", function () {
+        }, false);
+        var bgm = document.getElementById("bgm");
+//        bgm.src = "audio/bgm.mp3";
+        var imgs = [
+            "img/s-4-pic.png"
+        ];
+        preload(imgs);
+        function preload(imgs,proBox){
+            var proNum = 0,
+                    count = imgs.length,
+                    proPercentage = 0;
+            for(var i in imgs){
+                var newImg = new Image();
+                newImg.src = imgs[i];
+                newImg.onload = function (){
+                    proNum++;
+//                    proPercentage = Math.floor(proNum/count*100);
+                    if(proNum>=count){
+//                        proPercentage=100;
+                        $("#page0").stop().fadeOut(500);
+                        $("#page1").stop().fadeIn(500);
+                        setTimeout(function(){
+                            $(".music").addClass("play");
+                            bgm.play();
+                            WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
+                                bgm.play();
+                            });
+                        },100)
+                    }
+//                    proBox.html(proPercentage+"%");
+                }
+            }
+        }
+        $(".music").on(click, function (){
+            if(bgm.paused){
+                bgm.play();
+                $(".music").addClass("play");
+            }else{
+                bgm.pause();
+                $(".music").removeClass("play");
+            }
+        });
+
+        $(".page").each(function (index, item){
+            (function (index){
+                touch.on("#page"+index, "swipeup", function (){
+                    nextPage(index, index+1, function (){});
+                });
+                touch.on("#page"+index, "swipedown", function (){
+                    prePage(index, index-1, function (){});
+                });
+            })(index);
+        });
+        /*==下一页==*/
+        function nextPage(thisPage, nextPage, callback) {
+            if(thisPage<11){
+                $("#page"+thisPage).stop().fadeOut(500);
+                $("#page"+nextPage).stop().fadeIn(500, function () {
+                    callback();
+                });
+            }else{
+                $("#page11").stop().fadeOut(500);
+                $("#page1").stop().fadeIn(500);
+            }
+        }
+        /*==上一页==*/
+        function prePage(thisPage, prePage, callback) {
+            if(thisPage!=0){
+                if(thisPage>1){
+                    $(".page"+thisPage).stop().fadeOut(500);
+                    $(".page"+prePage).stop().fadeIn(500, function () {
+                        callback();
+                    });
+                }else{
+                    $("#page1").stop().fadeOut(500);
+                    $("#page11").stop().fadeIn(500);
+                }
+            }
+        }
+        /*==二级页面退出==*/
+        $(".sec-out").each(function (){
+            $(this).on(click, function(){
+                console.log(123);
+                var thisSec = $(this).closest(".pageSec");
+                thisSec.stop().animate({
+                    left : "100%"
+                },500, function (){
+                    thisSec.stop().fadeOut(100);
+                });
+            });
+        });
+        $(".toSecond").each(function (index, item){
+            $(this).on(click,function (){
+                $(".pageSec").eq(index).stop().fadeIn(200).animate({
+                    left : 0
+                },500)
+            });
+        });
+
+
+        /*==行 二级页面==*/
+//        $(".p4-part2-1").on(click, function (){
+//            $("#transTradition").stop().fadeIn(200).animate({
+//                left : 0
+//            },500)
+//        });
+//        $(".p4-part2-2").on(click, function (){
+//            $("#transCard").stop().fadeIn(200).animate({
+//                left : 0
+//            },500)
+//        });
+//        $(".p4-part2-3").on(click, function (){
+//            $("#transBike").stop().fadeIn(200).animate({
+//                left : 0
+//            },500)
+//        });
+
+
+
+
+
+    })(jQuery);
+</script>
+</body>
+</html>
