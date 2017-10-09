@@ -50,12 +50,12 @@
     to{ transform: scale(1,1);}
 }
 .p2-title{width: 71%; position: absolute; top: 94vw; right: 7.4vw; opacity:0; animation: fadeIn 1s linear 1s 1 forwards;}
-.p2-word{width: 85%; position: absolute; top: 109vw; left: 7.5vw; font-size: 0.6rem; color: #333; text-align: justify;letter-spacing: 1px; text-indent: 1.2rem; line-height: 0.9rem;opacity:0; animation: fadeIn 1s linear 1.5s 1 forwards;}
+.p2-word{width: 85%; position: absolute; top: 108vw; left: 7.5vw; font-size: 0.6rem; color: #333; text-align: justify;letter-spacing: 1px; text-indent: 1.2rem; line-height: 0.9rem;opacity:0; animation: fadeIn 1s linear 1.5s 1 forwards;}
 /*==page3==*/
 .p3-pic{width: 100%; position: absolute; top: -4vw; left: 0; transform-origin: 0 0;  animation: fadeIn 1.5s ease-in 0.1s 1 forwards;}
-#page3 .p2-title{width: 72.8%; top: 112vw; left: 13.6vw; right: auto;}
-.p3-word{width: 80%; position: absolute; left: 10%;top: 126vw; font-size: 0.6rem; color: #333; text-align: justify; text-indent: 1.2rem; line-height: 1rem; letter-spacing: 1px; opacity: 0; animation: fadeIn 1s linear 1.5s 1 forwards;}
-.p3-word p+p{ margin-top: 0.5rem;}
+#page3 .p2-title{width: 72.8%; top: 110vw; left: 13.6vw; right: auto;}
+.p3-word{width: 80%; position: absolute; left: 10%;top: 124vw; font-size: 0.6rem; color: #333; text-align: justify; text-indent: 1.2rem; line-height: 1rem; letter-spacing: 1px; opacity: 0; animation: fadeIn 1s linear 1.5s 1 forwards;}
+.p3-word p+p{ margin-top: 0.35rem;}
 /*==page4==*/
 .p4-part1{width: 100%; height: 23.6vh;background: url("../img/t-p4-1.png") no-repeat center center; -webkit-background-size: cover; background-size: cover; position: absolute; top: 0; left: 0;}
 .p4-title{width: auto; height: 5vh; position: absolute; left: 50%; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); bottom: 100%;animation: p4TitleMove 0.8s ease-out 0.6s 1 forwards;}
@@ -82,12 +82,12 @@
 .pageSec{left: 100%; }
 .pageSec-bg{width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: url("../img/t-secbg.png") no-repeat; -webkit-background-size:100% 100%; background-size:100% 100%;}
 .trans1-pic{width: 94.8vw; position: absolute; left: 2.6vw; top: 2.74%; transform-origin: 5% 5%; transform: scale(0,0);animation: page2PicMove 1.5s ease-in 0.1s 1 forwards;}
-.trans1-title{width: 72.8vw; position: absolute; left: 10%; top: 66vw; opacity: 0; animation: fadeIn 1s ease-in 1.3s 1 forwards;}
-.sec-words{position: absolute; left: 10%;right: 10%; top: 82vw;}
+.trans1-title{width: 72.8vw; position: absolute; left: 10%; top: 65vw; opacity: 0; animation: fadeIn 1s ease-in 1.3s 1 forwards;}
+.sec-words{position: absolute; left: 10%;right: 10%; top: 81vw;}
 .sec-word{opacity: 0;}
 .sec-word+.sec-word{margin-top: 0.45rem;}
 .sec-word p{font-size: 0.55rem; color: #333; line-height: 1rem; }
-.sec-word p.title{font-size: 0.65rem; color: #f28d49; margin-bottom: 0.25rem;}
+.sec-word p.title{font-size: 0.65rem; color: #f28d49; margin-bottom: 0.15rem;}
 /*.sec-word p:nth-of-type(2){}*/
 .sec-word:nth-of-type(1){animation: fadeIn 1s ease-in 2s 1 forwards;}
 .sec-word:nth-of-type(2){animation: fadeIn 1s ease-in 2.6s 1 forwards;}
@@ -99,18 +99,18 @@
     from{top: -50%;}
     to{top: 2.88%;}
 }
-#transCard .trans1-title{left: 13.7vw; top: 74vw;}
-#transCard .sec-words{top: 90vw;}
+#transCard .trans1-title{left: 13.7vw; top: 73vw;}
+#transCard .sec-words{top: 88vw;}
 .sec-word p.weightB{ font-weight: bold;}
 /*==行-自行车==*/
 #transBike .trans1-pic{top: -50%; transform: scale(1,1);animation: trans2PicMove 1.5s ease-in 0.1s 1 forwards;}
-#transBike .trans1-title{left: 13.7vw; top: 68vw;}
-#transBike .sec-words{top: 85vw;}
+#transBike .trans1-title{left: 13.7vw; top: 66vw;}
+#transBike .sec-words{top: 82vw;}
 #transBike .sec-word:nth-of-type(1){animation: fadeIn 1s ease-in 2s 1 forwards;}
 #transBike .sec-word:nth-of-type(2){animation: fadeIn 1s ease-in 2.6s 1 forwards;}
 /*==行-车==*/
-#transCar .trans1-title{top: 75vw;}
-#transCar .sec-words{top: 90vw;}
+#transCar .trans1-title{top: 73vw;}
+#transCar .sec-words{top: 88vw;}
 /*==page5==*/
 #page5 .p4-title{height: 6.4vh;}
 #page5 .p4-part2{height: 25.466vh;}
@@ -122,17 +122,17 @@
 .p5-part2-2 img{right: 3%; top: 18%; animation: fadeIn 0.8s ease-out 2.8s 1 forwards;}
 .p5-part2-3 img{left: 4%; top: 18%; animation: fadeIn 0.8s ease-out 3.7s 1 forwards;}
 #page5 .sec-words{ text-indent: 1.3rem;}
-#page5 .sec-words p+p{margin-top: 0.5rem;}
+#page5 .sec-words p+p{margin-top: 0.35rem;}
 /*==way1==*/
-#wayCoach .trans1-title{left: 19%; top: 111vw;}
-#wayCoach .sec-words{top: 129vw;}
+#wayCoach .trans1-title{left: 19%; top: 109vw;}
+#wayCoach .sec-words{top: 125vw;}
 /*==way2==*/
-#wayCar .trans1-title{left: 19%; top: 101vw;}
-#wayCar .sec-words{top: 118vw;}
+#wayCar .trans1-title{left: 19%; top: 98vw;}
+#wayCar .sec-words{top: 113vw;}
  /*==way3==*/
 #wayRec .trans1-pic{top: -50%; transform: scale(1,1);animation: trans2PicMove 1.5s ease-in 0.1s 1 forwards;}
-#wayRec .trans1-title{left: 19%; top: 113vw;}
-#wayRec .sec-words{top: 132vw;}
+#wayRec .trans1-title{left: 19%; top: 112vw;}
+#wayRec .sec-words{top: 128vw;}
 
 
 
