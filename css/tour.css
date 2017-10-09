@@ -104,13 +104,13 @@
 .sec-word p.weightB{ font-weight: bold;}
 /*==行-自行车==*/
 #transBike .trans1-pic{top: -50%; transform: scale(1,1);animation: trans2PicMove 1.5s ease-in 0.1s 1 forwards;}
-#transBike .trans1-title{left: 13.7vw; top: 66vw;}
-#transBike .sec-words{top: 82vw;}
+#transBike .trans1-title{left: 13.7vw; top: 64vw;}
+#transBike .sec-words{top: 79vw;}
 #transBike .sec-word:nth-of-type(1){animation: fadeIn 1s ease-in 2s 1 forwards;}
 #transBike .sec-word:nth-of-type(2){animation: fadeIn 1s ease-in 2.6s 1 forwards;}
 /*==行-车==*/
-#transCar .trans1-title{top: 73vw;}
-#transCar .sec-words{top: 88vw;}
+#transCar .trans1-title{top: 72vw;}
+#transCar .sec-words{top: 86vw;}
 /*==page5==*/
 #page5 .p4-title{height: 6.4vh;}
 #page5 .p4-part2{height: 25.466vh;}
@@ -122,17 +122,17 @@
 .p5-part2-2 img{right: 3%; top: 18%; animation: fadeIn 0.8s ease-out 2.8s 1 forwards;}
 .p5-part2-3 img{left: 4%; top: 18%; animation: fadeIn 0.8s ease-out 3.7s 1 forwards;}
 #page5 .sec-words{ text-indent: 1.3rem;}
-#page5 .sec-words p+p{margin-top: 0.35rem;}
+#page5 .sec-words p+p{margin-top: 0.25rem;}
 /*==way1==*/
-#wayCoach .trans1-title{left: 19%; top: 109vw;}
-#wayCoach .sec-words{top: 125vw;}
+#wayCoach .trans1-title{left: 19%; top: 107vw;}
+#wayCoach .sec-words{top: 122vw;}
 /*==way2==*/
-#wayCar .trans1-title{left: 19%; top: 98vw;}
-#wayCar .sec-words{top: 113vw;}
+#wayCar .trans1-title{left: 19%; top: 97vw;}
+#wayCar .sec-words{top: 112vw;}
  /*==way3==*/
 #wayRec .trans1-pic{top: -50%; transform: scale(1,1);animation: trans2PicMove 1.5s ease-in 0.1s 1 forwards;}
-#wayRec .trans1-title{left: 19%; top: 112vw;}
-#wayRec .sec-words{top: 128vw;}
+#wayRec .trans1-title{left: 19%; top: 111vw;}
+#wayRec .sec-words{top: 126vw;}
 
 
 
