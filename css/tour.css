@@ -133,6 +133,23 @@
 #wayRec .trans1-pic{top: -50%; transform: scale(1,1);animation: trans2PicMove 1.5s ease-in 0.1s 1 forwards;}
 #wayRec .trans1-title{left: 19%; top: 111vw;}
 #wayRec .sec-words{top: 126vw;}
+/*==p6==*/
+.p6-part2-1{top: 23.6vh;background: url("../img/t-p6-1.png") no-repeat center center; -webkit-background-size: cover; background-size: cover; animation: p4part2Move 1s ease-out 1s 1 forwards;}
+.p6-part2-2{top: 43.2vh;background: url("../img/t-p6-2.png") no-repeat center center; -webkit-background-size: cover; background-size: cover;animation: p4part2Move 1s ease-out 1.8s 1 forwards;}
+.p6-part2-3{top: 62.8vh;background: url("../img/t-p6-3.png") no-repeat center center; -webkit-background-size: cover; background-size: cover;animation: p4part2Move 1s ease-out 2.6s 1 forwards;}
+.p6-part2-4{top: 82.4vh;background: url("../img/t-p6-4.png") no-repeat center center; -webkit-background-size: cover; background-size: cover;animation: p4part2Move 1s ease-out 3.4s 1 forwards;}
+.p6-part2-1 img{left: 4%; top: 18%; animation: fadeIn 0.8s ease-out 2s 1 forwards;}
+.p6-part2-2 img{height: 6.6vh; right: 1%; top: 26%; animation: fadeIn 0.8s ease-out 2.8s 1 forwards;}
+.p6-part2-3 img{left: 4%; top: 18%; animation: fadeIn 0.8s ease-out 3.7s 1 forwards;}
+.p6-part2-4 img{height: 7.1vh; right: 1%; top: 26%; animation: fadeIn 0.8s ease-out 4.2s 1 forwards;}
+/*==playLiu==*/
+#playLiu .trans1-title{left: 22%; top: 75vw;}
+#playLiu .sec-words{top: 89vw;}
+
+#playLiu{}
+
+
+
 
 
 

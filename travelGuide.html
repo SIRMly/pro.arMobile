@@ -16,7 +16,7 @@
 </head>
 <body>
 <audio src="audio/bgm.mp3" loop preload="auto" id="bgm"></audio>
-<div class="page" id="page0">
+<div class="page hide" id="page0">
     <img src="img/s-loading.gif" alt=""/>
 </div>
 <div class="page hide" id="page1">
@@ -184,6 +184,97 @@
         <a href="javascript:;" class="sec-out"></a>
     </div>
 </div>
+<div class="page" id="page6">
+    <a class="p4-part1">
+        <img src="img/t-p4-title.png" alt="" class="p4-title"/>
+        <img src="img/t-p6-icon.png" alt="" class="p4-icon"/>
+    </a>
+    <a href="javascript:;" class="p4-part2 p6-part2-1 toSecond">
+        <img src="img/t-p6-word1.png" alt=""/>
+    </a>
+    <a href="javascript:;" class="p4-part2 p6-part2-2 toSecond">
+        <img src="img/t-p6-word2.png" alt=""/>
+    </a>
+    <a href="javascript:;" class="p4-part2 p6-part2-3 toSecond">
+        <img src="img/t-p6-word3.png" alt=""/>
+    </a>
+    <a href="javascript:;" class="p4-part2 p6-part2-4 toSecond">
+        <img src="img/t-p6-word4.png" alt=""/>
+    </a>
+    <div class="page pageSec hide" id="playLiu">
+        <img src="img/t-play1.png" alt="" class="trans1-pic">
+        <img src="img/t-play1-title.png" alt="" class="trans1-title">
+        <div class="sec-words">
+            <div class="sec-word">
+                <p class="title">门票 40元/人</p>
+                <p class="weightB">优惠政策： </p>
+                <p>16岁以上学生、60-70岁老年人凭有效证件半票;其他优惠以景区公布为准</p>
+                <p class="weightB">优惠政策： </p>
+                <p>16岁以上学生、60-70岁老年人凭有效证件半票;其他优惠以景区公布为准</p>
+            </div>
+            <div class="sec-word">
+                <p class="title">开放时间 9:00-17:00</p>
+            </div>
+        </div>
+        <div class="pageSec-bg"></div>
+        <a href="javascript:;" class="sec-out"></a>
+    </div>
+    <div class="page pageSec hide" id="transCard">
+        <img src="img/t-trans2.png" alt="" class="trans1-pic">
+        <img src="img/t-tran2-title.png" alt="" class="trans1-title">
+        <div class="sec-words">
+            <div class="sec-word">
+                <p class="title">押金 20 元/ 张</p>
+                <p>各公交营运点或者地铁站都有销售，第一次至少充值10 元。使用天府通卡可乘坐成都市市区地铁线路和所有安装天府通公交POS机具的公交线路，并可享受地铁票价9折优惠和主城区范围内公交线路票价5折优惠。</p>
+            </div>
+            <div class="sec-word">
+                <p class="weightB">退卡退款：</p>
+                <p>用户办理押金卡退卡，须出示押金凭证和退卡人身份证原件，并确保原卡表面完好无损，使用正常。</p>
+            </div>
+        </div>
+        <div class="pageSec-bg"></div>
+        <a href="javascript:;" class="sec-out"></a>
+    </div>
+    <div class="page pageSec hide" id="transBike">
+        <img src="img/t-trans3.png" alt="" class="trans1-pic">
+        <img src="img/t-tran3-title.png" alt="" class="trans1-title">
+        <div class="sec-words">
+            <div class="sec-word">
+                <p class="title">一步单车</p>
+                <p class="weightB">押金：99元 费用半小时0.5元/半小时</p>
+                <p>用车时，需要使用“1步单车”APP，绑定手机号、输入真实姓名（不需要输入身份证号）</p>
+            </div>
+            <div class="sec-word">
+                <p class="title">永安行</p>
+                <p class="weightB">押金：99元 费用半小时0.5元/半小时</p>
+                <p>用车时需要使用“摩拜单车”APP绑定手机号、输入真实姓名、身份证号码，</p>
+                <p>（还有大家常见的 摩拜，OFO，bluegogo）</p>
+            </div>
+        </div>
+        <div class="pageSec-bg"></div>
+        <a href="javascript:;" class="sec-out"></a>
+    </div>
+    <div class="page pageSec hide" id="transCar">
+        <img src="img/t-trans4.png" alt="" class="trans1-pic">
+        <img src="img/t-tran4-title.png" alt="" class="trans1-title">
+        <div class="sec-words">
+            <div class="sec-word">
+                <p class="title">Car2share</p>
+                <p class="weightB">费用：9.9元/半小时 1.2元 /公里</p>
+                <p>车型为奔驰smart，市面售价在12.50-22.80万不等，为燃油车，整个车子为单排双座，车型最小。</p>
+            </div>
+            <div class="sec-word">
+                <p class="title">Evcard</p>
+                <p class="weightB">押金：99元 费用半小时0.5元/半小时</p>
+                <p>费用：9元/小时，24小时内封顶129元</p>
+                <p>车型较多，主要是奇瑞EQ、荣威E50和宝马之诺三款车型</p>
+            </div>
+        </div>
+        <div class="pageSec-bg"></div>
+        <a href="javascript:;" class="sec-out"></a>
+    </div>
+</div>
+
 <!--<div class="s-arrow"></div>-->
 <!--<div class="music"></div>-->
 <div id="orientLayer" class="mod-orient-layer">
@@ -256,7 +347,7 @@
         });
         /*==下一页==*/
         function nextPage(thisPage, nextPage) {
-            if(thisPage<5){
+            if(thisPage<6){
                 $("#page"+thisPage).stop().fadeOut(500, function (){
                     $("#page"+thisPage).addClass("hide");
                 });
@@ -264,8 +355,8 @@
                     $("#page"+nextPage).removeClass("hide");
                 });
             }else{
-                $("#page5").stop().fadeOut(500, function (){
-                    $("#page5").addClass("hide");
+                $("#page6").stop().fadeOut(500, function (){
+                    $("#page6").addClass("hide");
                 });
                 $("#page1").stop().fadeIn(500, function (){
                     $("#page1").removeClass("hide");
@@ -287,8 +378,8 @@
                     $("#page1").stop().fadeOut(500, function (){
                         $("#page1").addClass("hide");
                     });
-                    $("#page11").stop().fadeIn(500, function (){
-                        $("#page5").removeClass("hide");
+                    $("#page6").stop().fadeIn(500, function (){
+                        $("#page6").removeClass("hide");
                     });
                 }
             }

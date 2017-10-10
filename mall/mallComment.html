@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
     <link rel="stylesheet" href="../css/newsIndex.css"/>
     <link rel="stylesheet" href="../css/mall.css"/>
     <title>安仁乐道</title>
@@ -33,9 +34,15 @@
                             <span>颜色规格：草莓</span>
                         </p>
                         <div class="comment-pics clearfix">
-                            <img src="../img/mall-1.png" alt="">
-                            <img src="../img/mall-1.png" alt="">
-                            <img src="../img/mall-1.png" alt="">
+                            <div class="com-img">
+                                <img src="../img/mall-1.png" alt="">
+                            </div>
+                            <div class="com-img">
+                                <img src="../img/mall-class1.png" alt="">
+                            </div>
+                            <div class="com-img">
+                                <img src="../img/s-p3-pic.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -64,8 +71,14 @@
                             <span>颜色规格：草莓</span>
                         </p>
                         <div class="comment-pics clearfix">
-                            <img src="../img/mall-1.png" alt="">
-                            <img src="../img/mall-1.png" alt="">
+                            <div class="comment-pics clearfix">
+                                <div class="com-img">
+                                    <img src="../img/s-p1-tower.png" alt="">
+                                </div>
+                                <div class="com-img">
+                                    <img src="../img/mall-new2.png" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -99,10 +112,70 @@
             </div>
         </div>
     </div>
+    <div class="container comment-show">
+        <div class="swiper-container" id="swiper-comment">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="javascript:;" class="comment-pic">
+                        <img src="../img/mall-top.png" alt=""/>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:;" class="comment-pic">
+                        <img src="../img/mall-top.png" alt=""/>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="javascript:;" class="comment-pic">
+                        <img src="../img/mall-top.png" alt=""/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <script src="../js/jquery.min.js"></script>
+<script src="../js/swiper.jquery.min.js"></script>
 <script>
-    var click = "ontouchstart" in document ? "touchstart" : "click";
+    ;(function ($){
+        var click = "ontouchstart" in document ? "touchstart" : "click";
+        var swiperTop = new Swiper('#swiper-comment',{
+            simulateTouch: false,
+            slidesPerView: 1,
+            paginationClickable: false,
+            spaceBetween: 0,
+            loop: false,
+            autoplay: false,
+            autoplayDisableOnInteraction: false,
+            observer:true,
+            observeParents:true,
+            onClick: function(swiper){
+                $(".comment-show").hide();
+            }
+        });
+        var commentPics;
+        var commentArr=[];
+        $(".com-img").on(click, function (){
+            commentArr=[];
+            commentPics = $(this).closest(".comment-pics").find("img");
+            commentPics.each(function(index, item){
+                var thisSrc = $(this).prop("src");
+                commentArr.push(thisSrc);
+            });
+            console.log(commentArr);
+            var swiperCon = $(".swiper-wrapper");
+            swiperCon.html("");
+            if(commentArr.length){
+                for(var i=0; i<commentArr.length; i++){
+                    var thisSlide = $("<div class='swiper-slide'><a href='javascript:;' class='comment-pic'><img src='"+ commentArr[i] +"'></a></div>");
+                    swiperCon.append(thisSlide);
+                }
+                swiperTop.update();
+                swiperTop.slideTo(0, 0, false);
+                $(".comment-show").show();
+            }
+        });
+    })(jQuery);
 </script>
 </body>
 </html>
