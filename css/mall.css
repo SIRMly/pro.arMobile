@@ -13,6 +13,8 @@ a{display: block;}
 .m-search-cancel{width: 6vw; height: 100%; background: url("../img/m-search-cancel.png") no-repeat right center; -webkit-background-size: 80% auto; background-size: 80% auto;}
 .m-search input{height: 100%; flex: auto; width: 0; margin: 0 10vw 0 2vw; font-size: 0.65rem; color: #fff; }
 .mall-class{padding: 0.75rem 0; border-bottom: 1px solid #e0e1e1;}
+#mall-index-new .swiper-slide img{height: calc((100vw - 60px) / 3.44);}
+#mall-index-class .swiper-slide img{height: calc((100vw - 60px) / 3.44);}
 #mall-index-class p,#mall-index-new p{position: absolute; width: 100%; height: 1.5rem; line-height: 1.5rem; text-align: center; left: 0;top: 50%; margin-top: -0.75rem; font-size: 0.75rem; color: #fff; text-shadow: -2px 1px 1px #000;}
 .mall-new{padding: 0.75rem 0 0;}
 .mall-anren{font-size: 0.75rem; color: #333333; text-align: center; width: 100%; height: 1.75rem; line-height: 1.75rem; position: relative; margin-bottom: 0.25rem;}

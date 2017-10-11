@@ -156,13 +156,13 @@
         var commentPics;
         var commentArr=[];
         $(".com-img").on(click, function (){
+            var thisIndex = $(this).index();
             commentArr=[];
             commentPics = $(this).closest(".comment-pics").find("img");
             commentPics.each(function(index, item){
                 var thisSrc = $(this).prop("src");
                 commentArr.push(thisSrc);
             });
-            console.log(commentArr);
             var swiperCon = $(".swiper-wrapper");
             swiperCon.html("");
             if(commentArr.length){
@@ -171,7 +171,7 @@
                     swiperCon.append(thisSlide);
                 }
                 swiperTop.update();
-                swiperTop.slideTo(0, 0, false);
+                swiperTop.slideTo(thisIndex, 0, false);
                 $(".comment-show").show();
             }
         });
