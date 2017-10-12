@@ -37,7 +37,8 @@
     to{transform: rotate(360deg);}
 }
 /*==loading==*/
-#page0{background-color: #000; padding-top: 34vh;}
+#page0{background-color: #000;}
+#page0 .page-inner{ padding-top: 34vh; background-color: #000;}
 #page0 img{width: 36vw; margin: 0 auto;}
 .progress-bar{width: 36vh; height: 3.2vw; margin: 2.6rem auto 0; background-color: #fff;}
 #progress{display: block; height: 100%; width: 0; background-color: #f9764e;}
