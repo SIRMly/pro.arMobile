@@ -49,10 +49,11 @@
 .p1-pic{width: 64.5vw; position: absolute; left: 10.75vw; top: 50%; margin-top: -31vw; opacity:0; animation: fadeIn 1.5s linear 1.5s 1 forwards;}
 .p1-bottom{width: 31vw; position: absolute; left: 27.5vw; bottom:7vw; opacity:0; animation: fadeIn 1.5s linear 2s 1 forwards;}
 /*==p2==*/
-.p2-pic{width: 100%; position: absolute; top: -3vw; left: 0; transform-origin: 0 0; transform: scale(0,0); animation: page2PicMove 1.5s ease-in 0.1s 1 forwards;}
+.p2-pic{width: 100%; position: absolute; top: -80%; left: 0; animation: page2PicMove 1.5s linear 0.1s 1 forwards;}
+
 @-webkit-keyframes page2PicMove {
-    from{ transform: scale(0,0);}
-    to{ transform: scale(1,1);}
+    from{ top: -90%;}
+    to{ top: -3vw;}
 }
 .p2-title{width: 71%; position: absolute; top: 94vw; right: 7.4vw; opacity:0; animation: fadeIn 1s linear 1s 1 forwards;}
 .p2-word{width: 85%; position: absolute; top: 108vw; left: 7.5vw; font-size: 0.6rem; color: #333; text-align: justify;letter-spacing: 1px; text-indent: 1.2rem; line-height: 0.9rem;opacity:0; animation: fadeIn 1s linear 1.5s 1 forwards;}
@@ -62,6 +63,7 @@
 .p3-word{width: 80%; position: absolute; left: 10%;top: 124vw; font-size: 0.6rem; color: #333; text-align: justify; text-indent: 1.2rem; line-height: 1rem; letter-spacing: 1px; opacity: 0; animation: fadeIn 1s linear 1.5s 1 forwards;}
 .p3-word p+p{ margin-top: 0.35rem;}
 /*==page4==*/
+.page-inner{position: absolute; width: 100%; height: 100%; left: 0; top: 0;background-color: #fff;}
 .p4-part1{width: 100%; height: 23.6vh;background: url("../img/t-p4-1.png") no-repeat center center; -webkit-background-size: cover; background-size: cover; position: absolute; top: 0; left: 0;}
 .p4-title{width: auto; height: 7.6vh; position: absolute; left: 50%; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); transform: translateX(-50%); bottom: 100%;animation: p4TitleMove 0.8s ease-out 0.6s 1 forwards;}
 @-webkit-keyframes p4TitleMove {
@@ -86,7 +88,13 @@
 /*==行-传统==*/
 .pageSec{left: 100%; }
 .pageSec-bg{width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: url("../img/t-secbg.png") no-repeat; -webkit-background-size:100% 100%; background-size:100% 100%;}
-.trans1-pic{width: 94.8vw; position: absolute; left: 2.6vw; top: 2.74%; transform-origin: 5% 5%; transform: scale(0,0);animation: page2PicMove 1.5s ease-in 0.1s 1 forwards;}
+.trans1-pic{width: 94.8vw; position: absolute; left: 2.6vw; top: 2.74%;
+    /*transform-origin: 5% 5%; transform: scale(0,0);*/
+    animation: topMove 1.5s ease-in 0.1s 1 forwards;}
+@-webkit-keyframes topMove{
+    from{top: -50%;}
+    to{top: 2.74%;}
+}
 .trans1-title{width: 72.8vw; position: absolute; left: 10%; top: 65vw; opacity: 0; animation: fadeIn 1s ease-in 1.3s 1 forwards;}
 .sec-words{position: absolute; left: 10%;right: 10%; top: 81vw;}
 .sec-word{opacity: 0;}
@@ -99,16 +107,16 @@
 .sec-word:nth-of-type(3){animation: fadeIn 1s ease-in 3.2s 1 forwards;}
 .sec-out{width: 2.2rem; height: 2.2rem; background: url("../img/t-sec-out.png") no-repeat center center; -webkit-background-size:2.1rem auto; background-size:2.1rem auto; position: absolute; left: 50%; margin-left: -1.1rem; bottom: 6%; opacity: 0;animation: fadeIn 1.5s ease-in 4s 1 forwards;}
 /*==行-卡==*/
-#transCard .trans1-pic{top: -50%; transform: scale(1,1);animation: trans2PicMove 1.5s ease-in 0.1s 1 forwards;}
-@-webkit-keyframes trans2PicMove {
-    from{top: -50%;}
-    to{top: 2.88%;}
+#transCard .trans1-pic{top: 2.74%;transform-origin: 5% 5%; transform: scale(0,0);animation: smallMove 1.5s ease-in 0.1s 1 forwards;}
+@-webkit-keyframes smallMove {
+    from{ transform: scale(0,0);}
+    to{ transform: scale(1, 1);}
 }
 #transCard .trans1-title{left: 13.7vw; top: 73vw;}
 #transCard .sec-words{top: 88vw;}
 .sec-word p.weightB{ font-weight: bold;}
 /*==行-自行车==*/
-#transBike .trans1-pic{top: -50%; transform: scale(1,1);animation: trans2PicMove 1.5s ease-in 0.1s 1 forwards;}
+#transBike .trans1-pic{top: 2.74%;transform-origin: 5% 5%; transform: scale(0,0);animation: smallMove 1.5s ease-in 0.1s 1 forwards;}
 #transBike .trans1-title{left: 13.7vw; top: 64vw;}
 #transBike .sec-words{top: 79vw;}
 #transBike .sec-word:nth-of-type(1){animation: fadeIn 1s ease-in 2s 1 forwards;}
@@ -135,7 +143,7 @@
 #wayCar .trans1-title{left: 19%; top: 97vw;}
 #wayCar .sec-words{top: 112vw;}
  /*==way3==*/
-#wayRec .trans1-pic{top: -50%; transform: scale(1,1);animation: trans2PicMove 1.5s ease-in 0.1s 1 forwards;}
+#wayRec .trans1-pic{top: 2.74%; transform-origin: 5% 5%; transform: scale(0,0);animation: smallMove 1.5s ease-in 0.1s 1 forwards;}
 #wayRec .trans1-title{left: 19%; top: 111vw;}
 #wayRec .sec-words{top: 126vw;}
 /*==p6==*/
@@ -152,7 +160,7 @@
 #playLiu .trans1-title{left: 22%; top: 75vw;}
 #playLiu .sec-words{top: 89vw;}
 /*==playMuseum==*/
-#playMuseum .trans1-pic{top: -50%; transform: scale(1,1);animation: trans2PicMove 1.5s ease-in 0.1s 1 forwards;}
+#playMuseum .trans1-pic{top: 2.74%; transform-origin: 5% 5%; transform: scale(0,0);animation: smallMove 1.5s ease-in 0.1s 1 forwards;}
 #playMuseum .trans1-title{left: 15%; top: 67vw;}
 #playMuseum .sec-words{top: 80vw; left: 12%;}
 /*==playAnhui==*/
