@@ -105,7 +105,7 @@
 .sec-word:nth-of-type(1){animation: fadeIn 1s ease-in 2s 1 forwards;}
 .sec-word:nth-of-type(2){animation: fadeIn 1s ease-in 2.6s 1 forwards;}
 .sec-word:nth-of-type(3){animation: fadeIn 1s ease-in 3.2s 1 forwards;}
-.sec-out{width: 2.2rem; height: 2.2rem; background: url("../img/t-sec-out.png") no-repeat center center; -webkit-background-size:2.1rem auto; background-size:2.1rem auto; position: absolute; left: 50%; margin-left: -1.1rem; bottom: 6%; opacity: 0;animation: fadeIn 1.5s ease-in 4s 1 forwards;}
+.sec-out{width: 2.2rem; height: 2.2rem; background: url("../img/t-sec-out.png") no-repeat center center; -webkit-background-size:2.1rem auto; background-size:2.1rem auto; position: absolute; left: 50%; margin-left: -1.1rem; bottom: 6%; opacity: 0;animation: fadeIn 1.5s ease-in 2s 1 forwards;}
 /*==行-卡==*/
 #transCard .trans1-pic{top: 2.74%;transform-origin: 5% 5%; transform: scale(0,0);animation: smallMove 1.5s ease-in 0.1s 1 forwards;}
 @-webkit-keyframes smallMove {
