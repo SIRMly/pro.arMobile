@@ -15,7 +15,7 @@
     <title>安仁乐道</title>
 </head>
 <body>
-<audio src="audio/bgm.mp3" loop preload="auto" id="bgm"></audio>
+<audio src="audio/tourBgm.mp3" loop preload="auto" id="bgm"></audio>
 <div class="page" id="page0">
     <div class="page-inner" id="page-inner0">
         <img src="img/t-p1-pic.png" alt=""/>
@@ -290,13 +290,13 @@
             <img src="img/t-p7-title.png" alt="" class="p4-title"/>
             <img src="img/t-p7-icon.png" alt="" class="p4-icon"/>
         </a>
-        <a href="javascript:;" class="p7-part2 p7-part2-1 toSecond">
+        <a href="http://mp.weixin.qq.com/s?__biz=MzI1MjY5Mjg4Ng==&mid=2247484564&idx=1&sn=1cf8106f4ec1eaef5f1e2cfc513d4d86&chksm=e9de946ddea91d7bd3133a23a1107920046c1deb03fafab3b59de346443eaa0ff7ee64fc26e2&mpshare=1&scene=1&srcid=1012sDm7T7GUSYdt7V7rzhuX#rd" class="p7-part2 p7-part2-1 toSecond">
             <img src="img/t-p7-word1.png" alt=""/>
         </a>
-        <a href="javascript:;" class="p7-part2 p7-part2-2 toSecond">
+        <a href="http://mp.weixin.qq.com/s/EiSZsOaTd2aUaczn2pKo0w" class="p7-part2 p7-part2-2 toSecond">
             <img src="img/t-p7-word2.png" alt=""/>
         </a>
-        <a href="javascript:;" class="p7-part2 p7-part2-3 toSecond">
+        <a href="http://mp.weixin.qq.com/mp/homepage?__biz=MzI1MjY5Mjg4Ng==&hid=3&sn=bcfd7bd11f340b509f53c59585d478c1&scene=18&pass_ticket=lJkwZZFclKzebWUsjNh9Pys9kzwYtMbtF9P5EZvJCeKd69oOxFnFV4RjliDymzVJ&scene=1" class="p7-part2 p7-part2-3 toSecond">
             <img src="img/t-p7-word3.png" alt=""/>
         </a>
     </div>
@@ -434,7 +434,7 @@
         $(".page-inner").each(function (index, item){
             (function (index){
                 touch.on("#page-inner"+index, "swipeup", function (){
-                    console.log(index)
+                    console.log(index);
                     nextPage(index, index+1);
                 });
                 touch.on("#page-inner"+index, "swipedown", function (){
