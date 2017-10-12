@@ -17,7 +17,10 @@
 <body>
 <audio src="audio/bgm.mp3" loop preload="auto" id="bgm"></audio>
 <div class="page" id="page0">
-    <img src="img/s-loading.gif" alt=""/>
+    <img src="img/t-p1-pic.png" alt=""/>
+    <div class="progress-bar">
+        <div id="progress"></div>
+    </div>
 </div>
 <div class="page hide" id="page1">
     <div class="p1-bg"></div>
@@ -283,7 +286,7 @@
     </a>
 </div>
 <!--<div class="s-arrow"></div>-->
-<!--<div class="music"></div>-->
+<div class="music"></div>
 <div id="orientLayer" class="mod-orient-layer">
     <div class="mod-orient-layer__content">
         <i class="icon mod-orient-layer__icon-orient"></i>
@@ -382,9 +385,10 @@
                 newImg.src = imgs[i];
                 newImg.onload = function (){
                     proNum++;
-//                    proPercentage = Math.floor(proNum/count*100);
+                    proPercentage = Math.floor(proNum/count*100);
+                    $("#progress").width(proPercentage+"%");
                     if(proNum>=count){
-//                        proPercentage=100;
+                        proPercentage=100;
                         $("#page0").stop().fadeOut(500, function (){
                             $("#page0").addClass("hide");
                         });
@@ -426,6 +430,9 @@
             if(thisPage<7){
                 $("#page"+thisPage).stop().fadeOut(500, function (){
                     $("#page"+thisPage).addClass("hide");
+                    $(".pageSec").stop().animate({
+                        left : "100%"
+                    },0).fadeOut(0);
                 });
                 $("#page"+nextPage).stop().fadeIn(500, function () {
                     $("#page"+nextPage).removeClass("hide");
@@ -446,6 +453,9 @@
                     console.log(thisPage);
                     $("#page"+thisPage).stop().fadeOut(500, function (){
                         $("#page"+thisPage).addClass("hide");
+                        $(".pageSec").stop().animate({
+                            left : "100%"
+                        },0).fadeOut(0);
                     });
                     $("#page"+prePage).stop().fadeIn(500, function () {
                         $("#page"+prePage).removeClass("hide");
