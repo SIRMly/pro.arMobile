@@ -288,6 +288,7 @@ a{display: block;}
 .mall-order-text{padding-bottom: 1.5rem;}
 .mall-order-text p{height: 1.5rem; line-height: 1.5rem; font-size: 0.55rem; color: #333333; padding-left: 0.75rem;}
 .to-center{position: absolute; right: 3%; bottom: 8%; margin-bottom: 8.8vw; width: 8.3vw; height: 8.3vw; background: url("../img/m-to-center.png") no-repeat center center; -webkit-background-size: contain; background-size: contain;}
+.mallOrder .buyer-name span{float: right; margin-right: 0.2rem;}
 
 
 
