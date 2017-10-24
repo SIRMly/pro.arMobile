@@ -19,6 +19,14 @@
 <div class="page index">
     <div class="container">
         <div class="content">
+            <div class="index-top po-re">
+                <img src="../img/index-top.png" alt=""/>
+                <div class="nav clearfix">
+                    <a href="../myCenter.html" class="to-center"></a>
+                    <a href="../search.html" class="to-search"></a>
+                    <a href="javascript:;" class="to-sidebar"></a>
+                </div>
+            </div>
             <div class="mall-top po-re">
                 <div class="swiper-container" id="mall-index-top">
                     <div class="swiper-wrapper">
@@ -164,12 +172,71 @@
     </div>
     <div class="to-top"></div>
     <a href="mallCenter.html" class="to-center"></a>
+    <div class="sidebar">
+        <div class="sidebar-inner">
+            <div class="sidebar-bg">
+                <ul class="sidebar-lists">
+                    <li>
+                        <a href="javascript:;" class="back-home">首页</a>
+                    </li>
+                    <li>
+                        <a href="newsIndex.html">最新动态</a>
+                    </li>
+                    <li>
+                        <a href="activeList.html">活动报名</a>
+                    </li>
+                    <li>
+                        <a href="survey.html">问卷调查</a>
+                    </li>
+                    <li>
+                        <a href="magazineList.html">安仁杂志</a>
+                    </li>
+                    <li>
+                        <a href="ranks.html">安仁美食排行</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">在线商城</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">地图导览</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">游览攻略</a>
+                    </li>
+                    <li>
+                        <a href="lostFound.html">失物招领</a>
+                    </li>
+                    <li>
+                        <a href="suggestion.html">意见反馈</a>
+                    </li>
+                </ul>
+                <a href="javascript:;" class="sidebar-back back-home"></a>
+            </div>
+        </div>
+    </div>
 </div>
 <script src="../js/jquery.min.js"></script>
 <script src="../js/swiper.jquery.min.js"></script>
 <script>
     ;(function ($){
         var click = "ontouchstart" in document ? "touchstart" : "click";
+        /*==sidebar==*/
+        $(".to-sidebar").on(click, function (){
+            if(!$(".sidebar").is(":animated")){
+                $(".sidebar").stop().fadeIn(0).animate({
+                    left : 0,
+                    opacity : 1
+                },1000,"swing");
+            }
+        });
+        $(".back-home").on(click, function (){
+            if(!$(".sidebar").is(":animated")){
+                $(".sidebar").stop().animate({
+                    left : "100%",
+                    opacity : 0
+                },1000,"swing").fadeOut(0);
+            }
+        });
         /*==顶部轮播图==*/
         var swiperTop = new Swiper('#mall-index-top',{
             simulateTouch: false,

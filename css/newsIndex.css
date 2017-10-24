@@ -117,7 +117,7 @@ video::-webkit-media-controls { display:none !important; }
 /*==点击屏幕控制播放暂停==*/
 .video-js.vjs-playing .vjs-tech {pointer-events: auto;}
 /*==评论==*/
-#comment .content{padding-top: 2rem;}
+#comment .comment{padding-top: 1.5rem;}
 /*==回复==*/
 #reply .comment1{padding-top: 1.75rem;}
 #reply .comment1 .comment-item{border-bottom: none; margin-bottom: 0.5rem;}

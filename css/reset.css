@@ -37,3 +37,16 @@ img{display: block; width: 100%;}
 .ver-stretch{-webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; align-items: stretch; }
 .her-center{-webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; }
 .her-stretch{-webkit-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; justify-content: space-between;}
+.nav{position: absolute; height: 100%; top: 0; right: 0; padding-right: 1.1vw;}
+.nav a{width: 9vw; float: left; height: 100%; background-image: none; position: static; margin-bottom: 0;}
+.index-banners{position: relative;}
+/*==sidebar==*/
+.sidebar{position: absolute; left:100%; width: 100%; height: 100%; top: 0; bottom: 0; z-index: 999; display: none; background-color: #fff; opacity: 0;}
+.sidebar-inner{position: absolute; width: 100%; left: 0%; top: 0; bottom: 0.1rem; }
+.sidebar.show{left: 0;}
+.sidebar-bg{min-height: 100vh; width: 100%; background: url("../img/sidebar-bg.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; padding-top: 1.5rem; padding-bottom: 1rem; position: relative;}
+.sidebar-lists{width: 100%; padding-bottom: 3.5rem;}
+.sidebar-lists li{text-align: center; height: 2.2rem; line-height:2.2rem;width: 91.3%; margin: 0 auto;}
+.sidebar-lists li:not(:last-child){border-bottom: 1px solid #e1cdb1;}
+.sidebar-lists a{color: #c49c63; font-size: 0.85rem;}
+.sidebar-back{width: 2rem; height: 2rem; background: url("../img/index-back.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; top: 26rem; right: 10%;}

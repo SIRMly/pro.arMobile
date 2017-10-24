@@ -51,7 +51,8 @@ a{display: block;}
 .bottom-bar+.container{bottom: 2rem;}
 #detail-swiper .swiper-slide{position: relative;}
 #detail-swiper p{position: absolute; font-size: 0.8rem; color: #fff; text-align: center; width: 2rem; height: 2rem; line-height: 2rem; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; background-color: rgba(0,0,0,0.8); right: 1.25rem; bottom: 0.5rem;}
-.detail-info{font-size: 1rem; padding:  1rem; border-bottom: 0.5rem solid #e0e1e1;}
+#detail-swiper img{height:53.6vw;}
+.detail-info{font-size: 1rem; padding: 1rem; border-bottom: 0.5rem solid #e0e1e1;}
 .info-name{color: #333; line-height: 1.3rem;}
 .info-price{color: #923333; margin-top: 0.6rem;}
 .d-tab-box{height: 2.4rem;}
@@ -289,7 +290,3 @@ a{display: block;}
 .mall-order-text p{height: 1.5rem; line-height: 1.5rem; font-size: 0.55rem; color: #333333; padding-left: 0.75rem;}
 .to-center{position: absolute; right: 3%; bottom: 8%; margin-bottom: 8.8vw; width: 8.3vw; height: 8.3vw; background: url("../img/m-to-center.png") no-repeat center center; -webkit-background-size: contain; background-size: contain;}
 .mallOrder .buyer-name span{float: right; margin-right: 0.2rem;}
-
-
-
-
