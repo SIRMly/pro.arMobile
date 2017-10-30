@@ -78,7 +78,9 @@ a{display: block;}
 .m-d-desc{padding: 0.3rem 1rem; font-size: 0.65rem; color: #333; line-height: 1rem;}
 .m-d-desc p{margin-top: 0.5rem;}
 .detail-bottom{ height: 100%;}
-.to-car-btn{width: 2.75rem; height: 1.25rem; background: url("../img/car-icon.png") no-repeat center center; -webkit-background-size: auto 100%; background-size: auto 100%; border-right: 0.1rem solid #bd9563; margin-top: 0.37rem;}
+.call-btn{width: 1.6rem; height: 1.25rem;  background: url("../img/call-btn.png") no-repeat center right; -webkit-background-size: auto 100%; background-size: auto 100%; margin-top: 0.37rem;}
+.to-car-btn{width: 2rem; height: 1.25rem; background: url("../img/car-icon.png") no-repeat center left; -webkit-background-size: auto 100%; background-size: auto 100%; border-right: 0.1rem solid #bd9563; margin-top: 0.37rem; margin-left: 0.55rem; position: relative;}
+.to-car-btn span{position: absolute; font-size: 0.35rem; color: #fff; width: 0.6rem; height: 0.6rem; line-height: 0.6rem; text-align: center; border-radius: 50%; background-color: #923333; right: 0.35rem; top: 0;}
 .add-car-btn{font-size: 0.65rem; color: #bd9563; height: 100%; line-height: 2rem; padding-left: 0.75rem;}
 .detail-buy-btn{color: #1a2954; font-size: 0.65rem; background-color: #bd9563; -webkit-border-radius: 0.3rem; -moz-border-radius: 0.3rem; border-radius: 0.3rem; height: 1.5rem; line-height: 1.5rem; width: 4.15rem; text-align: center; margin-top: 0.25rem;}
 .crash{position: absolute;width: 100%; height: 100%; left: 0; top: 0; background-color: rgba(0,0,0,0.5); z-index: 200;}
@@ -135,6 +137,9 @@ a{display: block;}
 .car-item-edit .detail-speci-item{margin-left: 0.6rem;}
 .car-item-edit .de-num-show{font-size: 0.7rem;}
 .car-item-delete{font-size: 0.65rem;color: #ffffff; background-color: #923333; height: 3.5rem; width: 2.5rem; text-align: center; line-height: 3.5rem; position: absolute; right: -1rem; top: -0.5rem; }
+.mall-like{border-top: 0.45rem solid #e0e1e1}
+.car .mall-anren:before{margin-right: 1.8rem;}
+.car .mall-anren:after{margin-left: 1.7rem;}
 /*==购买==*/
 .buy-count{line-height: 2rem; color: #bd9563; font-size: 0.65rem; text-align: center; width: 100%; display: block;}
 .buying .detail-buy-btn{position: absolute; right: 0.3rem; top: 0;}
@@ -244,7 +249,6 @@ a{display: block;}
 .reason-item input{position: absolute; width: 100%; height: 100%; left: 0; top: 0;}
 .reason-item input:checked+span{color: #fff; background-color: #923333; border-color: #923333;}
 .return-item input[type="text"]{width: calc(100% - 4rem);}
-
 .add-pic{margin-top: 0.8rem; width: 100%; position: relative; padding-bottom: 1.2rem;}
 .add-pic-wrapper{position: relative;webkit-box-pack: start; -ms-flex-pack: start; -webkit-justify-content: flex-start; justify-content: flex-start; }
 .img-updown{width: 13.6vw; height: 13.6vw; position: relative;  background: url("../img/pic-add.png") no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}

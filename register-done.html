@@ -25,7 +25,7 @@
                 <div class="border-right"></div>
                 <div class="register-title">
                     <p>注 册 成 功</p>
-                    <img src="img/forget-notice.png" alt="">
+                    <img src="img/succ-notice.png" alt="">
                 </div>
                 <p class="done-btns clearfix">
                     <a href="login.html" class="to-login pull-left">返回登陆</a>
@@ -40,6 +40,9 @@
 <script>
     ;(function ($){
         FastClick.attach(document.body);
+        setTimeout(function (){
+            window.location = "completeInfo.html";
+        },5000)
     })(jQuery);
 </script>
 </body>

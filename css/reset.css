@@ -50,3 +50,4 @@ img{display: block; width: 100%;}
 .sidebar-lists li:not(:last-child){border-bottom: 1px solid #e1cdb1;}
 .sidebar-lists a{color: #c49c63; font-size: 0.85rem;}
 .sidebar-back{width: 2rem; height: 2rem; background: url("../img/index-back.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; top: 26rem; right: 10%;}
+.load-btn{text-align: center; display: block; font-size: 0.6rem; margin: 0.5rem auto 0; padding-bottom: 1rem;}

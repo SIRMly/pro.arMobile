@@ -361,10 +361,12 @@
     var imgNum = 2;
     var upCrash = $("<div class='up-crash'></div>");
     var deleteImage = $("#delete-img");
+    var picNumArr = [0,0,0];
     function addImg(){
         if($(".img-updown").length<4){
             $(".add-pic-wrapper").append($('<div class="img-updown img-updown'+imgNum+'"><img src="" alt="" class="img-show" id="img-show'+imgNum+'"><input type="file" class="img-btn" id="img-btn'+imgNum+'" accept="image/jpeg,image/jpg,image/png"></div>'))
             imgNum++;
+            picNumArr[imgNum]=0;
         }
     }
     $("body").on("click",".img-updown", function (){
@@ -373,9 +375,12 @@
         if($("#img-btn"+index).val() == ""){
             /*==如果input内没有选图==*/
             $("#img-btn"+index).on("change", function (){
-                imgUpdown(index);
-                upCrash.clone(true).appendTo($(".img-updown"+index));
-                addImg();
+                if(picNumArr[index]<1){
+                    picNumArr[index]++;
+                    imgUpdown(index);
+                    upCrash.clone(true).appendTo($(".img-updown"+index));
+                    addImg();
+                }
             });
         }else{
             console.log("bbb");

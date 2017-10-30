@@ -94,30 +94,5 @@
 .magazine-remark{width: 86.53vw; margin: 1.25rem auto; color: #b6b7b7; font-size: 0.6rem;}
 .magazine-author{position: relative; padding-left: 0.8rem;}
 .magazine-author:before{content: ""; position: absolute; width: 0.65rem; height: 0.65rem; background-color: #8c8d8d; border-radius: 50%; left: 0; bottom: 0.1rem;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.magazineList .border-content{ padding-bottom: 2rem;}
+.magazineList .load-btn{position: absolute; bottom: 0;width: 100%;}

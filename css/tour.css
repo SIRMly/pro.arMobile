@@ -26,7 +26,7 @@
     from{margin-bottom: 0;}
     to{margin-bottom: 10px;}
 }
-.music{width: 1.5rem; height: 1.5rem; background: url("../img/music-icon.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: absolute; right: 6%; top: 5vw; z-index: 1000; transform: rotate(0deg);}
+.music{width: 1.5rem; height: 1.5rem; background: url("../img/music-icon.png") no-repeat center center; -webkit-background-size: contain; background-size: contain; position: ; right: 6%; top: 5vw; z-index: 1000; transform: rotate(0deg);}
 .music.play{-webkit-animation: rotate 2s linear 0s infinite; -o-animation: rotate 2s linear 0s infinite; animation: rotate 2s linear 0s infinite;}
 @-webkit-keyframes rotate {
     from{transform: rotate(0deg);}
@@ -182,38 +182,6 @@
 .p7-part2-1 img{left: 1%; top: 22%; animation: fadeIn 0.8s ease-out 1.5s 1 forwards;}
 .p7-part2-2 img{right: 1%; top: 22%; animation: fadeIn 0.8s ease-out 2.1s 1 forwards;}
 .p7-part2-3 img{left: 1%; top: 22%; animation: fadeIn 0.8s ease-out 2.7s 1 forwards;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*==横屏==*/
 @-webkit-keyframes rotation {
     10% { transform: rotate(-90deg); -webkit-transform: rotate(-90deg) }
@@ -239,40 +207,3 @@
     -webkit-transform: rotate(-90deg); -webkit-animation: rotation infinite 1.5s ease-in-out; animation: rotation infinite 1.5s ease-in-out;
     -webkit-background-size: 67px; background-size: 67px }
 .mod-orient-layer__desc { margin-top: 20px; font-size: 15px; color: #fff }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

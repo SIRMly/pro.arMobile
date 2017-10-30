@@ -138,6 +138,7 @@
             </div>
             <span class="scrollbar"></span>
         </div>
+        <div class="crash-close"></div>
     </div>
 </div>
 <script src="js/jquery.min.js"></script>
@@ -187,7 +188,7 @@
             });
 
         });
-        $(".item-crash").on("click", function (){
+        $(".item-crash,.crash-close").on("click", function (){
             $(".item-detail").stop().fadeOut(100);
             $(".shop").find(".container").css("overflow","auto");
             $(".detail-info").removeClass("long");
